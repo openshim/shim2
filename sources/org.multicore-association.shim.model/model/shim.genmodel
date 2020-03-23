@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.multicore-association.shim.model/src-gen"
+    creationIcons="false" editDirectory="/org.multicore-association.shim.model.edit/src-gen"
+    editorDirectory="/org.multicore-association.shim.model.editor/src-gen" modelPluginID="org.multicore-association.shim.model"
+    modelName="Shim" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" editPluginID="org.multicore-association.shim.model.edit"
+    editorPluginID="org.multicore-association.shim.model.editor" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>shim.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Shim" basePackage="org.multicore_association.shim.model" resource="XML"
+      disposableProviderFactory="true" extensibleProviderFactory="true" childCreationExtenders="true"
+      ecorePackage="shim.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CacheCoherencyType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheCoherencyType/HARDWARE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheCoherencyType/SOFTWARE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CachePrefetchType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CachePrefetchType/ALWAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CachePrefetchType/NEVER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CachePrefetchType/ONCE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CachePrefetchType/ONMISS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CacheReplacementType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheReplacementType/FIFO"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheReplacementType/LRU"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheReplacementType/RANDOM"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CacheType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheType/DATA"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheType/INSTRUCTION"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheType/UNIFIED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CacheWriteAllocateType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteAllocateType/ALWAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteAllocateType/NEVER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteAllocateType/NOFETCH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//CacheWriteBackType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteBackType/ALWAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteBackType/NEVER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//CacheWriteBackType/NOFETCH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//DataRateUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//DataRateUnitType/Bs"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//DataRateUnitType/KiBs"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//DataRateUnitType/MiBs"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//DataRateUnitType/GiBs"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//DataRateUnitType/TiBs"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//EndianType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//EndianType/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//EndianType/LITTLE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//EndianType/BIG"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//FrequencyUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//FrequencyUnitType/Hz"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//FrequencyUnitType/KHz"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//FrequencyUnitType/MHz"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//FrequencyUnitType/GHz"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//InstructionInputType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionInputType/INTEGER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionInputType/FLOAT"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionInputType/POINTER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionInputType/IMMEDIATE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//InstructionOutputType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionOutputType/INTEGER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionOutputType/FLOAT"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//InstructionOutputType/POINTER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//LockDownType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//LockDownType/LINE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//LockDownType/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//LockDownType/WAY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//MasterType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//MasterType/PU"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//MasterType/TU"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//MasterType/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//OperandAddressingType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperandAddressingType/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperandAddressingType/IMMEDIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperandAddressingType/REGISTER"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperandAddressingType/BOTH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//OperationType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperationType/TAS"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperationType/LLSC"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperationType/CAX"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OperationType/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//OrderingType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OrderingType/ORDERED"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OrderingType/UNORDERD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//PowerUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/pW"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/nW"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/uW"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/mW"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/W"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//RWType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/RW"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/WX"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/RX"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/R"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/W"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/X"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//RWType/RWX"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//SignednessType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SignednessType/SIGNED"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SignednessType/UNSIGNED"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SignednessType/BOTH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//SizeUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SizeUnitType/KiB"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SizeUnitType/B"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SizeUnitType/GiB"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SizeUnitType/MiB"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//SizeUnitType/TiB"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//ThroughputUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//ThroughputUnitType/Bcycle"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//ThroughputUnitType/BKcycle"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//VoltageUnitType">
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//VoltageUnitType/pV"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//VoltageUnitType/nV"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//VoltageUnitType/uV"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//VoltageUnitType/mV"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//VoltageUnitType/V"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="shim.ecore#//AddressValueType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//AddressValueObjectType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CacheCoherencyTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CachePrefetchTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CacheReplacementTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CacheTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CacheWriteAllocateTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//CacheWriteBackTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//DataRateUnitTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//EndianTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//FrequencyUnitTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//InstructionInputTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//InstructionOutputTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//LockDownTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//MasterTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//OperandAddressingTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//OperationTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//OrderingTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//PowerUnitTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//RWTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//SignednessTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//SizeUnitTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//ThroughputUnitTypeObject"/>
+    <genDataTypes ecoreDataType="shim.ecore#//UnsignedFloatType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//UnsignedFloatObjectType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//UnsignedIntType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//UnsignedIntObjectType"/>
+    <genDataTypes ecoreDataType="shim.ecore#//VoltageUnitTypeObject"/>
+    <genClasses image="false" ecoreClass="shim.ecore#//AbstractCommunication">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//AbstractCommunication/connectionSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractCommunication/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="shim.ecore#//AbstractComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractComponent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractComponent/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//AbstractComponent/frequencyDomainRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//AbstractComponent/voltageDomainRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//AbstractComponent/operatingPointRef"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="shim.ecore#//AbstractInstruction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractInstruction/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractInstruction/encodingLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractInstruction/nInputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractInstruction/nOutputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractInstruction/sIMDWidth"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//AbstractInstruction/performance"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="shim.ecore#//AbstractPerformance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractPerformance/best"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractPerformance/typical"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractPerformance/worst"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="shim.ecore#//AbstractShim">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractShim/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AbstractShim/shimVersion"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Accessor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Accessor/masterComponentRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Accessor/performanceSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//AccessType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/rwType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/accessByteSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/alignmentByteSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AccessType/nBurst"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//AccessTypeSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//AccessTypeSet/accessType"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//AddressSpace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AddressSpace/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//AddressSpace/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//AddressSpace/subSpace"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//AddressSpaceSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//AddressSpaceSet/addressSpace"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Cache">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/cacheType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/cacheCoherency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/sizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/nWay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/lineSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/lockDownType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/prefetch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/prefetchDistance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/replacement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/writeAllocate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Cache/writeBack"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Cache/cacheRef"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//ClockFrequency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//ClockFrequency/clockValue"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//CommonInstructionSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//CommonInstructionSet/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommonInstructionSet/functionalUnitSetFile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommonInstructionSet/functionalUnitSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//CommunicationSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommunicationSet/sharedMemoryCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommunicationSet/sharedRegisterCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommunicationSet/eventCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommunicationSet/fIFOCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CommunicationSet/interruptCommunication"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//ComponentSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ComponentSet/componentSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ComponentSet/masterComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ComponentSet/slaveComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ComponentSet/cache"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Connection/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Connection/to"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Connection/performance"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//ConnectionSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ConnectionSet/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//ContentionGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//ContentionGroup/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//ContentionGroup/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ContentionGroup/throughput"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ContentionGroup/dataRate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//ContentionGroup/performanceSetRef"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//ContentionGroupSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//ContentionGroupSet/contentionGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//CustomInstruction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CustomInstruction/instructionInput"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CustomInstruction/instructionOperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//CustomInstruction/instructionOutput"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//DataRate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//DataRate/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//DataRate/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference shim.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference shim.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//DocumentRoot/shim"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//EventCommunication"/>
+    <genClasses ecoreClass="shim.ecore#//FIFOCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FIFOCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FIFOCommunication/dataSizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FIFOCommunication/queueSize"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//FrequencyDomain">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FrequencyDomain/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FrequencyDomain/id"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//FrequencyVoltageSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FrequencyVoltageSet/frequencyDomain"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FrequencyVoltageSet/voltageDomain"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FrequencyVoltageSet/operatingPointSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//FunctionalUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FunctionalUnit/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FunctionalUnit/instruction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FunctionalUnit/customInstruction"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//FunctionalUnitSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//FunctionalUnitSet/functionalUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//FunctionalUnitSetFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//FunctionalUnitSetFile/src"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Instruction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/immediateBitWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/inputBitWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/inputPreserved"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/isEmulated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/operandAddressing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/operation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/outputBitWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Instruction/supportedSignedness"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//InstructionInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionInput/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionInput/bitWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionInput/value"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//InstructionOperation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionOperation/operation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionOperation/instructionOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//InstructionOutput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionOutput/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionOutput/bitWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//InstructionOutput/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//InterruptCommunication"/>
+    <genClasses ecoreClass="shim.ecore#//Latency"/>
+    <genClasses ecoreClass="shim.ecore#//MasterComponent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//MasterComponent/cacheRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//MasterComponent/accessTypeSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//MasterComponent/clockFrequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/arch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/archOption"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/endian"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/masterType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/nChannel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/nThread"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MasterComponent/pid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//MasterComponent/commonInstructionSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//MasterSlaveBinding">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//MasterSlaveBinding/accessor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//MasterSlaveBinding/slaveComponentRef"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//MasterSlaveBindingSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//MasterSlaveBindingSet/masterSlaveBinding"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//MemoryConsistencyModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MemoryConsistencyModel/rawOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MemoryConsistencyModel/warOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MemoryConsistencyModel/wawOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//MemoryConsistencyModel/rarOrdering"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//OperatingPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/frequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/frequencyUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/voltage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPoint/voltageUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//OperatingPointSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPointSet/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//OperatingPointSet/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//OperatingPointSet/operatingPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Performance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/accessTypeRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/pitch"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/latency"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//PerformanceSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PerformanceSet/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//PerformanceSet/cacheRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//PerformanceSet/performance"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Pitch"/>
+    <genClasses ecoreClass="shim.ecore#//PowerConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PowerConfiguration/systemConfigurationSrc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//PowerConfiguration/powerConsumptionSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//PowerConsumption">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//PowerConsumption/operatingPointRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PowerConsumption/power"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PowerConsumption/powerUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//PowerConsumptionSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PowerConsumptionSet/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PowerConsumptionSet/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//PowerConsumptionSet/powerConsumption"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//PowerConsumptionSet/powerConsumerRef"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//SharedMemoryCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedMemoryCommunication/operationType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedMemoryCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedMemoryCommunication/dataSizeUnit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//SharedMemoryCommunication/addressSpaceRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//SharedMemoryCommunication/subSpaceRef"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//SharedRegisterCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedRegisterCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedRegisterCommunication/dataSizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SharedRegisterCommunication/nRegister"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Shim">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Shim/systemConfiguration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Shim/powerConfiguration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Shim/functionalUnitSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//SlaveComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SlaveComponent/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SlaveComponent/sizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SlaveComponent/rwType"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//SubSpace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SubSpace/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SubSpace/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SubSpace/start"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SubSpace/end"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//SubSpace/endian"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SubSpace/masterSlaveBindingSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SubSpace/memoryConsistencyModel"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//SystemConfiguration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SystemConfiguration/componentSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SystemConfiguration/addressSpaceSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SystemConfiguration/communicationSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SystemConfiguration/frequencyVoltageSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//SystemConfiguration/contentionGroupSet"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//Throughput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Throughput/frequencyDomainRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Throughput/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//Throughput/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="shim.ecore#//VoltageDomain">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//VoltageDomain/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//VoltageDomain/id"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

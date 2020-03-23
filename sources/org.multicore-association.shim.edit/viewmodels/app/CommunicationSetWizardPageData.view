@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_9kzDsLi4Eemq2aQw7jAXMQ" name="CommunicationSetWizardPageData">
+  <rootEClass href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVBJQLi7EemLHrBtt6fUag" name="Control checkInterruptCommunication">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVBJQbi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/checkInterruptCommunication"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVCXYLi7EemLHrBtt6fUag" name="Control checkEventCommunication">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVCXYbi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/checkEventCommunication"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVDlgLi7EemLHrBtt6fUag" name="Control checkFIFOCommunication">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVDlgbi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/checkFIFOCommunication"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_GoaCgFLmEeqCOs2SLeGx0w" name="FIFO Communication" collapsed="true">
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_lxrjsL_SEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVEMkLi7EemLHrBtt6fUag" name="Control fifoDataSize">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVEMkbi7EemLHrBtt6fUag">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/fifoDataSize"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVEzoLi7EemLHrBtt6fUag" name="Control fifoDataSizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVEzobi7EemLHrBtt6fUag">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/fifoDataSizeUnit"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVFasLi7EemLHrBtt6fUag" name="Control queueSize">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVFasbi7EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/queueSize"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVHP4Li7EemLHrBtt6fUag" name="Control checkSharedMemoryCommunication">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVHP4bi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/checkSharedMemoryCommunication"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_fr4HAFLmEeqCOs2SLeGx0w" name="SharedRegisterCommunication">
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_poMD8Li7EemLHrBtt6fUag">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVIeALi7EemLHrBtt6fUag" name="Control sharedMemoryDataSize">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVIeAbi7EemLHrBtt6fUag">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/sharedMemoryDataSize"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVJsILi7EemLHrBtt6fUag" name="Control sharedMemoryDataSizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVJsIbi7EemLHrBtt6fUag">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/sharedMemoryDataSizeUnit"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVKTMLi7EemLHrBtt6fUag" name="Control operationType">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVKTMbi7EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/operationType"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_9k4jQri4Eemq2aQw7jAXMQ" name="Control addressSpace">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_9k4jQ7i4Eemq2aQw7jAXMQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/addressSpace"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_9k4jRLi4Eemq2aQw7jAXMQ" name="Control subSpace">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_9k4jRbi4Eemq2aQw7jAXMQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/subSpace"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVLhULi7EemLHrBtt6fUag" name="Control checkSharedRegisterCommunication">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVLhUbi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/checkSharedRegisterCommunication"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_8NAtMLi_EemI1ewH39HCbQ" name="SharedRegisterCommunication">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVN9kLi7EemLHrBtt6fUag" name="Control nRegister">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVN9kbi7EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/nRegister"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_NVOkoLi7EemLHrBtt6fUag" name="Control dontConnect">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_NVOkobi7EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CommunicationSetPreferences/dontConnect"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmlns:org.eclipse.emf.ecp.view.rule.model="http://org/eclipse/emf/ecp/view/rule/model" xmi:id="_udxGQL2yEemv3PQmL74F5g" name="CacheDataPreferences">
+  <rootEClass href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_ud1-wL2yEemv3PQmL74F5g" name="Control cacheType">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_ud1-wb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_L96wcL2-EemPHokfbLkkGg" name="Cache(Unified)">
+    <attachments xsi:type="org.eclipse.emf.ecp.view.rule.model:ShowRule" xmi:id="_NsGwkL2-EemPHokfbLkkGg">
+      <condition xsi:type="org.eclipse.emf.ecp.view.rule.model:LeafCondition" xmi:id="_OP2W0L2-EemPHokfbLkkGg" expectedValue="ACED0005740007554E4946494544">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_QOmigL2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+        </domainModelReference>
+      </condition>
+    </attachments>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3bDUL2-EemPHokfbLkkGg" name="Control cacheCoherenecy">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3bDUb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/cacheCoherenecy"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_nTIhoL_NEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3cRcL2-EemPHokfbLkkGg" name="Control size">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3cRcb2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/size"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3dfkL2-EemPHokfbLkkGg" name="Control sizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3dfkb2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/sizeUnit"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3eGoL2-EemPHokfbLkkGg" name="Control nWay">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3eGob2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/nWay"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3fUwL2-EemPHokfbLkkGg" name="Control lineSize">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3fUwb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lineSize"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_T3hxAL2-EemPHokfbLkkGg" name="Control lockDownType">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_T3hxAb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lockDownType"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_U622QL2-EemPHokfbLkkGg" name="Cache(Data)">
+    <attachments xsi:type="org.eclipse.emf.ecp.view.rule.model:ShowRule" xmi:id="_WhBi0L2-EemPHokfbLkkGg">
+      <condition xsi:type="org.eclipse.emf.ecp.view.rule.model:OrCondition" xmi:id="_Y_9DYL2-EemPHokfbLkkGg">
+        <conditions xsi:type="org.eclipse.emf.ecp.view.rule.model:LeafCondition" xmi:id="_ZaXHcL2-EemPHokfbLkkGg" expectedValue="ACED000574000444415441">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_ZaXHcb2-EemPHokfbLkkGg">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+          </domainModelReference>
+        </conditions>
+        <conditions xsi:type="org.eclipse.emf.ecp.view.rule.model:LeafCondition" xmi:id="_ZgdIYL2-EemPHokfbLkkGg" expectedValue="ACED0005740014444154415F414E445F494E535452554354494F4E">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_ZgdIYb2-EemPHokfbLkkGg">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+          </domainModelReference>
+        </conditions>
+      </condition>
+    </attachments>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eVuOML2-EemPHokfbLkkGg" name="Control cacheCoherenecy">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eVuOMb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/cacheCoherenecy"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_odn-0L_NEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eVvcUL2-EemPHokfbLkkGg" name="Control size">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eVvcUb2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/size"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eVwqcL2-EemPHokfbLkkGg" name="Control sizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eVwqcb2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/sizeUnit"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eVyfoL2-EemPHokfbLkkGg" name="Control nWay">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eVyfob2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/nWay"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eVztwL2-EemPHokfbLkkGg" name="Control lineSize">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eVztwb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lineSize"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_eV074L2-EemPHokfbLkkGg" name="Control lockDownType">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eV074b2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lockDownType"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_VJiLcL2-EemPHokfbLkkGg" name="Cache(Instruction)">
+    <attachments xsi:type="org.eclipse.emf.ecp.view.rule.model:ShowRule" xmi:id="_cOsQQL2-EemPHokfbLkkGg">
+      <condition xsi:type="org.eclipse.emf.ecp.view.rule.model:OrCondition" xmi:id="_cOsQQb2-EemPHokfbLkkGg">
+        <conditions xsi:type="org.eclipse.emf.ecp.view.rule.model:LeafCondition" xmi:id="_cOsQQr2-EemPHokfbLkkGg" expectedValue="ACED000574000B494E535452554354494F4E">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_cOsQQ72-EemPHokfbLkkGg">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+          </domainModelReference>
+        </conditions>
+        <conditions xsi:type="org.eclipse.emf.ecp.view.rule.model:LeafCondition" xmi:id="_cOsQRL2-EemPHokfbLkkGg" expectedValue="ACED0005740014444154415F414E445F494E535452554354494F4E">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_cOsQRb2-EemPHokfbLkkGg">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/cacheType"/>
+          </domainModelReference>
+        </conditions>
+      </condition>
+    </attachments>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_flvroL2-EemPHokfbLkkGg" name="Control cacheCoherenecy">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_flvrob2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/cacheCoherenecy"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_p0pcIL_NEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_flyH4L2-EemPHokfbLkkGg" name="Control size">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_flyH4b2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/size"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_flzWAL2-EemPHokfbLkkGg" name="Control sizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_flzWAb2-EemPHokfbLkkGg">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/sizeUnit"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_flz9EL2-EemPHokfbLkkGg" name="Control nWay">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_flz9Eb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/nWay"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_fl1LML2-EemPHokfbLkkGg" name="Control lineSize">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_fl1LMb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lineSize"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_fl2ZUL2-EemPHokfbLkkGg" name="Control lockDownType">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_fl2ZUb2-EemPHokfbLkkGg">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/CacheDataUnitPreferences/lockDownType"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//preferences/CacheDataPreferences/data"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

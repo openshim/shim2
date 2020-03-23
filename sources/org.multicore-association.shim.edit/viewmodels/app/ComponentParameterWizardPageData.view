@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.categorization.model="http://org/eclipse/emf/ecp/view/categorization/model" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.label.model="http://org/eclipse/emf/ecp/view/label/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_YSoTULgsEemXgqleU3rqew" name="ComponentParameterWizardPageData">
+  <rootEClass href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_8NvPwLgsEemXgqleU3rqew" name="General" groupType="Embedded">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_ORwO0LgtEemXgqleU3rqew" name="Control systemName">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_h_fvgLhTEemeZroizeVY8w">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/ComponentsPreferences/systemName"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentsPreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_9nEIQLguEemXgqleU3rqew">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_OR5YwLgtEemXgqleU3rqew" name="Control numberMaster">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_OR5YwbgtEemXgqleU3rqew">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/ComponentsPreferences/numberMaster"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentsPreferences"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_OR5YwrgtEemXgqleU3rqew" name="Control numberSlave">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_OR5Yw7gtEemXgqleU3rqew">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/ComponentsPreferences/numberSlave"/>
+          <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentsPreferences"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_OR5YxLgtEemXgqleU3rqew" name="Control numberComponent">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_OR5YxbgtEemXgqleU3rqew">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/ComponentsPreferences/numberComponent"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentsPreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_OR5YxrgtEemXgqleU3rqew" name="Control clock">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_OR5Yx7gtEemXgqleU3rqew">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/ComponentsPreferences/clock"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentsPreferences"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.categorization.model:CategorizationElement" xmi:id="_F9fOwL_REemqZ6BN_GZ5aQ" mainCategoryDepth="1">
+    <categorizations xsi:type="org.eclipse.emf.ecp.view.categorization.model:Category" xmi:id="_R_ZhcL_REemqZ6BN_GZ5aQ" name="Master Component">
+      <composite xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_IlczULgtEemXgqleU3rqew" name="Master Component" groupType="Embedded">
+        <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWaw0LgtEemXgqleU3rqew" name="Control baseName">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bnN0ELgtEemXgqleU3rqew">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+            <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+          </domainModelReference>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_73xv8MAFEemqZ6BN_GZ5aQ">
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWaw0rgtEemXgqleU3rqew" name="Control type">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWaw07gtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/type"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWaw1LgtEemXgqleU3rqew" name="Control endian">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWaw1bgtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/endian"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_63afIMAFEemqZ6BN_GZ5aQ">
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWj6wLgtEemXgqleU3rqew" name="Control arch">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWj6wbgtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/arch"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWj6wrgtEemXgqleU3rqew" name="Control archOpt">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWj6w7gtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/archOpt"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_7KiPcMAFEemqZ6BN_GZ5aQ">
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWj6xLgtEemXgqleU3rqew" name="Control nChannel">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWj6xbgtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/nChannel"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWj6xrgtEemXgqleU3rqew" name="Control nThread">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_PWj6x7gtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/nThread"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_TXvaUMAGEemqZ6BN_GZ5aQ">
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_PWj6yLgtEemXgqleU3rqew" name="Control checkClockForMaster">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_KkjtcMAGEemqZ6BN_GZ5aQ">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/checkClockForMaster"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_GfJXQMAGEemqZ6BN_GZ5aQ" name="Control clock">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_GfJXQcAGEemqZ6BN_GZ5aQ">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/clock"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+            </domainModelReference>
+          </children>
+        </children>
+      </composite>
+    </categorizations>
+    <categorizations xsi:type="org.eclipse.emf.ecp.view.categorization.model:Category" xmi:id="_HRIA4L_REemqZ6BN_GZ5aQ" name="Slave Component">
+      <composite xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_J5vswLgtEemXgqleU3rqew" name="Slave Component" groupType="Embedded">
+        <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_Q5hiULgtEemXgqleU3rqew" name="Control baseName">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_dCYKgLgtEemXgqleU3rqew">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+            <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/slaveComponentPreferences"/>
+          </domainModelReference>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_kwK8oLgtEemXgqleU3rqew">
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_Q5hiUrgtEemXgqleU3rqew" name="Control size">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_Q5hiU7gtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/size"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/slaveComponentPreferences"/>
+            </domainModelReference>
+          </children>
+          <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_Q5hiVLgtEemXgqleU3rqew" name="Control sizeUnit" labelAlignment="None">
+            <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_Q5hiVbgtEemXgqleU3rqew">
+              <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/sizeUnit"/>
+              <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/slaveComponentPreferences"/>
+            </domainModelReference>
+          </children>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_Q5hiVrgtEemXgqleU3rqew" name="Control rwType">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_Q5hiV7gtEemXgqleU3rqew">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/rwType"/>
+            <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/slaveComponentPreferences"/>
+          </domainModelReference>
+        </children>
+      </composite>
+    </categorizations>
+    <categorizations xsi:type="org.eclipse.emf.ecp.view.categorization.model:Category" xmi:id="_HnggkL_REemqZ6BN_GZ5aQ" name="Component Set">
+      <composite xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_8l-JkLgsEemXgqleU3rqew" name="Component Set" groupType="Embedded">
+        <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_R4MKALgtEemXgqleU3rqew" name="Control baseName">
+          <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_eItgcLgtEemXgqleU3rqew">
+            <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+            <domainModelEReferencePath href="http://multicore-association.org/shimApp#//ComponentParameterWizardPageData/componentSetPreferences"/>
+          </domainModelReference>
+        </children>
+        <children xsi:type="org.eclipse.emf.ecp.view.label.model:Label" xmi:id="_aSkb4FIpEeqCOs2SLeGx0w" name="The instance of ComponentSet name is &lt;BaseName>_L1_L2_..._LN   ('LN' is the number of level)"/>
+      </composite>
+    </categorizations>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

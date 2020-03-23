@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_X8lFgLdVEem_m-uYqXJ65A" name="InstructionInput">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//InstructionInput"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_l82ScLtfEemaAKF4TnPa2g" name="Instruction Input">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_X8u2hLdVEem_m-uYqXJ65A" name="Control type">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_X8u2hbdVEem_m-uYqXJ65A">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//InstructionInput/type"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_X8u2grdVEem_m-uYqXJ65A" name="Control value">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_X8u2g7dVEem_m-uYqXJ65A">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//InstructionInput/value"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_X8u2gLdVEem_m-uYqXJ65A" name="Control bitWidth">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_X8u2gbdVEem_m-uYqXJ65A">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//InstructionInput/bitWidth"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>
