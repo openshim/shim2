@@ -34,7 +34,7 @@ public interface SlaveComponent extends AbstractComponent {
 	 * @see #setSize(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSlaveComponent_Size()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='size' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='size'"
 	 * @generated
 	 */
 	int getSize();
@@ -60,7 +60,7 @@ public interface SlaveComponent extends AbstractComponent {
 	 * @see #setSizeUnit(SizeUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSlaveComponent_SizeUnit()
 	 * @model default="KiB" required="true"
-	 *        extendedMetaData="kind='attribute' name='sizeUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='sizeUnit'"
 	 * @generated
 	 */
 	SizeUnitType getSizeUnit();
@@ -87,7 +87,7 @@ public interface SlaveComponent extends AbstractComponent {
 	 * @see #setRwType(RWType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSlaveComponent_RwType()
 	 * @model default="RW" required="true"
-	 *        extendedMetaData="kind='attribute' name='rwType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='rwType'"
 	 * @generated
 	 */
 	RWType getRwType();

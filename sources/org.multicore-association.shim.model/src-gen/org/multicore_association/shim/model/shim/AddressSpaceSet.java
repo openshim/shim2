@@ -31,7 +31,7 @@ public interface AddressSpaceSet extends EObject {
 	 * @return the value of the '<em>Address Space</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAddressSpaceSet_AddressSpace()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='AddressSpace' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='AddressSpace'"
 	 * @generated
 	 */
 	EList<AddressSpace> getAddressSpace();

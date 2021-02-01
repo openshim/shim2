@@ -31,7 +31,7 @@ public interface AccessTypeSet extends EObject {
 	 * @return the value of the '<em>Access Type</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessTypeSet_AccessType()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='AccessType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='AccessType'"
 	 * @generated
 	 */
 	EList<AccessType> getAccessType();

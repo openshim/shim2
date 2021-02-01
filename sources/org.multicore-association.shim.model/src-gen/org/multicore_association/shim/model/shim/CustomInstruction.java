@@ -33,7 +33,7 @@ public interface CustomInstruction extends EObject {
 	 * @return the value of the '<em>Instruction Input</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCustomInstruction_InstructionInput()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='InstructionInput' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='InstructionInput'"
 	 * @generated
 	 */
 	EList<InstructionInput> getInstructionInput();
@@ -46,7 +46,7 @@ public interface CustomInstruction extends EObject {
 	 * @return the value of the '<em>Instruction Operation</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCustomInstruction_InstructionOperation()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='InstructionOperation' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='InstructionOperation'"
 	 * @generated
 	 */
 	EList<Performance> getInstructionOperation();
@@ -59,7 +59,7 @@ public interface CustomInstruction extends EObject {
 	 * @return the value of the '<em>Instruction Output</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCustomInstruction_InstructionOutput()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='InstructionOutput' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='InstructionOutput'"
 	 * @generated
 	 */
 	EList<Performance> getInstructionOutput();

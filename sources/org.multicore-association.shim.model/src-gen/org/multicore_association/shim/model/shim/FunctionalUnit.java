@@ -33,7 +33,7 @@ public interface FunctionalUnit extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFunctionalUnit_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -56,7 +56,7 @@ public interface FunctionalUnit extends EObject {
 	 * @return the value of the '<em>Instruction</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFunctionalUnit_Instruction()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Instruction' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Instruction'"
 	 * @generated
 	 */
 	EList<Instruction> getInstruction();
@@ -69,7 +69,7 @@ public interface FunctionalUnit extends EObject {
 	 * @return the value of the '<em>Custom Instruction</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFunctionalUnit_CustomInstruction()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='CustomInstruction' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='CustomInstruction'"
 	 * @generated
 	 */
 	EList<CustomInstruction> getCustomInstruction();

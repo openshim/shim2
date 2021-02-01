@@ -33,7 +33,7 @@ public interface FrequencyVoltageSet extends EObject {
 	 * @return the value of the '<em>Frequency Domain</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFrequencyVoltageSet_FrequencyDomain()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='FrequencyDomain' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FrequencyDomain'"
 	 * @generated
 	 */
 	EList<FrequencyDomain> getFrequencyDomain();
@@ -46,7 +46,7 @@ public interface FrequencyVoltageSet extends EObject {
 	 * @return the value of the '<em>Voltage Domain</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFrequencyVoltageSet_VoltageDomain()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='VoltageDomain' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='VoltageDomain'"
 	 * @generated
 	 */
 	EList<VoltageDomain> getVoltageDomain();
@@ -59,7 +59,7 @@ public interface FrequencyVoltageSet extends EObject {
 	 * @return the value of the '<em>Operating Point Set</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFrequencyVoltageSet_OperatingPointSet()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='OperatingPointSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='OperatingPointSet'"
 	 * @generated
 	 */
 	EList<OperatingPointSet> getOperatingPointSet();

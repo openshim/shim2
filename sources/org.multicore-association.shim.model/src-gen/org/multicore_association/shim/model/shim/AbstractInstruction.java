@@ -35,7 +35,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -60,7 +60,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setEncodingLength(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_EncodingLength()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='encodingLength' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='encodingLength'"
 	 * @generated
 	 */
 	Integer getEncodingLength();
@@ -110,7 +110,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setNInputs(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_NInputs()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='nInputs' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nInputs'"
 	 * @generated
 	 */
 	Integer getNInputs();
@@ -160,7 +160,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setNOutputs(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_NOutputs()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='nOutputs' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nOutputs'"
 	 * @generated
 	 */
 	String getNOutputs();
@@ -210,7 +210,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setSIMDWidth(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_SIMDWidth()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='sIMDWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='sIMDWidth'"
 	 * @generated
 	 */
 	String getSIMDWidth();
@@ -258,7 +258,7 @@ public interface AbstractInstruction extends EObject {
 	 * @see #setPerformance(Performance)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractInstruction_Performance()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='Performance' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Performance'"
 	 * @generated
 	 */
 	Performance getPerformance();

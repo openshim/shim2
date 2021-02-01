@@ -29,7 +29,7 @@ public interface Shim extends AbstractShim {
 	 * @see #setSystemConfiguration(SystemConfiguration)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getShim_SystemConfiguration()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='SystemConfiguration' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='SystemConfiguration'"
 	 * @generated
 	 */
 	SystemConfiguration getSystemConfiguration();
@@ -52,7 +52,7 @@ public interface Shim extends AbstractShim {
 	 * @see #setPowerConfiguration(PowerConfiguration)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getShim_PowerConfiguration()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='PowerConfiguration' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='PowerConfiguration'"
 	 * @generated
 	 */
 	PowerConfiguration getPowerConfiguration();
@@ -75,7 +75,7 @@ public interface Shim extends AbstractShim {
 	 * @see #setFunctionalUnitSet(FunctionalUnitSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getShim_FunctionalUnitSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='FunctionalUnitSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FunctionalUnitSet'"
 	 * @generated
 	 */
 	FunctionalUnitSet getFunctionalUnitSet();

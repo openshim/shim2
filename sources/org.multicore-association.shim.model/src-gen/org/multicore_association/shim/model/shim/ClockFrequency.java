@@ -30,7 +30,7 @@ public interface ClockFrequency extends EObject {
 	 * @see #setClockValue(float)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getClockFrequency_ClockValue()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedFloatType" required="true"
-	 *        extendedMetaData="kind='attribute' name='clockValue' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='clockValue'"
 	 * @generated
 	 */
 	float getClockValue();

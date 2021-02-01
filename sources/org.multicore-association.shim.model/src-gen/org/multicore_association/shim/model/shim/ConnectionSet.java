@@ -31,7 +31,7 @@ public interface ConnectionSet extends EObject {
 	 * @return the value of the '<em>Connection</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getConnectionSet_Connection()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='Connection' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Connection'"
 	 * @generated
 	 */
 	EList<Connection> getConnection();

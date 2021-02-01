@@ -35,7 +35,7 @@ public interface InstructionInput extends EObject {
 	 * @see #setType(InstructionInputType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionInput_Type()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='type' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='type'"
 	 * @generated
 	 */
 	InstructionInputType getType();
@@ -84,7 +84,7 @@ public interface InstructionInput extends EObject {
 	 * @see #setBitWidth(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionInput_BitWidth()
 	 * @model dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='bitWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='bitWidth'"
 	 * @generated
 	 */
 	int getBitWidth();
@@ -107,7 +107,7 @@ public interface InstructionInput extends EObject {
 	 * @see #setValue(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionInput_Value()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='value' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='value'"
 	 * @generated
 	 */
 	String getValue();

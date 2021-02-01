@@ -31,7 +31,7 @@ public interface AbstractCommunication extends EObject {
 	 * @see #setConnectionSet(ConnectionSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractCommunication_ConnectionSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='ConnectionSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ConnectionSet'"
 	 * @generated
 	 */
 	ConnectionSet getConnectionSet();
@@ -54,7 +54,7 @@ public interface AbstractCommunication extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractCommunication_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();

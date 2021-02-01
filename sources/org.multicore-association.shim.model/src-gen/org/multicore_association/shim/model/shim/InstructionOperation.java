@@ -32,7 +32,7 @@ public interface InstructionOperation extends EObject {
 	 * @see #setOperation(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionOperation_Operation()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='operation' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='operation'"
 	 * @generated
 	 */
 	String getOperation();
@@ -55,7 +55,7 @@ public interface InstructionOperation extends EObject {
 	 * @return the value of the '<em>Instruction Operand</em>' attribute list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionOperation_InstructionOperand()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='InstructionOperand' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='InstructionOperand'"
 	 * @generated
 	 */
 	EList<String> getInstructionOperand();

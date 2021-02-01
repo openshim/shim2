@@ -36,7 +36,7 @@ public interface Connection extends EObject {
 	 * @see #setFrom(MasterComponent)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getConnection_From()
 	 * @model required="true"
-	 *        extendedMetaData="kind='attribute' name='from' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='from'"
 	 * @generated
 	 */
 	MasterComponent getFrom();
@@ -62,7 +62,7 @@ public interface Connection extends EObject {
 	 * @see #setTo(MasterComponent)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getConnection_To()
 	 * @model required="true"
-	 *        extendedMetaData="kind='attribute' name='to' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='to'"
 	 * @generated
 	 */
 	MasterComponent getTo();
@@ -85,7 +85,7 @@ public interface Connection extends EObject {
 	 * @return the value of the '<em>Performance</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getConnection_Performance()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Performance' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Performance'"
 	 * @generated
 	 */
 	EList<Performance> getPerformance();

@@ -31,7 +31,7 @@ public interface MasterSlaveBindingSet extends EObject {
 	 * @return the value of the '<em>Master Slave Binding</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterSlaveBindingSet_MasterSlaveBinding()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='MasterSlaveBinding' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='MasterSlaveBinding'"
 	 * @generated
 	 */
 	EList<MasterSlaveBinding> getMasterSlaveBinding();

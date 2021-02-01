@@ -36,7 +36,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setImmediateBitWidth(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_ImmediateBitWidth()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='immediateBitWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='immediateBitWidth'"
 	 * @generated
 	 */
 	Integer getImmediateBitWidth();
@@ -86,7 +86,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setInputBitWidth(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_InputBitWidth()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='inputBitWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='inputBitWidth'"
 	 * @generated
 	 */
 	Integer getInputBitWidth();
@@ -136,7 +136,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setInputPreserved(boolean)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_InputPreserved()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='inputPreserved' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='inputPreserved'"
 	 * @generated
 	 */
 	boolean isInputPreserved();
@@ -186,7 +186,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setIsEmulated(boolean)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_IsEmulated()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='isEmulated' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='isEmulated'"
 	 * @generated
 	 */
 	boolean isIsEmulated();
@@ -238,7 +238,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setOperandAddressing(OperandAddressingType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_OperandAddressing()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='operandAddressing' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='operandAddressing'"
 	 * @generated
 	 */
 	OperandAddressingType getOperandAddressing();
@@ -289,7 +289,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setOperation(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_Operation()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='operation' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='operation'"
 	 * @generated
 	 */
 	Integer getOperation();
@@ -339,7 +339,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setOutputBitWidth(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_OutputBitWidth()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='outputBitWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='outputBitWidth'"
 	 * @generated
 	 */
 	Integer getOutputBitWidth();
@@ -391,7 +391,7 @@ public interface Instruction extends AbstractInstruction {
 	 * @see #setSupportedSignedness(SignednessType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstruction_SupportedSignedness()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='supportedSignedness' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='supportedSignedness'"
 	 * @generated
 	 */
 	SignednessType getSupportedSignedness();

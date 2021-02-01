@@ -22,12 +22,20 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.multicore_association.shim.model.shim.Accessor;
+import org.multicore_association.shim.model.shim.AddressSpace;
+import org.multicore_association.shim.model.shim.AddressSpaceSet;
+import org.multicore_association.shim.model.shim.Cache;
 import org.multicore_association.shim.model.shim.ComponentSet;
 import org.multicore_association.shim.model.shim.DocumentRoot;
 import org.multicore_association.shim.model.shim.MasterComponent;
+import org.multicore_association.shim.model.shim.MasterSlaveBinding;
+import org.multicore_association.shim.model.shim.MasterSlaveBindingSet;
 import org.multicore_association.shim.model.shim.Shim;
 import org.multicore_association.shim.model.shim.ShimPackage;
 import org.multicore_association.shim.model.shim.SlaveComponent;
+import org.multicore_association.shim.model.shim.SubSpace;
+import org.multicore_association.shim.model.shim.SystemConfiguration;
 
 /**
  * A class that implements methods to load SHIM Data.
@@ -67,6 +75,7 @@ public class ShimDataLoader {
 				resource.load(xmlInputStream, createLoadOptions());
 			}
 
+
 			EObject content = resource.getContents().get(0);
 
 			if (!(content instanceof DocumentRoot)) {
@@ -74,9 +83,33 @@ public class ShimDataLoader {
 			}
 			DocumentRoot documentRoot = (DocumentRoot) content;
 			shim = documentRoot.getShim();
-
+			
 			if (shim != null) {
 				shim = EcoreUtil.copy(shim);
+			}
+			
+			for (ComponentSet cs : shim.getSystemConfiguration().getComponentSet().getComponentSet()) {
+				for (ComponentSet cs2 : cs.getComponentSet()) {
+					for (MasterComponent mc : cs2.getMasterComponent()) {
+						for (Cache c : mc.getCacheRef()) {
+							System.out.println("Cache");
+							System.out.println(c);
+						}
+					}
+				}
+			}
+			
+			SystemConfiguration systemconfiguration = shim.getSystemConfiguration();
+			AddressSpaceSet addressSpaceSet = systemconfiguration.getAddressSpaceSet();
+			for (AddressSpace as : addressSpaceSet.getAddressSpace()) {
+				for (SubSpace ss : as.getSubSpace()) {
+					MasterSlaveBindingSet masterSlaveBindingSet = ss.getMasterSlaveBindingSet();
+					for (MasterSlaveBinding msb : masterSlaveBindingSet.getMasterSlaveBinding()) {
+						for (Accessor a : msb.getAccessor()) {
+							System.out.println(a.getMasterComponentRef());
+						}
+					}
+				}
 			}
 
 			printShimData(shim);
@@ -84,6 +117,7 @@ public class ShimDataLoader {
 			return 1;
 
 		} catch (Exception e) {
+			System.out.println("Exeption");
 			throw e;
 		}
 	}
@@ -211,19 +245,18 @@ public class ShimDataLoader {
 		options.put(XMIResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
 		options.put(XMLResource.OPTION_KEEP_DEFAULT_CONTENT, Boolean.TRUE);
 		options.put(XMLResource.OPTION_EXTENDED_META_DATA, new BasicExtendedMetaData());
-		/*
-		{
-			@Override
-			public EPackage getPackage(String namespace) {
-				if (namespace == null) {
-					return ShimPackage.eINSTANCE;
-				}
-				return super.getPackage(namespace);
-			}
-		});
-*/
+//		{
+//			@Override
+//			public EPackage getPackage(String namespace) {
+//				if (namespace == null) {
+//					return ShimPackage.eINSTANCE;
+//				}
+//				return super.getPackage(namespace);
+//			}
+//		});
+
 				
-		// Required for SHIM 1.0
+//		// Required for SHIM 1.0
 //		options.put(XMLResource.OPTION_URI_HANDLER, new XMLResource.URIHandler() {
 //
 //			@Override

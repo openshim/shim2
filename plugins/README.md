@@ -6,7 +6,7 @@ This tool is an Eclipse Plugin-in, which is capable of creating and editing SHIM
   1. [Requirement](#requirement)
   2. [Tutorial](#tutorial)
    - 2.1. [Procedures](#procedures)
-   - 2.2. [Import the project from plugins](#import-the-sample-project)
+   - 2.2. [Import the project](#import-the-sample-project)
    - 2.3. [Run the project](#run-the-measurement-process)
 
 
@@ -24,6 +24,8 @@ The operation was confirmed in the following environment.
 - Eclipse IDE 2019-06
 
 ----------------
+
+##### How to run the application
 The procedure for executing the application is as follows.
 
 Preparing for the Eclipse environment
@@ -56,69 +58,52 @@ The installation destination and Java environment selection screen is displayed.
 
 ### <a name="tutorial">Tutorial</a>
 
-#### <a name="procedures">Procedures</a>
-Download the plugins from [plugins](https://github.com/openshim/shim2/tree/master/plugins).
+##### <a name="procedures">Procedures</a>
+Download the source code from [shim2]((https://github.com/openshim/shim2/tree/master/sources)). The file can be tar.gz(SHIM2.0editor.tar.gz) format.
 
-#### <a name="import-the-sample-project">Import the project from plugins</a>
+##### <a name="import-the-sample-project">Import the project</a>
 
 
 Execute the installed "Eclipse Modeling 2019-06". A screen for selecting the location of the workspace is displayed. Set the location where you want to place the workspace, and then click "Launch".
 
-<img src="images/p1.png" width="600"><br>
+<img src="images/2.PNG" width="600"><br>
 
 Click "Import" in the "File" menu.
 
 <img src="images/22.png" width="600"><br>
 
-The wizard launches and displays a selection page. In the "Plug-ins and Fragments" category
-Select "Plug-ins and Fragments" and click "Next".
+The wizard launches and displays a selection page. In the "General" category
+Select "Existing Projects into Workspace" and click "Next".
 
-<img src="images/p2.png" width="600"><br>
+<img src="images/23.png" width="600"><br>
 
-A screen for specifying the directory to import from is displayed. Select "Directory" and then select the "plugins" of downloaded file. After selecting "plugins", select "Next"
+A screen for specifying the directory to import from is displayed. Select "Select archive file" and then select the downloaded file. The "Projects" list is updated. Make sure that the project to be imported is as shown below, and select "Finish" to deploy the project with Eclipse.
 
-<img src="images/p3.png" width="600"><br>
-
-*Plug-ins and Fragments* list is updated. Make sure that the project to be imported is as shown below. Select "Add all" to import *Plug-ins and Fragments* with Eclipse and "Finish".
-
-<img src="images/p4.png" width="600"><br>
+<img src="images/21.PNG" width="600"><br>
 
 
 
-#### <a name="run-the-measurement-process">Run the project</a>
-
-#### Required Plug-ins
-
-When launching the SHIM2.0 editor from *Plug-ins and Fragments*, you need to add the plugins needed for your environment. This is usually stored in the *feature.xml file*, but *feature.xml file* cannot be plugged in (note that it is included in the [sources](https://github.com/openshim/shim2/tree/master/source)). Therefore, you need to manually add the required plugins to your environment in the following way.
+##### <a name="run-the-measurement-process">Run the project</a>
 
 Projects listed in the Model Explorer list
 Expand "org.multicore_association.shim.edit" and select "ShimEdit.product" in it.
 
-With "ShimEdit.product" selected, select "Run As" in the "Run" menu, and then select "Run Configuratations".
-
-<img src="images/p5.png" width="600"><br>
-
-A screen for setting the configuratations of the project is displayed. Select "Plug-ins"
-
-<img src="images/p6.png" width="600"><br>
-
-This screen allows you to manually set the plugins required for your environment. Select "Validate Plug-ins" to see a list of plugins needed for your environment.
-
-<img src="images/p7.png" width="600"><br>
-
-By selecting "Add Required Plug-ins", you can automatically add the required plugins for your environment. Select "Add Required Plug-ins" and select "Apply" to complete the required plugin settings. You can also start the SHIM2.0 editor from this screen by selecting "Apply" and selecting "Run".
-
-<img src="images/p8.png" width="600"><br>
-
-#### How to run the application
-
-Projects listed in the Model Explorer list Expand "org.multicore_association.shim.edit" and select "ShimEdit.product" in it.                               
 With "ShimEdit.product" selected, select "Run As" in the "Run" menu, and then select "Eclipse Application".
 
-<img src="images/p9.png" width="600"><br>
+<img src="images/24.png" width="600"><br>
 
 You can see that the application is running and a window is displayed.
 
 <img src="images/25.png" width="600"><br>
+
+If you are having trouble setting up Run, you can configure Run Configurations yourself.
+
+Select "Run Configurations" in the "Run" menu.
+<img src="images/m40.jpg" width="600"><br>
+
+
+After opening Run Configurations, select " Plugin-ins" . Here, it is possible to automatically set the Configurations of the target file. After selecting the target file, select " Validate Plug-ins"  and then " Run". Then you can see that the application is running and a window is displayed.
+<img src="images/m41.jpg" width="600"><br>
+
 
 ----------------

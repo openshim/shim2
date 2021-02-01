@@ -37,7 +37,7 @@ public interface SubSpace extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -60,7 +60,7 @@ public interface SubSpace extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -84,7 +84,7 @@ public interface SubSpace extends EObject {
 	 * @see #setStart(long)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_Start()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.AddressValueType" required="true"
-	 *        extendedMetaData="kind='attribute' name='start' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='start'"
 	 * @generated
 	 */
 	long getStart();
@@ -108,7 +108,7 @@ public interface SubSpace extends EObject {
 	 * @see #setEnd(long)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_End()
 	 * @model default="4294967295" dataType="org.multicore_association.shim.model.shim.AddressValueType" required="true"
-	 *        extendedMetaData="kind='attribute' name='end' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='end'"
 	 * @generated
 	 */
 	long getEnd();
@@ -135,7 +135,7 @@ public interface SubSpace extends EObject {
 	 * @see #setEndian(EndianType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_Endian()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='endian' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='endian'"
 	 * @generated
 	 */
 	EndianType getEndian();
@@ -184,7 +184,7 @@ public interface SubSpace extends EObject {
 	 * @see #setMasterSlaveBindingSet(MasterSlaveBindingSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_MasterSlaveBindingSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='MasterSlaveBindingSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='MasterSlaveBindingSet'"
 	 * @generated
 	 */
 	MasterSlaveBindingSet getMasterSlaveBindingSet();
@@ -207,7 +207,7 @@ public interface SubSpace extends EObject {
 	 * @return the value of the '<em>Memory Consistency Model</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSubSpace_MemoryConsistencyModel()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='MemoryConsistencyModel' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='MemoryConsistencyModel'"
 	 * @generated
 	 */
 	EList<MemoryConsistencyModel> getMemoryConsistencyModel();

@@ -205,8 +205,9 @@ public class ShimUtils {
 		AdapterFactoryEditingDomain domain = new AdapterFactoryEditingDomain(
 			adapterFactory, new BasicCommandStack(), rs);
 		rs.eAdapters().add(new AdapterFactoryEditingDomain.EditingDomainProvider(domain));
-
+		
 		Resource resource = rs.createResource(URI.createURI("VIRTAUAL_URI"));
+//		Resource resource = rs.createResource(URI.createURI(""));
 		if (resource != null) {
 			resource.getContents().add(rootObject);
 		}

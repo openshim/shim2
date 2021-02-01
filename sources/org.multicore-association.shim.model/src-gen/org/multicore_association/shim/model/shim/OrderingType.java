@@ -28,14 +28,14 @@ public enum OrderingType implements Enumerator {
 	 */
 	ORDERED(0, "ORDERED", "ORDERED"),
 	/**
-	 * The '<em><b>UNORDERD</b></em>' literal object.
+	 * The '<em><b>UNORDERED</b></em>' literal object.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @see #UNORDERD_VALUE
+	 * <!-- end-user-doc -->
+	 * @see #UNORDERED_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	UNORDERD(1, "UNORDERD", "UNORDERD");
+	UNORDERED(1, "UNORDERED", "UNORDERED");
 
 	/**
 	 * The '<em><b>ORDERED</b></em>' literal value.
@@ -49,15 +49,15 @@ public enum OrderingType implements Enumerator {
 	public static final int ORDERED_VALUE = 0;
 
 	/**
-	 * The '<em><b>UNORDERD</b></em>' literal value.
+	 * The '<em><b>UNORDERED</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #UNORDERD
+	 * @see #UNORDERED
 	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	public static final int UNORDERD_VALUE = 1;
+	public static final int UNORDERED_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Ordering Type</b></em>' enumerators.
@@ -65,7 +65,7 @@ public enum OrderingType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final OrderingType[] VALUES_ARRAY = new OrderingType[] { ORDERED, UNORDERD, };
+	private static final OrderingType[] VALUES_ARRAY = new OrderingType[] { ORDERED, UNORDERED, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Ordering Type</b></em>' enumerators.
@@ -123,8 +123,8 @@ public enum OrderingType implements Enumerator {
 		switch (value) {
 		case ORDERED_VALUE:
 			return ORDERED;
-		case UNORDERD_VALUE:
-			return UNORDERD;
+		case UNORDERED_VALUE:
+			return UNORDERED;
 		}
 		return null;
 	}

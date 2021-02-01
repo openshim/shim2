@@ -13,9 +13,9 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.multicore_association.shim.model.shim.Performance#getAccessTypeRef <em>Access Type Ref</em>}</li>
  *   <li>{@link org.multicore_association.shim.model.shim.Performance#getPitch <em>Pitch</em>}</li>
  *   <li>{@link org.multicore_association.shim.model.shim.Performance#getLatency <em>Latency</em>}</li>
+ *   <li>{@link org.multicore_association.shim.model.shim.Performance#getAccessTypeRef <em>Access Type Ref</em>}</li>
  * </ul>
  *
  * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformance()
@@ -30,7 +30,7 @@ public interface Performance extends EObject {
 	 * @return the value of the '<em>Access Type Ref</em>' reference.
 	 * @see #setAccessTypeRef(AccessType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformance_AccessTypeRef()
-	 * @model extendedMetaData="kind='attribute' name='accessTypeRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='attribute' name='accessTypeRef'"
 	 * @generated
 	 */
 	AccessType getAccessTypeRef();
@@ -53,7 +53,7 @@ public interface Performance extends EObject {
 	 * @see #setPitch(Pitch)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformance_Pitch()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='Pitch' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Pitch'"
 	 * @generated
 	 */
 	Pitch getPitch();
@@ -76,7 +76,7 @@ public interface Performance extends EObject {
 	 * @see #setLatency(Latency)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformance_Latency()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='Latency' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Latency'"
 	 * @generated
 	 */
 	Latency getLatency();

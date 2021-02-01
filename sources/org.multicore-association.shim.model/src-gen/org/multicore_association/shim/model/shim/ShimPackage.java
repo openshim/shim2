@@ -2676,22 +2676,13 @@ public interface ShimPackage extends EPackage {
 	int PERFORMANCE = 41;
 
 	/**
-	 * The feature id for the '<em><b>Access Type Ref</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERFORMANCE__ACCESS_TYPE_REF = 0;
-
-	/**
 	 * The feature id for the '<em><b>Pitch</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERFORMANCE__PITCH = 1;
+	int PERFORMANCE__PITCH = 0;
 
 	/**
 	 * The feature id for the '<em><b>Latency</b></em>' containment reference.
@@ -2700,7 +2691,16 @@ public interface ShimPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERFORMANCE__LATENCY = 2;
+	int PERFORMANCE__LATENCY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Access Type Ref</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERFORMANCE__ACCESS_TYPE_REF = 2;
 
 	/**
 	 * The number of structural features of the '<em>Performance</em>' class.

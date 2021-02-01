@@ -26,6 +26,13 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.FileDialog;
 import org.multicore_association.shim.edit.binding.ShimDataLoader;
+import org.multicore_association.shim.model.shim.AddressSpace;
+import org.multicore_association.shim.model.shim.AddressSpaceSet;
+import org.multicore_association.shim.model.shim.MasterSlaveBinding;
+import org.multicore_association.shim.model.shim.MasterSlaveBindingSet;
+import org.multicore_association.shim.model.shim.Shim;
+import org.multicore_association.shim.model.shim.SubSpace;
+import org.multicore_association.shim.model.shim.SystemConfiguration;
 
 public class ShimContentXmlOutputControl extends ShimContentControl implements MouseListener, MouseMoveListener {
 	
@@ -73,7 +80,7 @@ public class ShimContentXmlOutputControl extends ShimContentControl implements M
 			view.dispose();
 			view = null;
 		}
-
+			
 		Composite container = this;
 		
 		File sampleFile = new File("sample.xml");
@@ -83,7 +90,7 @@ public class ShimContentXmlOutputControl extends ShimContentControl implements M
 		try (FileOutputStream fos = new FileOutputStream(sampleFile)) {
 			resource.save(fos, ShimDataLoader.createSaveOptions());
 		} catch (IOException e) {
-			
+			e.printStackTrace();
 		}
 		
 		text = new StyledText(container, SWT.MULTI|SWT.BORDER|SWT.H_SCROLL|SWT.V_SCROLL);

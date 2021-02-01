@@ -32,7 +32,7 @@ public interface DataRate extends EObject {
 	 * @see #setValue(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getDataRate_Value()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='value' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='value'"
 	 * @generated
 	 */
 	Integer getValue();
@@ -84,7 +84,7 @@ public interface DataRate extends EObject {
 	 * @see #setUnit(DataRateUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getDataRate_Unit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='unit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='unit'"
 	 * @generated
 	 */
 	DataRateUnitType getUnit();

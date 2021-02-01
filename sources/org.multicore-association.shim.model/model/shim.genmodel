@@ -97,7 +97,7 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//OrderingType">
       <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OrderingType/ORDERED"/>
-      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OrderingType/UNORDERD"/>
+      <genEnumLiterals ecoreEnumLiteral="shim.ecore#//OrderingType/UNORDERED"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="shim.ecore#//PowerUnitType">
       <genEnumLiterals ecoreEnumLiteral="shim.ecore#//PowerUnitType/pW"/>
@@ -378,9 +378,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//OperatingPointSet/operatingPoint"/>
     </genClasses>
     <genClasses ecoreClass="shim.ecore#//Performance">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/accessTypeRef"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/pitch"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/latency"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shim.ecore#//Performance/accessTypeRef"/>
     </genClasses>
     <genClasses ecoreClass="shim.ecore#//PerformanceSet">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shim.ecore#//PerformanceSet/id"/>

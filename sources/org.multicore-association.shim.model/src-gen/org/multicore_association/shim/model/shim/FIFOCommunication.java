@@ -30,7 +30,7 @@ public interface FIFOCommunication extends AbstractCommunication {
 	 * @see #setDataSize(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFIFOCommunication_DataSize()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='dataSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSize'"
 	 * @generated
 	 */
 	int getDataSize();
@@ -57,7 +57,7 @@ public interface FIFOCommunication extends AbstractCommunication {
 	 * @see #setDataSizeUnit(SizeUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFIFOCommunication_DataSizeUnit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='dataSizeUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSizeUnit'"
 	 * @generated
 	 */
 	SizeUnitType getDataSizeUnit();
@@ -107,7 +107,7 @@ public interface FIFOCommunication extends AbstractCommunication {
 	 * @see #setQueueSize(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFIFOCommunication_QueueSize()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='queueSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='queueSize'"
 	 * @generated
 	 */
 	int getQueueSize();

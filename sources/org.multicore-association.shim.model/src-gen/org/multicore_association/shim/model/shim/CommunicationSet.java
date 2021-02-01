@@ -35,7 +35,7 @@ public interface CommunicationSet extends EObject {
 	 * @return the value of the '<em>Shared Memory Communication</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommunicationSet_SharedMemoryCommunication()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='SharedMemoryCommunication' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='SharedMemoryCommunication'"
 	 * @generated
 	 */
 	EList<SharedMemoryCommunication> getSharedMemoryCommunication();
@@ -48,7 +48,7 @@ public interface CommunicationSet extends EObject {
 	 * @return the value of the '<em>Shared Register Communication</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommunicationSet_SharedRegisterCommunication()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='SharedRegisterCommunication' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='SharedRegisterCommunication'"
 	 * @generated
 	 */
 	EList<SharedRegisterCommunication> getSharedRegisterCommunication();
@@ -61,7 +61,7 @@ public interface CommunicationSet extends EObject {
 	 * @return the value of the '<em>Event Communication</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommunicationSet_EventCommunication()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='EventCommunication' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='EventCommunication'"
 	 * @generated
 	 */
 	EList<EventCommunication> getEventCommunication();
@@ -74,7 +74,7 @@ public interface CommunicationSet extends EObject {
 	 * @return the value of the '<em>FIFO Communication</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommunicationSet_FIFOCommunication()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='FIFOCommunication' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FIFOCommunication'"
 	 * @generated
 	 */
 	EList<FIFOCommunication> getFIFOCommunication();
@@ -87,7 +87,7 @@ public interface CommunicationSet extends EObject {
 	 * @return the value of the '<em>Interrupt Communication</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommunicationSet_InterruptCommunication()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='InterruptCommunication' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='InterruptCommunication'"
 	 * @generated
 	 */
 	EList<InterruptCommunication> getInterruptCommunication();

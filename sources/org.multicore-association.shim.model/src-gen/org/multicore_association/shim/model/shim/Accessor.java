@@ -32,7 +32,7 @@ public interface Accessor extends EObject {
 	 * @see #setMasterComponentRef(MasterComponent)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessor_MasterComponentRef()
 	 * @model required="true"
-	 *        extendedMetaData="kind='attribute' name='masterComponentRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='masterComponentRef'"
 	 * @generated
 	 */
 	MasterComponent getMasterComponentRef();
@@ -55,7 +55,7 @@ public interface Accessor extends EObject {
 	 * @return the value of the '<em>Performance Set</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessor_PerformanceSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='PerformanceSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='PerformanceSet'"
 	 * @generated
 	 */
 	EList<PerformanceSet> getPerformanceSet();

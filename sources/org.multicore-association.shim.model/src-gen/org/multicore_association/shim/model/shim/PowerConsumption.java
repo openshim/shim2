@@ -30,7 +30,7 @@ public interface PowerConsumption extends EObject {
 	 * @return the value of the '<em>Operating Point Ref</em>' reference.
 	 * @see #setOperatingPointRef(OperatingPoint)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumption_OperatingPointRef()
-	 * @model extendedMetaData="kind='attribute' name='operatingPointRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='attribute' name='operatingPointRef'"
 	 * @generated
 	 */
 	OperatingPoint getOperatingPointRef();
@@ -55,7 +55,7 @@ public interface PowerConsumption extends EObject {
 	 * @see #setPower(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumption_Power()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='power' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='power'"
 	 * @generated
 	 */
 	Integer getPower();
@@ -107,7 +107,7 @@ public interface PowerConsumption extends EObject {
 	 * @see #setPowerUnit(PowerUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumption_PowerUnit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='powerUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='powerUnit'"
 	 * @generated
 	 */
 	PowerUnitType getPowerUnit();

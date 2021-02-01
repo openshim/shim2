@@ -32,7 +32,7 @@ public interface MasterSlaveBinding extends EObject {
 	 * @return the value of the '<em>Accessor</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterSlaveBinding_Accessor()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='Accessor' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Accessor'"
 	 * @generated
 	 */
 	EList<Accessor> getAccessor();
@@ -45,7 +45,7 @@ public interface MasterSlaveBinding extends EObject {
 	 * @see #setSlaveComponentRef(SlaveComponent)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterSlaveBinding_SlaveComponentRef()
 	 * @model required="true"
-	 *        extendedMetaData="kind='attribute' name='slaveComponentRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='slaveComponentRef'"
 	 * @generated
 	 */
 	SlaveComponent getSlaveComponentRef();

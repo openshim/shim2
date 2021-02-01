@@ -31,7 +31,7 @@ public interface CommonInstructionSet extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommonInstructionSet_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -54,7 +54,7 @@ public interface CommonInstructionSet extends EObject {
 	 * @see #setFunctionalUnitSetFile(FunctionalUnitSetFile)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommonInstructionSet_FunctionalUnitSetFile()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='FunctionalUnitSetFile' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FunctionalUnitSetFile'"
 	 * @generated
 	 */
 	FunctionalUnitSetFile getFunctionalUnitSetFile();
@@ -77,7 +77,7 @@ public interface CommonInstructionSet extends EObject {
 	 * @see #setFunctionalUnitSet(FunctionalUnitSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCommonInstructionSet_FunctionalUnitSet()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='FunctionalUnitSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FunctionalUnitSet'"
 	 * @generated
 	 */
 	FunctionalUnitSet getFunctionalUnitSet();

@@ -34,7 +34,7 @@ public interface AbstractComponent extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractComponent_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -57,7 +57,7 @@ public interface AbstractComponent extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractComponent_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -82,7 +82,7 @@ public interface AbstractComponent extends EObject {
 	 * @see #setFrequencyDomainRef(FrequencyDomain)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractComponent_FrequencyDomainRef()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='frequencyDomainRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='frequencyDomainRef'"
 	 * @generated
 	 */
 	FrequencyDomain getFrequencyDomainRef();
@@ -132,7 +132,7 @@ public interface AbstractComponent extends EObject {
 	 * @see #setVoltageDomainRef(VoltageDomain)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractComponent_VoltageDomainRef()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='voltageDomainRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='voltageDomainRef'"
 	 * @generated
 	 */
 	VoltageDomain getVoltageDomainRef();
@@ -182,7 +182,7 @@ public interface AbstractComponent extends EObject {
 	 * @see #setOperatingPointRef(OperatingPointSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractComponent_OperatingPointRef()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='operatingPointRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='operatingPointRef'"
 	 * @generated
 	 */
 	OperatingPointSet getOperatingPointRef();

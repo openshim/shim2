@@ -19,7 +19,7 @@
   - [Re-Make AddressSpaceSet(or CommunicationSet)](#4_6_remake)
   - [Visualization of XML](#4_7_visualize)
   - [Split output of XML (FunctionalUnitSet)](#4_8_split)
-
+5. [Convert SHIM1.0 XML to SHIM2.0 XML](#5_convert)
 
 
 
@@ -43,7 +43,7 @@ SHIM2.0 Editor starts and show the Editor page.
 Click on *New* and the "Create New SHIM2.0 Data Wizard" starts.
 Refer to an after section for what configure by each page of Wizards.
 
-<img src="images/m1.png" width="600"><br>
+<img src="images/M1_.png" width="600"><br>
 **figure1. Editor page**
 <!--<center>
 <img src="pic/002_001.png" width="500" height="300">
@@ -135,7 +135,7 @@ Click on File and Open, and select SHIM2.0 XML file.
 **figure11. Load SHIM2.0 XML**
 
 
-<img src="images/m12.png" width="600"><br>
+<img src="images/M12.png" width="600"><br>
 **figure12. Load SHIM2.0 XML, FileDialog**
 
 
@@ -248,5 +248,18 @@ Left-click the red FunctionalUnitSet. The output dialog opens.
 <img src="images/m29_.PNG" width="600"><br>
 **figure25. Split output of XML (FunctionalUnitSet)**
 
-<img src="images/m30.png" width="600"><br>
+<img src="images/M30.png" width="600"><br>
 **figure26. The split output dialog FunctionalUnitSet**
+
+## <a name="5_convert">5.Convert SHIM1.0 XML to SHIM2.0 XML</a>
+
+If you have a SHIM1.0 XML file, you can open it and it is converted SHIM2.0 XML file. Note that you cannot edit the XML of SHIM1.0 as it is. The opened file can be edited as SHIM 2.0 XML.
+Click on File and the "Convert", and select SHIM1.0 XML file.
+
+
+<img src="images/m33.png" width="600"><br>
+**figure27. Convert page**
+
+
+<img src="images/m34.png" width="600"><br>
+**figure28. Load SHIM1.0 XML, FileDialog**

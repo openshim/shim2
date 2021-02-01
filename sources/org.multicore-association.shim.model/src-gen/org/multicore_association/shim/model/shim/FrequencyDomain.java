@@ -30,7 +30,7 @@ public interface FrequencyDomain extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFrequencyDomain_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -53,7 +53,7 @@ public interface FrequencyDomain extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFrequencyDomain_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();

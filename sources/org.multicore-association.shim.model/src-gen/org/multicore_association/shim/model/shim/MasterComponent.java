@@ -38,7 +38,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cache Ref</em>' reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_CacheRef()
-	 * @model extendedMetaData="kind='element' name='CacheRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='CacheRef'"
 	 * @generated
 	 */
 	EList<Cache> getCacheRef();
@@ -51,7 +51,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setAccessTypeSet(AccessTypeSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_AccessTypeSet()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='AccessTypeSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='AccessTypeSet'"
 	 * @generated
 	 */
 	AccessTypeSet getAccessTypeSet();
@@ -74,7 +74,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setClockFrequency(ClockFrequency)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_ClockFrequency()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='ClockFrequency' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ClockFrequency'"
 	 * @generated
 	 */
 	ClockFrequency getClockFrequency();
@@ -97,7 +97,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setArch(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_Arch()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='arch' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='arch'"
 	 * @generated
 	 */
 	String getArch();
@@ -122,7 +122,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setArchOption(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_ArchOption()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='archOption' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='archOption'"
 	 * @generated
 	 */
 	String getArchOption();
@@ -174,7 +174,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setEndian(EndianType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_Endian()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='endian' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='endian'"
 	 * @generated
 	 */
 	EndianType getEndian();
@@ -226,7 +226,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setMasterType(MasterType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_MasterType()
 	 * @model default="PU" required="true"
-	 *        extendedMetaData="kind='attribute' name='masterType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='masterType'"
 	 * @generated
 	 */
 	MasterType getMasterType();
@@ -252,7 +252,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setNChannel(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_NChannel()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='nChannel' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nChannel'"
 	 * @generated
 	 */
 	Integer getNChannel();
@@ -302,7 +302,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setNThread(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_NThread()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='nThread' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nThread'"
 	 * @generated
 	 */
 	Integer getNThread();
@@ -352,7 +352,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setPid(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_Pid()
 	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='pid' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='pid'"
 	 * @generated
 	 */
 	String getPid();
@@ -400,7 +400,7 @@ public interface MasterComponent extends AbstractComponent {
 	 * @see #setCommonInstructionSet(CommonInstructionSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMasterComponent_CommonInstructionSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='CommonInstructionSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='CommonInstructionSet'"
 	 * @generated
 	 */
 	CommonInstructionSet getCommonInstructionSet();

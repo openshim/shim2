@@ -31,7 +31,7 @@ public interface ContentionGroupSet extends EObject {
 	 * @return the value of the '<em>Contention Group</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroupSet_ContentionGroup()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='ContentionGroup' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ContentionGroup'"
 	 * @generated
 	 */
 	EList<ContentionGroup> getContentionGroup();

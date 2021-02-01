@@ -14,4 +14,6 @@
     <properties xsi:type="org.eclipse.emf.ecp.view.template.style.labelwidth.model:LabelWidthStyleProperty" width="180"/>
     <properties xsi:type="org.eclipse.emf.ecp.view.template.style.alignment.model:AlignmentStyleProperty"/>
   </styles>
+  <referencedEcores>/org.multicore-association.shim.edit.model/model/app.ecore</referencedEcores>
+  <referencedEcores>/org.multicore-association.shim.model/model/shim.ecore</referencedEcores>
 </org.eclipse.emf.ecp.view.template.model:ViewTemplate>

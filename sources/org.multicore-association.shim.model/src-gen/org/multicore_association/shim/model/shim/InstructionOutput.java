@@ -35,7 +35,7 @@ public interface InstructionOutput extends EObject {
 	 * @see #setType(InstructionOutputType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionOutput_Type()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='type' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='type'"
 	 * @generated
 	 */
 	InstructionOutputType getType();
@@ -84,7 +84,7 @@ public interface InstructionOutput extends EObject {
 	 * @see #setBitWidth(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionOutput_BitWidth()
 	 * @model dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='bitWidth' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='bitWidth'"
 	 * @generated
 	 */
 	int getBitWidth();
@@ -107,7 +107,7 @@ public interface InstructionOutput extends EObject {
 	 * @see #setRef(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getInstructionOutput_Ref()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='ref' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='ref'"
 	 * @generated
 	 */
 	String getRef();

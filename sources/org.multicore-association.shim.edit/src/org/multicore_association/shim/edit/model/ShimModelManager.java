@@ -316,6 +316,57 @@ public class ShimModelManager {
 
 		return slaveList;
 	}
+	
+	/**
+	 * Creates the list of SubSpace that is contained in the specified
+	 * AddressSpaceSet.
+	 * 
+	 * @param ass
+	 *         the AddressSpaceSet to create the list of contained
+	 *         SubSpaces
+	 * @return the list of SubSpace that is contained in the specified
+	 *         AdddressSpaceSet
+	 */
+	public static List<SubSpace> makeSubSpaceList(AddressSpaceSet ass) {
+		
+		List<SubSpace> subSpaceList = new ArrayList<SubSpace>();
+		
+		for (AddressSpace as : ass.getAddressSpace()) {
+			if (as.getSubSpace().size() > 0) {
+				for (SubSpace ss : as.getSubSpace()) {
+					subSpaceList.add(ss);
+				}
+			}
+		}
+		
+		return subSpaceList;
+	}
+	
+	/**
+	 * Creates the list of AccessType that is contained in the specified
+	 * ComponentSet.
+	 * 
+	 * @param cs
+	 *         the ComponentSet to create the list of contained
+	 *         AccessTypes
+	 * @return the list of AccessType that is contained in the specified
+	 *         ComponentSet
+	 */
+	public static List<AccessType> makeAccessTypeList(ComponentSet cs) {
+		
+		List<AccessType> accessTypeList = new ArrayList<AccessType>();
+		List<MasterComponent> masterComponentList = makeMasterComponentList(cs);
+		
+		for (MasterComponent mc : masterComponentList) {
+			AccessTypeSet accessTypeSet = mc.getAccessTypeSet();
+			
+			for (AccessType at : accessTypeSet.getAccessType()) {
+				accessTypeList.add(at);
+			}
+		}
+		
+		return accessTypeList;
+	}
 
 	/**
 	 * Creates the list which covered all the connections between
@@ -888,8 +939,7 @@ public class ShimModelManager {
 					List<Accessor> accessorList = masterSlaveBinding
 							.getAccessor();
 					for (Accessor accessor : accessorList) {
-						MasterComponent masterComponentRef = (MasterComponent) accessor
-								.getMasterComponentRef();
+						MasterComponent masterComponentRef = accessor.getMasterComponentRef();
 
 						boolean contain = false;
 						List<PerformanceSet> performanceSetList = accessor

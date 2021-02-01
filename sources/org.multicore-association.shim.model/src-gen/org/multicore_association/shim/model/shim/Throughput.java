@@ -33,7 +33,7 @@ public interface Throughput extends EObject {
 	 * @see #setFrequencyDomainRef(FrequencyDomain)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getThroughput_FrequencyDomainRef()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='frequencyDomainRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='frequencyDomainRef'"
 	 * @generated
 	 */
 	FrequencyDomain getFrequencyDomainRef();
@@ -83,7 +83,7 @@ public interface Throughput extends EObject {
 	 * @see #setValue(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getThroughput_Value()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='value' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='value'"
 	 * @generated
 	 */
 	Integer getValue();
@@ -135,7 +135,7 @@ public interface Throughput extends EObject {
 	 * @see #setUnit(ThroughputUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getThroughput_Unit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='unit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='unit'"
 	 * @generated
 	 */
 	ThroughputUnitType getUnit();

@@ -31,7 +31,7 @@ public interface AbstractShim extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractShim_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -54,7 +54,7 @@ public interface AbstractShim extends EObject {
 	 * @see #setShimVersion(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractShim_ShimVersion()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='shimVersion' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='shimVersion'"
 	 * @generated
 	 */
 	String getShimVersion();

@@ -30,7 +30,7 @@ public interface FunctionalUnitSetFile extends EObject {
 	 * @see #setSrc(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFunctionalUnitSetFile_Src()
 	 * @model default="0" required="true"
-	 *        extendedMetaData="kind='attribute' name='src' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='src'"
 	 * @generated
 	 */
 	String getSrc();

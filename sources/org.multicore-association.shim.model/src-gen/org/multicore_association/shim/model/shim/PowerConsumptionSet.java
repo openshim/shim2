@@ -34,7 +34,7 @@ public interface PowerConsumptionSet extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumptionSet_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -57,7 +57,7 @@ public interface PowerConsumptionSet extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumptionSet_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -80,7 +80,7 @@ public interface PowerConsumptionSet extends EObject {
 	 * @return the value of the '<em>Power Consumption</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumptionSet_PowerConsumption()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='PowerConsumption' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='PowerConsumption'"
 	 * @generated
 	 */
 	EList<PowerConsumption> getPowerConsumption();
@@ -92,7 +92,7 @@ public interface PowerConsumptionSet extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Power Consumer Ref</em>' reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConsumptionSet_PowerConsumerRef()
-	 * @model extendedMetaData="kind='element' name='PowerConsumerRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='PowerConsumerRef'"
 	 * @generated
 	 */
 	EList<AbstractComponent> getPowerConsumerRef();

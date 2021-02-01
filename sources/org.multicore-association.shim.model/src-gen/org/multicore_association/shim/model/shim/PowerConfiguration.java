@@ -30,7 +30,7 @@ public interface PowerConfiguration extends EObject {
 	 * @see #setSystemConfigurationSrc(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConfiguration_SystemConfigurationSrc()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='systemConfigurationSrc' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='systemConfigurationSrc'"
 	 * @generated
 	 */
 	String getSystemConfigurationSrc();
@@ -53,7 +53,7 @@ public interface PowerConfiguration extends EObject {
 	 * @see #setPowerConsumptionSet(PowerConsumptionSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPowerConfiguration_PowerConsumptionSet()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='PowerConsumptionSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='PowerConsumptionSet'"
 	 * @generated
 	 */
 	PowerConsumptionSet getPowerConsumptionSet();

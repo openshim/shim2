@@ -33,7 +33,7 @@ public interface PerformanceSet extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformanceSet_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -58,7 +58,7 @@ public interface PerformanceSet extends EObject {
 	 * @see #setCacheRef(Cache)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformanceSet_CacheRef()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='cacheRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='cacheRef'"
 	 * @generated
 	 */
 	Cache getCacheRef();
@@ -106,7 +106,7 @@ public interface PerformanceSet extends EObject {
 	 * @return the value of the '<em>Performance</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getPerformanceSet_Performance()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Performance' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Performance'"
 	 * @generated
 	 */
 	EList<Performance> getPerformance();

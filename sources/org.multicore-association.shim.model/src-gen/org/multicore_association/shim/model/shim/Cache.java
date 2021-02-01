@@ -47,7 +47,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setCacheType(CacheType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_CacheType()
 	 * @model default="DATA" required="true"
-	 *        extendedMetaData="kind='attribute' name='cacheType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='cacheType'"
 	 * @generated
 	 */
 	CacheType getCacheType();
@@ -74,7 +74,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setCacheCoherency(CacheCoherencyType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_CacheCoherency()
 	 * @model default="HARDWARE" required="true"
-	 *        extendedMetaData="kind='attribute' name='cacheCoherency' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='cacheCoherency'"
 	 * @generated
 	 */
 	CacheCoherencyType getCacheCoherency();
@@ -99,7 +99,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setSize(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_Size()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='size' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='size'"
 	 * @generated
 	 */
 	int getSize();
@@ -125,7 +125,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setSizeUnit(SizeUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_SizeUnit()
 	 * @model default="KiB" required="true"
-	 *        extendedMetaData="kind='attribute' name='sizeUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='sizeUnit'"
 	 * @generated
 	 */
 	SizeUnitType getSizeUnit();
@@ -151,7 +151,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setNWay(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_NWay()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='nWay' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nWay'"
 	 * @generated
 	 */
 	Integer getNWay();
@@ -201,7 +201,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setLineSize(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_LineSize()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='lineSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='lineSize'"
 	 * @generated
 	 */
 	Integer getLineSize();
@@ -253,7 +253,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setLockDownType(LockDownType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_LockDownType()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='lockDownType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='lockDownType'"
 	 * @generated
 	 */
 	LockDownType getLockDownType();
@@ -306,7 +306,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setPrefetch(CachePrefetchType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_Prefetch()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='prefetch' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='prefetch'"
 	 * @generated
 	 */
 	CachePrefetchType getPrefetch();
@@ -357,7 +357,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setPrefetchDistance(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_PrefetchDistance()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='prefetchDistance' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='prefetchDistance'"
 	 * @generated
 	 */
 	Integer getPrefetchDistance();
@@ -409,7 +409,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setReplacement(CacheReplacementType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_Replacement()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='replacement' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='replacement'"
 	 * @generated
 	 */
 	CacheReplacementType getReplacement();
@@ -462,7 +462,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setWriteAllocate(CacheWriteAllocateType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_WriteAllocate()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='writeAllocate' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='writeAllocate'"
 	 * @generated
 	 */
 	CacheWriteAllocateType getWriteAllocate();
@@ -515,7 +515,7 @@ public interface Cache extends AbstractComponent {
 	 * @see #setWriteBack(CacheWriteBackType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_WriteBack()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='writeBack' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='writeBack'"
 	 * @generated
 	 */
 	CacheWriteBackType getWriteBack();
@@ -563,7 +563,7 @@ public interface Cache extends AbstractComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cache Ref</em>' reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getCache_CacheRef()
-	 * @model extendedMetaData="kind='element' name='CacheRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='CacheRef'"
 	 * @generated
 	 */
 	EList<Cache> getCacheRef();

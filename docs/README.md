@@ -96,4 +96,14 @@ You can see that the application is running and a window is displayed.
 
 <img src="images/25.png" width="600"><br>
 
+If you are having trouble setting up Run, you can configure Run Configurations yourself.
+
+Select "Run Configurations" in the "Run" menu.
+<img src="images/m40.jpg" width="600"><br>
+
+
+After opening Run Configurations, select " Plugin-ins" . Here, it is possible to automatically set the Configurations of the target file. After selecting the target file, select " Validate Plug-ins"  and then " Run". Then you can see that the application is running and a window is displayed.
+<img src="images/m41.jpg" width="600"><br>
+
+
 ----------------

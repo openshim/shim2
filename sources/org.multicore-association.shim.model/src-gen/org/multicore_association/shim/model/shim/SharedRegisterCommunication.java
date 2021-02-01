@@ -30,7 +30,7 @@ public interface SharedRegisterCommunication extends AbstractCommunication {
 	 * @see #setDataSize(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedRegisterCommunication_DataSize()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='dataSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSize'"
 	 * @generated
 	 */
 	int getDataSize();
@@ -56,7 +56,7 @@ public interface SharedRegisterCommunication extends AbstractCommunication {
 	 * @see #setDataSizeUnit(SizeUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedRegisterCommunication_DataSizeUnit()
 	 * @model default="KiB" required="true"
-	 *        extendedMetaData="kind='attribute' name='dataSizeUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSizeUnit'"
 	 * @generated
 	 */
 	SizeUnitType getDataSizeUnit();
@@ -81,7 +81,7 @@ public interface SharedRegisterCommunication extends AbstractCommunication {
 	 * @see #setNRegister(int)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedRegisterCommunication_NRegister()
 	 * @model default="0" dataType="org.multicore_association.shim.model.shim.UnsignedIntType" required="true"
-	 *        extendedMetaData="kind='attribute' name='nRegister' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nRegister'"
 	 * @generated
 	 */
 	int getNRegister();

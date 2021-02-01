@@ -16,6 +16,7 @@ import org.eclipse.e4.ui.workbench.modeling.EModelService;
 import org.eclipse.e4.ui.workbench.modeling.EPartService;
 import org.multicore_association.shim.edit.gui.jface.ShimEditorPart;
 import org.multicore_association.shim.model.shim.Shim;
+import org.multicore_association.shim10.model.shim10.DocumentRoot;
 
 public class PartUtils {
 
@@ -54,6 +55,17 @@ public class PartUtils {
 //		part.setElementId("newid");
 		part.setObject(shim);
 
+		return part;
+	}
+	
+	public static MPart createShim10EditorPart(DocumentRoot root, String path, EPartService partService) {
+		File file = new File(path);
+		
+		MPart part = partService.createPart(PARTDESCRIPTOR_SHIMEDITOR_ID);
+		part.setLabel(file.getName());
+		part.setTooltip(path);
+		part.setObject(root);
+		
 		return part;
 	}
 }

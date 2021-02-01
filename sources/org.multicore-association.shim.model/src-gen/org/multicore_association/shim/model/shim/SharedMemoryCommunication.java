@@ -35,7 +35,7 @@ public interface SharedMemoryCommunication extends AbstractCommunication {
 	 * @see #setOperationType(OperationType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedMemoryCommunication_OperationType()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='operationType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='operationType'"
 	 * @generated
 	 */
 	OperationType getOperationType();
@@ -86,7 +86,7 @@ public interface SharedMemoryCommunication extends AbstractCommunication {
 	 * @see #setDataSize(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedMemoryCommunication_DataSize()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='dataSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSize'"
 	 * @generated
 	 */
 	Integer getDataSize();
@@ -138,7 +138,7 @@ public interface SharedMemoryCommunication extends AbstractCommunication {
 	 * @see #setDataSizeUnit(SizeUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedMemoryCommunication_DataSizeUnit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='dataSizeUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='dataSizeUnit'"
 	 * @generated
 	 */
 	SizeUnitType getDataSizeUnit();
@@ -186,7 +186,7 @@ public interface SharedMemoryCommunication extends AbstractCommunication {
 	 * @return the value of the '<em>Address Space Ref</em>' reference.
 	 * @see #setAddressSpaceRef(AddressSpace)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedMemoryCommunication_AddressSpaceRef()
-	 * @model extendedMetaData="kind='attribute' name='addressSpaceRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='attribute' name='addressSpaceRef'"
 	 * @generated
 	 */
 	AddressSpace getAddressSpaceRef();
@@ -208,7 +208,7 @@ public interface SharedMemoryCommunication extends AbstractCommunication {
 	 * @return the value of the '<em>Sub Space Ref</em>' reference.
 	 * @see #setSubSpaceRef(SubSpace)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSharedMemoryCommunication_SubSpaceRef()
-	 * @model extendedMetaData="kind='attribute' name='subSpaceRef' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='attribute' name='subSpaceRef'"
 	 * @generated
 	 */
 	SubSpace getSubSpaceRef();

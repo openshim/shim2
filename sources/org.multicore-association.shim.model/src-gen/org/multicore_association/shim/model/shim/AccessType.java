@@ -34,7 +34,7 @@ public interface AccessType extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -57,7 +57,7 @@ public interface AccessType extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -84,7 +84,7 @@ public interface AccessType extends EObject {
 	 * @see #setRwType(RWType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_RwType()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='rwType' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='rwType'"
 	 * @generated
 	 */
 	RWType getRwType();
@@ -135,7 +135,7 @@ public interface AccessType extends EObject {
 	 * @see #setAccessByteSize(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_AccessByteSize()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='accessByteSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='accessByteSize'"
 	 * @generated
 	 */
 	Integer getAccessByteSize();
@@ -185,7 +185,7 @@ public interface AccessType extends EObject {
 	 * @see #setAlignmentByteSize(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_AlignmentByteSize()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='alignmentByteSize' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='alignmentByteSize'"
 	 * @generated
 	 */
 	Integer getAlignmentByteSize();
@@ -235,7 +235,7 @@ public interface AccessType extends EObject {
 	 * @see #setNBurst(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAccessType_NBurst()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='nBurst' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='nBurst'"
 	 * @generated
 	 */
 	Integer getNBurst();

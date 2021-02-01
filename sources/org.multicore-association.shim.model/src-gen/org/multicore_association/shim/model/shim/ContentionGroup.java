@@ -35,7 +35,7 @@ public interface ContentionGroup extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroup_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -58,7 +58,7 @@ public interface ContentionGroup extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroup_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -81,7 +81,7 @@ public interface ContentionGroup extends EObject {
 	 * @see #setThroughput(Throughput)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroup_Throughput()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Throughput' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Throughput'"
 	 * @generated
 	 */
 	Throughput getThroughput();
@@ -104,7 +104,7 @@ public interface ContentionGroup extends EObject {
 	 * @see #setDataRate(DataRate)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroup_DataRate()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='DataRate' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='DataRate'"
 	 * @generated
 	 */
 	DataRate getDataRate();
@@ -127,7 +127,7 @@ public interface ContentionGroup extends EObject {
 	 * @return the value of the '<em>Performance Set Ref</em>' reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getContentionGroup_PerformanceSetRef()
 	 * @model resolveProxies="false" required="true"
-	 *        extendedMetaData="kind='element' name='PerformanceSetRef' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='PerformanceSetRef'"
 	 * @generated
 	 */
 	EList<PerformanceSet> getPerformanceSetRef();

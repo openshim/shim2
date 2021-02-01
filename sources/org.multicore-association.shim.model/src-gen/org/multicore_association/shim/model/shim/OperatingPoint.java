@@ -34,7 +34,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -57,7 +57,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -82,7 +82,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setFrequency(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_Frequency()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='frequency' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='frequency'"
 	 * @generated
 	 */
 	Integer getFrequency();
@@ -134,7 +134,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setFrequencyUnit(FrequencyUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_FrequencyUnit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='frequencyUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='frequencyUnit'"
 	 * @generated
 	 */
 	FrequencyUnitType getFrequencyUnit();
@@ -185,7 +185,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setVoltage(Integer)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_Voltage()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedIntObjectType"
-	 *        extendedMetaData="kind='attribute' name='voltage' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='voltage'"
 	 * @generated
 	 */
 	Integer getVoltage();
@@ -237,7 +237,7 @@ public interface OperatingPoint extends EObject {
 	 * @see #setVoltageUnit(VoltageUnitType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPoint_VoltageUnit()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='voltageUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='voltageUnit'"
 	 * @generated
 	 */
 	VoltageUnitType getVoltageUnit();

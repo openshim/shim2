@@ -2484,7 +2484,7 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 	 * @generated
 	 */
 	public EReference getPerformance_AccessTypeRef() {
-		return (EReference) performanceEClass.getEStructuralFeatures().get(0);
+		return (EReference) performanceEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2493,7 +2493,7 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 	 * @generated
 	 */
 	public EReference getPerformance_Pitch() {
-		return (EReference) performanceEClass.getEStructuralFeatures().get(1);
+		return (EReference) performanceEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2502,7 +2502,7 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 	 * @generated
 	 */
 	public EReference getPerformance_Latency() {
-		return (EReference) performanceEClass.getEStructuralFeatures().get(2);
+		return (EReference) performanceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3703,9 +3703,9 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		createEReference(operatingPointSetEClass, OPERATING_POINT_SET__OPERATING_POINT);
 
 		performanceEClass = createEClass(PERFORMANCE);
-		createEReference(performanceEClass, PERFORMANCE__ACCESS_TYPE_REF);
 		createEReference(performanceEClass, PERFORMANCE__PITCH);
 		createEReference(performanceEClass, PERFORMANCE__LATENCY);
+		createEReference(performanceEClass, PERFORMANCE__ACCESS_TYPE_REF);
 
 		performanceSetEClass = createEClass(PERFORMANCE_SET);
 		createEAttribute(performanceSetEClass, PERFORMANCE_SET__ID);
@@ -4374,15 +4374,15 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 
 		initEClass(performanceEClass, Performance.class, "Performance", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPerformance_AccessTypeRef(), this.getAccessType(), null, "accessTypeRef", null, 0, 1,
-				Performance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerformance_Pitch(), this.getPitch(), null, "pitch", null, 1, 1, Performance.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerformance_Latency(), this.getLatency(), null, "latency", null, 1, 1, Performance.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerformance_AccessTypeRef(), this.getAccessType(), null, "accessTypeRef", null, 0, 1,
+				Performance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(performanceSetEClass, PerformanceSet.class, "PerformanceSet", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -4622,7 +4622,7 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 
 		initEEnum(orderingTypeEEnum, OrderingType.class, "OrderingType");
 		addEEnumLiteral(orderingTypeEEnum, OrderingType.ORDERED);
-		addEEnumLiteral(orderingTypeEEnum, OrderingType.UNORDERD);
+		addEEnumLiteral(orderingTypeEEnum, OrderingType.UNORDERED);
 
 		initEEnum(powerUnitTypeEEnum, PowerUnitType.class, "PowerUnitType");
 		addEEnumLiteral(powerUnitTypeEEnum, PowerUnitType.PW);
@@ -4741,110 +4741,84 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(abstractCommunicationEClass, source,
 				new String[] { "name", "AbstractCommunication", "kind", "elementOnly" });
 		addAnnotation(getAbstractCommunication_ConnectionSet(), source,
-				new String[] { "kind", "element", "name", "ConnectionSet", "namespace", "##targetNamespace" });
-		addAnnotation(getAbstractCommunication_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ConnectionSet" });
+		addAnnotation(getAbstractCommunication_Name(), source, new String[] { "kind", "attribute", "name", "name" });
 		addAnnotation(abstractComponentEClass, source,
 				new String[] { "name", "AbstractComponent", "kind", "elementOnly" });
-		addAnnotation(getAbstractComponent_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getAbstractComponent_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getAbstractComponent_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getAbstractComponent_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(getAbstractComponent_FrequencyDomainRef(), source,
-				new String[] { "kind", "attribute", "name", "frequencyDomainRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "frequencyDomainRef" });
 		addAnnotation(getAbstractComponent_VoltageDomainRef(), source,
-				new String[] { "kind", "attribute", "name", "voltageDomainRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "voltageDomainRef" });
 		addAnnotation(getAbstractComponent_OperatingPointRef(), source,
-				new String[] { "kind", "attribute", "name", "operatingPointRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "operatingPointRef" });
 		addAnnotation(abstractInstructionEClass, source,
 				new String[] { "name", "AbstractInstruction", "kind", "elementOnly" });
-		addAnnotation(getAbstractInstruction_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+		addAnnotation(getAbstractInstruction_Name(), source, new String[] { "kind", "attribute", "name", "name" });
 		addAnnotation(getAbstractInstruction_EncodingLength(), source,
-				new String[] { "kind", "attribute", "name", "encodingLength", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "encodingLength" });
 		addAnnotation(getAbstractInstruction_NInputs(), source,
-				new String[] { "kind", "attribute", "name", "nInputs", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "nInputs" });
 		addAnnotation(getAbstractInstruction_NOutputs(), source,
-				new String[] { "kind", "attribute", "name", "nOutputs", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "nOutputs" });
 		addAnnotation(getAbstractInstruction_SIMDWidth(), source,
-				new String[] { "kind", "attribute", "name", "sIMDWidth", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "sIMDWidth" });
 		addAnnotation(getAbstractInstruction_Performance(), source,
-				new String[] { "kind", "element", "name", "Performance", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "Performance" });
 		addAnnotation(abstractPerformanceEClass, source,
 				new String[] { "name", "AbstractPerformance", "kind", "empty" });
-		addAnnotation(getAbstractPerformance_Best(), source,
-				new String[] { "kind", "attribute", "name", "best", "namespace", "##targetNamespace" });
+		addAnnotation(getAbstractPerformance_Best(), source, new String[] { "kind", "attribute", "name", "best" });
 		addAnnotation(getAbstractPerformance_Typical(), source,
-				new String[] { "kind", "attribute", "name", "typical", "namespace", "##targetNamespace" });
-		addAnnotation(getAbstractPerformance_Worst(), source,
-				new String[] { "kind", "attribute", "name", "worst", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "typical" });
+		addAnnotation(getAbstractPerformance_Worst(), source, new String[] { "kind", "attribute", "name", "worst" });
 		addAnnotation(abstractShimEClass, source, new String[] { "name", "AbstractShim", "kind", "elementOnly" });
-		addAnnotation(getAbstractShim_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+		addAnnotation(getAbstractShim_Name(), source, new String[] { "kind", "attribute", "name", "name" });
 		addAnnotation(getAbstractShim_ShimVersion(), source,
-				new String[] { "kind", "attribute", "name", "shimVersion", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "shimVersion" });
 		addAnnotation(accessorEClass, source, new String[] { "name", "Accessor", "kind", "elementOnly" });
 		addAnnotation(getAccessor_MasterComponentRef(), source,
-				new String[] { "kind", "attribute", "name", "masterComponentRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "masterComponentRef" });
 		addAnnotation(getAccessor_PerformanceSet(), source,
-				new String[] { "kind", "element", "name", "PerformanceSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PerformanceSet" });
 		addAnnotation(accessTypeEClass, source, new String[] { "name", "AccessType", "kind", "empty" });
-		addAnnotation(getAccessType_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getAccessType_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-		addAnnotation(getAccessType_RwType(), source,
-				new String[] { "kind", "attribute", "name", "rwType", "namespace", "##targetNamespace" });
+		addAnnotation(getAccessType_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getAccessType_Id(), source, new String[] { "kind", "attribute", "name", "id" });
+		addAnnotation(getAccessType_RwType(), source, new String[] { "kind", "attribute", "name", "rwType" });
 		addAnnotation(getAccessType_AccessByteSize(), source,
-				new String[] { "kind", "attribute", "name", "accessByteSize", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "accessByteSize" });
 		addAnnotation(getAccessType_AlignmentByteSize(), source,
-				new String[] { "kind", "attribute", "name", "alignmentByteSize", "namespace", "##targetNamespace" });
-		addAnnotation(getAccessType_NBurst(), source,
-				new String[] { "kind", "attribute", "name", "nBurst", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "alignmentByteSize" });
+		addAnnotation(getAccessType_NBurst(), source, new String[] { "kind", "attribute", "name", "nBurst" });
 		addAnnotation(accessTypeSetEClass, source, new String[] { "name", "AccessTypeSet", "kind", "elementOnly" });
-		addAnnotation(getAccessTypeSet_AccessType(), source,
-				new String[] { "kind", "element", "name", "AccessType", "namespace", "##targetNamespace" });
+		addAnnotation(getAccessTypeSet_AccessType(), source, new String[] { "kind", "element", "name", "AccessType" });
 		addAnnotation(addressSpaceEClass, source, new String[] { "name", "AddressSpace", "kind", "elementOnly" });
-		addAnnotation(getAddressSpace_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getAddressSpace_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-		addAnnotation(getAddressSpace_SubSpace(), source,
-				new String[] { "kind", "element", "name", "SubSpace", "namespace", "##targetNamespace" });
+		addAnnotation(getAddressSpace_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getAddressSpace_Id(), source, new String[] { "kind", "attribute", "name", "id" });
+		addAnnotation(getAddressSpace_SubSpace(), source, new String[] { "kind", "element", "name", "SubSpace" });
 		addAnnotation(addressSpaceSetEClass, source, new String[] { "name", "AddressSpaceSet", "kind", "elementOnly" });
 		addAnnotation(getAddressSpaceSet_AddressSpace(), source,
-				new String[] { "kind", "element", "name", "AddressSpace", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "AddressSpace" });
 		addAnnotation(addressValueTypeEDataType, source,
 				new String[] { "name", "AddressValueType", "minInclusive", "0" });
 		addAnnotation(addressValueObjectTypeEDataType, source,
 				new String[] { "name", "AddressValueObjectType", "minInclusive", "0" });
 		addAnnotation(cacheEClass, source, new String[] { "name", "Cache", "kind", "elementOnly" });
-		addAnnotation(getCache_CacheType(), source,
-				new String[] { "kind", "attribute", "name", "cacheType", "namespace", "##targetNamespace" });
+		addAnnotation(getCache_CacheType(), source, new String[] { "kind", "attribute", "name", "cacheType" });
 		addAnnotation(getCache_CacheCoherency(), source,
-				new String[] { "kind", "attribute", "name", "cacheCoherency", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_Size(), source,
-				new String[] { "kind", "attribute", "name", "size", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_SizeUnit(), source,
-				new String[] { "kind", "attribute", "name", "sizeUnit", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_NWay(), source,
-				new String[] { "kind", "attribute", "name", "nWay", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_LineSize(), source,
-				new String[] { "kind", "attribute", "name", "lineSize", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_LockDownType(), source,
-				new String[] { "kind", "attribute", "name", "lockDownType", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_Prefetch(), source,
-				new String[] { "kind", "attribute", "name", "prefetch", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "cacheCoherency" });
+		addAnnotation(getCache_Size(), source, new String[] { "kind", "attribute", "name", "size" });
+		addAnnotation(getCache_SizeUnit(), source, new String[] { "kind", "attribute", "name", "sizeUnit" });
+		addAnnotation(getCache_NWay(), source, new String[] { "kind", "attribute", "name", "nWay" });
+		addAnnotation(getCache_LineSize(), source, new String[] { "kind", "attribute", "name", "lineSize" });
+		addAnnotation(getCache_LockDownType(), source, new String[] { "kind", "attribute", "name", "lockDownType" });
+		addAnnotation(getCache_Prefetch(), source, new String[] { "kind", "attribute", "name", "prefetch" });
 		addAnnotation(getCache_PrefetchDistance(), source,
-				new String[] { "kind", "attribute", "name", "prefetchDistance", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_Replacement(), source,
-				new String[] { "kind", "attribute", "name", "replacement", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_WriteAllocate(), source,
-				new String[] { "kind", "attribute", "name", "writeAllocate", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_WriteBack(), source,
-				new String[] { "kind", "attribute", "name", "writeBack", "namespace", "##targetNamespace" });
-		addAnnotation(getCache_CacheRef(), source,
-				new String[] { "kind", "element", "name", "CacheRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "prefetchDistance" });
+		addAnnotation(getCache_Replacement(), source, new String[] { "kind", "attribute", "name", "replacement" });
+		addAnnotation(getCache_WriteAllocate(), source, new String[] { "kind", "attribute", "name", "writeAllocate" });
+		addAnnotation(getCache_WriteBack(), source, new String[] { "kind", "attribute", "name", "writeBack" });
+		addAnnotation(getCache_CacheRef(), source, new String[] { "kind", "element", "name", "CacheRef" });
 		addAnnotation(cacheCoherencyTypeEEnum, source, new String[] { "name", "CacheCoherencyType" });
 		addAnnotation(cacheCoherencyTypeObjectEDataType, source,
 				new String[] { "name", "CacheCoherencyType:Object", "baseType", "CacheCoherencyType" });
@@ -4865,74 +4839,63 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 				new String[] { "name", "CacheWriteBackType:Object", "baseType", "CacheWriteBackType" });
 		addAnnotation(clockFrequencyEClass, source, new String[] { "name", "ClockFrequency", "kind", "empty" });
 		addAnnotation(getClockFrequency_ClockValue(), source,
-				new String[] { "kind", "attribute", "name", "clockValue", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "clockValue" });
 		addAnnotation(commonInstructionSetEClass, source,
 				new String[] { "name", "CommonInstructionSet", "kind", "elementOnly" });
-		addAnnotation(getCommonInstructionSet_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+		addAnnotation(getCommonInstructionSet_Name(), source, new String[] { "kind", "attribute", "name", "name" });
 		addAnnotation(getCommonInstructionSet_FunctionalUnitSetFile(), source,
-				new String[] { "kind", "element", "name", "FunctionalUnitSetFile", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FunctionalUnitSetFile" });
 		addAnnotation(getCommonInstructionSet_FunctionalUnitSet(), source,
-				new String[] { "kind", "element", "name", "FunctionalUnitSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FunctionalUnitSet" });
 		addAnnotation(communicationSetEClass, source,
 				new String[] { "name", "CommunicationSet", "kind", "elementOnly" });
-		addAnnotation(getCommunicationSet_SharedMemoryCommunication(), source, new String[] { "kind", "element", "name",
-				"SharedMemoryCommunication", "namespace", "##targetNamespace" });
-		addAnnotation(getCommunicationSet_SharedRegisterCommunication(), source, new String[] { "kind", "element",
-				"name", "SharedRegisterCommunication", "namespace", "##targetNamespace" });
+		addAnnotation(getCommunicationSet_SharedMemoryCommunication(), source,
+				new String[] { "kind", "element", "name", "SharedMemoryCommunication" });
+		addAnnotation(getCommunicationSet_SharedRegisterCommunication(), source,
+				new String[] { "kind", "element", "name", "SharedRegisterCommunication" });
 		addAnnotation(getCommunicationSet_EventCommunication(), source,
-				new String[] { "kind", "element", "name", "EventCommunication", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "EventCommunication" });
 		addAnnotation(getCommunicationSet_FIFOCommunication(), source,
-				new String[] { "kind", "element", "name", "FIFOCommunication", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FIFOCommunication" });
 		addAnnotation(getCommunicationSet_InterruptCommunication(), source,
-				new String[] { "kind", "element", "name", "InterruptCommunication", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "InterruptCommunication" });
 		addAnnotation(componentSetEClass, source, new String[] { "name", "ComponentSet", "kind", "elementOnly" });
 		addAnnotation(getComponentSet_ComponentSet(), source,
-				new String[] { "kind", "element", "name", "ComponentSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ComponentSet" });
 		addAnnotation(getComponentSet_MasterComponent(), source,
-				new String[] { "kind", "element", "name", "MasterComponent", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "MasterComponent" });
 		addAnnotation(getComponentSet_SlaveComponent(), source,
-				new String[] { "kind", "element", "name", "SlaveComponent", "namespace", "##targetNamespace" });
-		addAnnotation(getComponentSet_Cache(), source,
-				new String[] { "kind", "element", "name", "Cache", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "SlaveComponent" });
+		addAnnotation(getComponentSet_Cache(), source, new String[] { "kind", "element", "name", "Cache" });
 		addAnnotation(connectionEClass, source, new String[] { "name", "Connection", "kind", "elementOnly" });
-		addAnnotation(getConnection_From(), source,
-				new String[] { "kind", "attribute", "name", "from", "namespace", "##targetNamespace" });
-		addAnnotation(getConnection_To(), source,
-				new String[] { "kind", "attribute", "name", "to", "namespace", "##targetNamespace" });
-		addAnnotation(getConnection_Performance(), source,
-				new String[] { "kind", "element", "name", "Performance", "namespace", "##targetNamespace" });
+		addAnnotation(getConnection_From(), source, new String[] { "kind", "attribute", "name", "from" });
+		addAnnotation(getConnection_To(), source, new String[] { "kind", "attribute", "name", "to" });
+		addAnnotation(getConnection_Performance(), source, new String[] { "kind", "element", "name", "Performance" });
 		addAnnotation(connectionSetEClass, source, new String[] { "name", "ConnectionSet", "kind", "elementOnly" });
-		addAnnotation(getConnectionSet_Connection(), source,
-				new String[] { "kind", "element", "name", "Connection", "namespace", "##targetNamespace" });
+		addAnnotation(getConnectionSet_Connection(), source, new String[] { "kind", "element", "name", "Connection" });
 		addAnnotation(contentionGroupEClass, source, new String[] { "name", "ContentionGroup", "kind", "elementOnly" });
-		addAnnotation(getContentionGroup_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getContentionGroup_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getContentionGroup_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getContentionGroup_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(getContentionGroup_Throughput(), source,
-				new String[] { "kind", "element", "name", "Throughput", "namespace", "##targetNamespace" });
-		addAnnotation(getContentionGroup_DataRate(), source,
-				new String[] { "kind", "element", "name", "DataRate", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "Throughput" });
+		addAnnotation(getContentionGroup_DataRate(), source, new String[] { "kind", "element", "name", "DataRate" });
 		addAnnotation(getContentionGroup_PerformanceSetRef(), source,
-				new String[] { "kind", "element", "name", "PerformanceSetRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PerformanceSetRef" });
 		addAnnotation(contentionGroupSetEClass, source,
 				new String[] { "name", "ContentionGroupSet", "kind", "elementOnly" });
 		addAnnotation(getContentionGroupSet_ContentionGroup(), source,
-				new String[] { "kind", "element", "name", "ContentionGroup", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ContentionGroup" });
 		addAnnotation(customInstructionEClass, source,
 				new String[] { "name", "CustomInstruction", "kind", "elementOnly" });
 		addAnnotation(getCustomInstruction_InstructionInput(), source,
-				new String[] { "kind", "element", "name", "InstructionInput", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "InstructionInput" });
 		addAnnotation(getCustomInstruction_InstructionOperation(), source,
-				new String[] { "kind", "element", "name", "InstructionOperation", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "InstructionOperation" });
 		addAnnotation(getCustomInstruction_InstructionOutput(), source,
-				new String[] { "kind", "element", "name", "InstructionOutput", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "InstructionOutput" });
 		addAnnotation(dataRateEClass, source, new String[] { "name", "DataRate", "kind", "elementOnly" });
-		addAnnotation(getDataRate_Value(), source,
-				new String[] { "kind", "attribute", "name", "value", "namespace", "##targetNamespace" });
-		addAnnotation(getDataRate_Unit(), source,
-				new String[] { "kind", "attribute", "name", "unit", "namespace", "##targetNamespace" });
+		addAnnotation(getDataRate_Value(), source, new String[] { "kind", "attribute", "name", "value" });
+		addAnnotation(getDataRate_Unit(), source, new String[] { "kind", "attribute", "name", "unit" });
 		addAnnotation(dataRateUnitTypeEEnum, source, new String[] { "name", "DataRateUnitType" });
 		addAnnotation(dataRateUnitTypeObjectEDataType, source,
 				new String[] { "name", "DataRateUnitType:Object", "baseType", "DataRateUnitType" });
@@ -4952,84 +4915,73 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(fifoCommunicationEClass, source,
 				new String[] { "name", "FIFOCommunication", "kind", "elementOnly" });
 		addAnnotation(getFIFOCommunication_DataSize(), source,
-				new String[] { "kind", "attribute", "name", "dataSize", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSize" });
 		addAnnotation(getFIFOCommunication_DataSizeUnit(), source,
-				new String[] { "kind", "attribute", "name", "dataSizeUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSizeUnit" });
 		addAnnotation(getFIFOCommunication_QueueSize(), source,
-				new String[] { "kind", "attribute", "name", "queueSize", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "queueSize" });
 		addAnnotation(frequencyDomainEClass, source, new String[] { "name", "FrequencyDomain", "kind", "empty" });
-		addAnnotation(getFrequencyDomain_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getFrequencyDomain_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getFrequencyDomain_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getFrequencyDomain_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(frequencyUnitTypeEEnum, source, new String[] { "name", "FrequencyUnitType" });
 		addAnnotation(frequencyUnitTypeObjectEDataType, source,
 				new String[] { "name", "FrequencyUnitType:Object", "baseType", "FrequencyUnitType" });
 		addAnnotation(frequencyVoltageSetEClass, source,
 				new String[] { "name", "FrequencyVoltageSet", "kind", "elementOnly" });
 		addAnnotation(getFrequencyVoltageSet_FrequencyDomain(), source,
-				new String[] { "kind", "element", "name", "FrequencyDomain", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FrequencyDomain" });
 		addAnnotation(getFrequencyVoltageSet_VoltageDomain(), source,
-				new String[] { "kind", "element", "name", "VoltageDomain", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "VoltageDomain" });
 		addAnnotation(getFrequencyVoltageSet_OperatingPointSet(), source,
-				new String[] { "kind", "element", "name", "OperatingPointSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "OperatingPointSet" });
 		addAnnotation(functionalUnitEClass, source, new String[] { "name", "FunctionalUnit", "kind", "elementOnly" });
-		addAnnotation(getFunctionalUnit_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+		addAnnotation(getFunctionalUnit_Name(), source, new String[] { "kind", "attribute", "name", "name" });
 		addAnnotation(getFunctionalUnit_Instruction(), source,
-				new String[] { "kind", "element", "name", "Instruction", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "Instruction" });
 		addAnnotation(getFunctionalUnit_CustomInstruction(), source,
-				new String[] { "kind", "element", "name", "CustomInstruction", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "CustomInstruction" });
 		addAnnotation(functionalUnitSetEClass, source,
 				new String[] { "name", "FunctionalUnitSet", "kind", "elementOnly" });
 		addAnnotation(getFunctionalUnitSet_FunctionalUnit(), source,
-				new String[] { "kind", "element", "name", "FunctionalUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FunctionalUnit" });
 		addAnnotation(functionalUnitSetFileEClass, source,
 				new String[] { "name", "FunctionalUnitSetFile", "kind", "elementOnly" });
-		addAnnotation(getFunctionalUnitSetFile_Src(), source,
-				new String[] { "kind", "attribute", "name", "src", "namespace", "##targetNamespace" });
+		addAnnotation(getFunctionalUnitSetFile_Src(), source, new String[] { "kind", "attribute", "name", "src" });
 		addAnnotation(instructionEClass, source, new String[] { "name", "Instruction", "kind", "elementOnly" });
 		addAnnotation(getInstruction_ImmediateBitWidth(), source,
-				new String[] { "kind", "attribute", "name", "immediateBitWidth", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "immediateBitWidth" });
 		addAnnotation(getInstruction_InputBitWidth(), source,
-				new String[] { "kind", "attribute", "name", "inputBitWidth", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "inputBitWidth" });
 		addAnnotation(getInstruction_InputPreserved(), source,
-				new String[] { "kind", "attribute", "name", "inputPreserved", "namespace", "##targetNamespace" });
-		addAnnotation(getInstruction_IsEmulated(), source,
-				new String[] { "kind", "attribute", "name", "isEmulated", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "inputPreserved" });
+		addAnnotation(getInstruction_IsEmulated(), source, new String[] { "kind", "attribute", "name", "isEmulated" });
 		addAnnotation(getInstruction_OperandAddressing(), source,
-				new String[] { "kind", "attribute", "name", "operandAddressing", "namespace", "##targetNamespace" });
-		addAnnotation(getInstruction_Operation(), source,
-				new String[] { "kind", "attribute", "name", "operation", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "operandAddressing" });
+		addAnnotation(getInstruction_Operation(), source, new String[] { "kind", "attribute", "name", "operation" });
 		addAnnotation(getInstruction_OutputBitWidth(), source,
-				new String[] { "kind", "attribute", "name", "outputBitWidth", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "outputBitWidth" });
 		addAnnotation(getInstruction_SupportedSignedness(), source,
-				new String[] { "kind", "attribute", "name", "supportedSignedness", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "supportedSignedness" });
 		addAnnotation(instructionInputEClass, source,
 				new String[] { "name", "InstructionInput", "kind", "elementOnly" });
-		addAnnotation(getInstructionInput_Type(), source,
-				new String[] { "kind", "attribute", "name", "type", "namespace", "##targetNamespace" });
-		addAnnotation(getInstructionInput_BitWidth(), source,
-				new String[] { "kind", "attribute", "name", "bitWidth", "namespace", "##targetNamespace" });
-		addAnnotation(getInstructionInput_Value(), source,
-				new String[] { "kind", "attribute", "name", "value", "namespace", "##targetNamespace" });
+		addAnnotation(getInstructionInput_Type(), source, new String[] { "kind", "attribute", "name", "type" });
+		addAnnotation(getInstructionInput_BitWidth(), source, new String[] { "kind", "attribute", "name", "bitWidth" });
+		addAnnotation(getInstructionInput_Value(), source, new String[] { "kind", "attribute", "name", "value" });
 		addAnnotation(instructionInputTypeEEnum, source, new String[] { "name", "InstructionInputType" });
 		addAnnotation(instructionInputTypeObjectEDataType, source,
 				new String[] { "name", "InstructionInputType:Object", "baseType", "InstructionInputType" });
 		addAnnotation(instructionOperationEClass, source,
 				new String[] { "name", "InstructionOperation", "kind", "elementOnly" });
 		addAnnotation(getInstructionOperation_Operation(), source,
-				new String[] { "kind", "attribute", "name", "operation", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "operation" });
 		addAnnotation(getInstructionOperation_InstructionOperand(), source,
-				new String[] { "kind", "element", "name", "InstructionOperand", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "InstructionOperand" });
 		addAnnotation(instructionOutputEClass, source,
 				new String[] { "name", "InstructionOutput", "kind", "elementOnly" });
-		addAnnotation(getInstructionOutput_Type(), source,
-				new String[] { "kind", "attribute", "name", "type", "namespace", "##targetNamespace" });
+		addAnnotation(getInstructionOutput_Type(), source, new String[] { "kind", "attribute", "name", "type" });
 		addAnnotation(getInstructionOutput_BitWidth(), source,
-				new String[] { "kind", "attribute", "name", "bitWidth", "namespace", "##targetNamespace" });
-		addAnnotation(getInstructionOutput_Ref(), source,
-				new String[] { "kind", "attribute", "name", "ref", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "bitWidth" });
+		addAnnotation(getInstructionOutput_Ref(), source, new String[] { "kind", "attribute", "name", "ref" });
 		addAnnotation(instructionOutputTypeEEnum, source, new String[] { "name", "InstructionOutputType" });
 		addAnnotation(instructionOutputTypeObjectEDataType, source,
 				new String[] { "name", "InstructionOutputType:Object", "baseType", "InstructionOutputType" });
@@ -5040,75 +4992,62 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(lockDownTypeObjectEDataType, source,
 				new String[] { "name", "LockDownType:Object", "baseType", "LockDownType" });
 		addAnnotation(masterComponentEClass, source, new String[] { "name", "MasterComponent", "kind", "elementOnly" });
-		addAnnotation(getMasterComponent_CacheRef(), source,
-				new String[] { "kind", "element", "name", "CacheRef", "namespace", "##targetNamespace" });
+		addAnnotation(getMasterComponent_CacheRef(), source, new String[] { "kind", "element", "name", "CacheRef" });
 		addAnnotation(getMasterComponent_AccessTypeSet(), source,
-				new String[] { "kind", "element", "name", "AccessTypeSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "AccessTypeSet" });
 		addAnnotation(getMasterComponent_ClockFrequency(), source,
-				new String[] { "kind", "element", "name", "ClockFrequency", "namespace", "##targetNamespace" });
-		addAnnotation(getMasterComponent_Arch(), source,
-				new String[] { "kind", "attribute", "name", "arch", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ClockFrequency" });
+		addAnnotation(getMasterComponent_Arch(), source, new String[] { "kind", "attribute", "name", "arch" });
 		addAnnotation(getMasterComponent_ArchOption(), source,
-				new String[] { "kind", "attribute", "name", "archOption", "namespace", "##targetNamespace" });
-		addAnnotation(getMasterComponent_Endian(), source,
-				new String[] { "kind", "attribute", "name", "endian", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "archOption" });
+		addAnnotation(getMasterComponent_Endian(), source, new String[] { "kind", "attribute", "name", "endian" });
 		addAnnotation(getMasterComponent_MasterType(), source,
-				new String[] { "kind", "attribute", "name", "masterType", "namespace", "##targetNamespace" });
-		addAnnotation(getMasterComponent_NChannel(), source,
-				new String[] { "kind", "attribute", "name", "nChannel", "namespace", "##targetNamespace" });
-		addAnnotation(getMasterComponent_NThread(), source,
-				new String[] { "kind", "attribute", "name", "nThread", "namespace", "##targetNamespace" });
-		addAnnotation(getMasterComponent_Pid(), source,
-				new String[] { "kind", "attribute", "name", "pid", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "masterType" });
+		addAnnotation(getMasterComponent_NChannel(), source, new String[] { "kind", "attribute", "name", "nChannel" });
+		addAnnotation(getMasterComponent_NThread(), source, new String[] { "kind", "attribute", "name", "nThread" });
+		addAnnotation(getMasterComponent_Pid(), source, new String[] { "kind", "attribute", "name", "pid" });
 		addAnnotation(getMasterComponent_CommonInstructionSet(), source,
-				new String[] { "kind", "element", "name", "CommonInstructionSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "CommonInstructionSet" });
 		addAnnotation(masterSlaveBindingEClass, source,
 				new String[] { "name", "MasterSlaveBinding", "kind", "elementOnly" });
-		addAnnotation(getMasterSlaveBinding_Accessor(), source,
-				new String[] { "kind", "element", "name", "Accessor", "namespace", "##targetNamespace" });
+		addAnnotation(getMasterSlaveBinding_Accessor(), source, new String[] { "kind", "element", "name", "Accessor" });
 		addAnnotation(getMasterSlaveBinding_SlaveComponentRef(), source,
-				new String[] { "kind", "attribute", "name", "slaveComponentRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "slaveComponentRef" });
 		addAnnotation(masterSlaveBindingSetEClass, source,
 				new String[] { "name", "MasterSlaveBindingSet", "kind", "elementOnly" });
 		addAnnotation(getMasterSlaveBindingSet_MasterSlaveBinding(), source,
-				new String[] { "kind", "element", "name", "MasterSlaveBinding", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "MasterSlaveBinding" });
 		addAnnotation(masterTypeEEnum, source, new String[] { "name", "MasterType" });
 		addAnnotation(masterTypeObjectEDataType, source,
 				new String[] { "name", "MasterType:Object", "baseType", "MasterType" });
 		addAnnotation(memoryConsistencyModelEClass, source,
 				new String[] { "name", "MemoryConsistencyModel", "kind", "empty" });
 		addAnnotation(getMemoryConsistencyModel_RawOrdering(), source,
-				new String[] { "kind", "attribute", "name", "rawOrdering", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "rawOrdering" });
 		addAnnotation(getMemoryConsistencyModel_WarOrdering(), source,
-				new String[] { "kind", "attribute", "name", "warOrdering", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "warOrdering" });
 		addAnnotation(getMemoryConsistencyModel_WawOrdering(), source,
-				new String[] { "kind", "attribute", "name", "wawOrdering", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "wawOrdering" });
 		addAnnotation(getMemoryConsistencyModel_RarOrdering(), source,
-				new String[] { "kind", "attribute", "name", "rarOrdering", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "rarOrdering" });
 		addAnnotation(operandAddressingTypeEEnum, source, new String[] { "name", "OperandAddressingType" });
 		addAnnotation(operandAddressingTypeObjectEDataType, source,
 				new String[] { "name", "OperandAddressingType:Object", "baseType", "OperandAddressingType" });
 		addAnnotation(operatingPointEClass, source, new String[] { "name", "OperatingPoint", "kind", "elementOnly" });
-		addAnnotation(getOperatingPoint_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getOperatingPoint_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-		addAnnotation(getOperatingPoint_Frequency(), source,
-				new String[] { "kind", "attribute", "name", "frequency", "namespace", "##targetNamespace" });
+		addAnnotation(getOperatingPoint_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getOperatingPoint_Id(), source, new String[] { "kind", "attribute", "name", "id" });
+		addAnnotation(getOperatingPoint_Frequency(), source, new String[] { "kind", "attribute", "name", "frequency" });
 		addAnnotation(getOperatingPoint_FrequencyUnit(), source,
-				new String[] { "kind", "attribute", "name", "frequencyUnit", "namespace", "##targetNamespace" });
-		addAnnotation(getOperatingPoint_Voltage(), source,
-				new String[] { "kind", "attribute", "name", "voltage", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "frequencyUnit" });
+		addAnnotation(getOperatingPoint_Voltage(), source, new String[] { "kind", "attribute", "name", "voltage" });
 		addAnnotation(getOperatingPoint_VoltageUnit(), source,
-				new String[] { "kind", "attribute", "name", "voltageUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "voltageUnit" });
 		addAnnotation(operatingPointSetEClass, source,
 				new String[] { "name", "OperatingPointSet", "kind", "elementOnly" });
-		addAnnotation(getOperatingPointSet_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getOperatingPointSet_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getOperatingPointSet_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getOperatingPointSet_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(getOperatingPointSet_OperatingPoint(), source,
-				new String[] { "kind", "element", "name", "OperatingPoint", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "OperatingPoint" });
 		addAnnotation(operationTypeEEnum, source, new String[] { "name", "OperationType" });
 		addAnnotation(operationTypeObjectEDataType, source,
 				new String[] { "name", "OperationType:Object", "baseType", "OperationType" });
@@ -5116,44 +5055,37 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(orderingTypeObjectEDataType, source,
 				new String[] { "name", "OrderingType:Object", "baseType", "OrderingType" });
 		addAnnotation(performanceEClass, source, new String[] { "name", "Performance", "kind", "elementOnly" });
+		addAnnotation(getPerformance_Pitch(), source, new String[] { "kind", "element", "name", "Pitch" });
+		addAnnotation(getPerformance_Latency(), source, new String[] { "kind", "element", "name", "Latency" });
 		addAnnotation(getPerformance_AccessTypeRef(), source,
-				new String[] { "kind", "attribute", "name", "accessTypeRef", "namespace", "##targetNamespace" });
-		addAnnotation(getPerformance_Pitch(), source,
-				new String[] { "kind", "element", "name", "Pitch", "namespace", "##targetNamespace" });
-		addAnnotation(getPerformance_Latency(), source,
-				new String[] { "kind", "element", "name", "Latency", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "accessTypeRef" });
 		addAnnotation(performanceSetEClass, source, new String[] { "name", "PerformanceSet", "kind", "elementOnly" });
-		addAnnotation(getPerformanceSet_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-		addAnnotation(getPerformanceSet_CacheRef(), source,
-				new String[] { "kind", "attribute", "name", "cacheRef", "namespace", "##targetNamespace" });
+		addAnnotation(getPerformanceSet_Id(), source, new String[] { "kind", "attribute", "name", "id" });
+		addAnnotation(getPerformanceSet_CacheRef(), source, new String[] { "kind", "attribute", "name", "cacheRef" });
 		addAnnotation(getPerformanceSet_Performance(), source,
-				new String[] { "kind", "element", "name", "Performance", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "Performance" });
 		addAnnotation(pitchEClass, source, new String[] { "name", "Pitch", "kind", "empty" });
 		addAnnotation(powerConfigurationEClass, source,
 				new String[] { "name", "PowerConfiguration", "kind", "elementOnly" });
-		addAnnotation(getPowerConfiguration_SystemConfigurationSrc(), source, new String[] { "kind", "attribute",
-				"name", "systemConfigurationSrc", "namespace", "##targetNamespace" });
+		addAnnotation(getPowerConfiguration_SystemConfigurationSrc(), source,
+				new String[] { "kind", "attribute", "name", "systemConfigurationSrc" });
 		addAnnotation(getPowerConfiguration_PowerConsumptionSet(), source,
-				new String[] { "kind", "element", "name", "PowerConsumptionSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PowerConsumptionSet" });
 		addAnnotation(powerConsumptionEClass, source,
 				new String[] { "name", "PowerConsumption", "kind", "elementOnly" });
 		addAnnotation(getPowerConsumption_OperatingPointRef(), source,
-				new String[] { "kind", "attribute", "name", "operatingPointRef", "namespace", "##targetNamespace" });
-		addAnnotation(getPowerConsumption_Power(), source,
-				new String[] { "kind", "attribute", "name", "power", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "operatingPointRef" });
+		addAnnotation(getPowerConsumption_Power(), source, new String[] { "kind", "attribute", "name", "power" });
 		addAnnotation(getPowerConsumption_PowerUnit(), source,
-				new String[] { "kind", "attribute", "name", "powerUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "powerUnit" });
 		addAnnotation(powerConsumptionSetEClass, source,
 				new String[] { "name", "PowerConsumptionSet", "kind", "elementOnly" });
-		addAnnotation(getPowerConsumptionSet_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getPowerConsumptionSet_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getPowerConsumptionSet_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getPowerConsumptionSet_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(getPowerConsumptionSet_PowerConsumption(), source,
-				new String[] { "kind", "element", "name", "PowerConsumption", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PowerConsumption" });
 		addAnnotation(getPowerConsumptionSet_PowerConsumerRef(), source,
-				new String[] { "kind", "element", "name", "PowerConsumerRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PowerConsumerRef" });
 		addAnnotation(powerUnitTypeEEnum, source, new String[] { "name", "PowerUnitType" });
 		addAnnotation(powerUnitTypeObjectEDataType, source,
 				new String[] { "name", "PowerUnitType:Object", "baseType", "PowerUnitType" });
@@ -5162,30 +5094,30 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(sharedMemoryCommunicationEClass, source,
 				new String[] { "name", "SharedMemoryCommunication", "kind", "elementOnly" });
 		addAnnotation(getSharedMemoryCommunication_OperationType(), source,
-				new String[] { "kind", "attribute", "name", "operationType", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "operationType" });
 		addAnnotation(getSharedMemoryCommunication_DataSize(), source,
-				new String[] { "kind", "attribute", "name", "dataSize", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSize" });
 		addAnnotation(getSharedMemoryCommunication_DataSizeUnit(), source,
-				new String[] { "kind", "attribute", "name", "dataSizeUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSizeUnit" });
 		addAnnotation(getSharedMemoryCommunication_AddressSpaceRef(), source,
-				new String[] { "kind", "attribute", "name", "addressSpaceRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "addressSpaceRef" });
 		addAnnotation(getSharedMemoryCommunication_SubSpaceRef(), source,
-				new String[] { "kind", "attribute", "name", "subSpaceRef", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "subSpaceRef" });
 		addAnnotation(sharedRegisterCommunicationEClass, source,
 				new String[] { "name", "SharedRegisterCommunication", "kind", "elementOnly" });
 		addAnnotation(getSharedRegisterCommunication_DataSize(), source,
-				new String[] { "kind", "attribute", "name", "dataSize", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSize" });
 		addAnnotation(getSharedRegisterCommunication_DataSizeUnit(), source,
-				new String[] { "kind", "attribute", "name", "dataSizeUnit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "dataSizeUnit" });
 		addAnnotation(getSharedRegisterCommunication_NRegister(), source,
-				new String[] { "kind", "attribute", "name", "nRegister", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "nRegister" });
 		addAnnotation(shimEClass, source, new String[] { "name", "Shim", "kind", "elementOnly" });
 		addAnnotation(getShim_SystemConfiguration(), source,
-				new String[] { "kind", "element", "name", "SystemConfiguration", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "SystemConfiguration" });
 		addAnnotation(getShim_PowerConfiguration(), source,
-				new String[] { "kind", "element", "name", "PowerConfiguration", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "PowerConfiguration" });
 		addAnnotation(getShim_FunctionalUnitSet(), source,
-				new String[] { "kind", "element", "name", "FunctionalUnitSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FunctionalUnitSet" });
 		addAnnotation(signednessTypeEEnum, source, new String[] { "name", "SignednessType" });
 		addAnnotation(signednessTypeObjectEDataType, source,
 				new String[] { "name", "SignednessType:Object", "baseType", "SignednessType" });
@@ -5193,46 +5125,36 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(sizeUnitTypeObjectEDataType, source,
 				new String[] { "name", "SizeUnitType:Object", "baseType", "SizeUnitType" });
 		addAnnotation(slaveComponentEClass, source, new String[] { "name", "SlaveComponent", "kind", "empty" });
-		addAnnotation(getSlaveComponent_Size(), source,
-				new String[] { "kind", "attribute", "name", "size", "namespace", "##targetNamespace" });
-		addAnnotation(getSlaveComponent_SizeUnit(), source,
-				new String[] { "kind", "attribute", "name", "sizeUnit", "namespace", "##targetNamespace" });
-		addAnnotation(getSlaveComponent_RwType(), source,
-				new String[] { "kind", "attribute", "name", "rwType", "namespace", "##targetNamespace" });
+		addAnnotation(getSlaveComponent_Size(), source, new String[] { "kind", "attribute", "name", "size" });
+		addAnnotation(getSlaveComponent_SizeUnit(), source, new String[] { "kind", "attribute", "name", "sizeUnit" });
+		addAnnotation(getSlaveComponent_RwType(), source, new String[] { "kind", "attribute", "name", "rwType" });
 		addAnnotation(subSpaceEClass, source, new String[] { "name", "SubSpace", "kind", "elementOnly" });
-		addAnnotation(getSubSpace_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getSubSpace_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-		addAnnotation(getSubSpace_Start(), source,
-				new String[] { "kind", "attribute", "name", "start", "namespace", "##targetNamespace" });
-		addAnnotation(getSubSpace_End(), source,
-				new String[] { "kind", "attribute", "name", "end", "namespace", "##targetNamespace" });
-		addAnnotation(getSubSpace_Endian(), source,
-				new String[] { "kind", "attribute", "name", "endian", "namespace", "##targetNamespace" });
+		addAnnotation(getSubSpace_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getSubSpace_Id(), source, new String[] { "kind", "attribute", "name", "id" });
+		addAnnotation(getSubSpace_Start(), source, new String[] { "kind", "attribute", "name", "start" });
+		addAnnotation(getSubSpace_End(), source, new String[] { "kind", "attribute", "name", "end" });
+		addAnnotation(getSubSpace_Endian(), source, new String[] { "kind", "attribute", "name", "endian" });
 		addAnnotation(getSubSpace_MasterSlaveBindingSet(), source,
-				new String[] { "kind", "element", "name", "MasterSlaveBindingSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "MasterSlaveBindingSet" });
 		addAnnotation(getSubSpace_MemoryConsistencyModel(), source,
-				new String[] { "kind", "element", "name", "MemoryConsistencyModel", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "MemoryConsistencyModel" });
 		addAnnotation(systemConfigurationEClass, source,
 				new String[] { "name", "SystemConfiguration", "kind", "elementOnly" });
 		addAnnotation(getSystemConfiguration_ComponentSet(), source,
-				new String[] { "kind", "element", "name", "ComponentSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ComponentSet" });
 		addAnnotation(getSystemConfiguration_AddressSpaceSet(), source,
-				new String[] { "kind", "element", "name", "AddressSpaceSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "AddressSpaceSet" });
 		addAnnotation(getSystemConfiguration_CommunicationSet(), source,
-				new String[] { "kind", "element", "name", "CommunicationSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "CommunicationSet" });
 		addAnnotation(getSystemConfiguration_FrequencyVoltageSet(), source,
-				new String[] { "kind", "element", "name", "FrequencyVoltageSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "FrequencyVoltageSet" });
 		addAnnotation(getSystemConfiguration_ContentionGroupSet(), source,
-				new String[] { "kind", "element", "name", "ContentionGroupSet", "namespace", "##targetNamespace" });
+				new String[] { "kind", "element", "name", "ContentionGroupSet" });
 		addAnnotation(throughputEClass, source, new String[] { "name", "Throughput", "kind", "elementOnly" });
 		addAnnotation(getThroughput_FrequencyDomainRef(), source,
-				new String[] { "kind", "attribute", "name", "frequencyDomainRef", "namespace", "##targetNamespace" });
-		addAnnotation(getThroughput_Value(), source,
-				new String[] { "kind", "attribute", "name", "value", "namespace", "##targetNamespace" });
-		addAnnotation(getThroughput_Unit(), source,
-				new String[] { "kind", "attribute", "name", "unit", "namespace", "##targetNamespace" });
+				new String[] { "kind", "attribute", "name", "frequencyDomainRef" });
+		addAnnotation(getThroughput_Value(), source, new String[] { "kind", "attribute", "name", "value" });
+		addAnnotation(getThroughput_Unit(), source, new String[] { "kind", "attribute", "name", "unit" });
 		addAnnotation(throughputUnitTypeEEnum, source, new String[] { "name", "ThroughputUnitType" });
 		addAnnotation(throughputUnitTypeObjectEDataType, source,
 				new String[] { "name", "ThroughputUnitType:Object", "baseType", "ThroughputUnitType" });
@@ -5245,10 +5167,8 @@ public class ShimPackageImpl extends EPackageImpl implements ShimPackage {
 		addAnnotation(unsignedIntObjectTypeEDataType, source,
 				new String[] { "name", "UnsignedIntObjectType", "minInclusive", "0" });
 		addAnnotation(voltageDomainEClass, source, new String[] { "name", "VoltageDomain", "kind", "empty" });
-		addAnnotation(getVoltageDomain_Name(), source,
-				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-		addAnnotation(getVoltageDomain_Id(), source,
-				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
+		addAnnotation(getVoltageDomain_Name(), source, new String[] { "kind", "attribute", "name", "name" });
+		addAnnotation(getVoltageDomain_Id(), source, new String[] { "kind", "attribute", "name", "id" });
 		addAnnotation(voltageUnitTypeEEnum, source, new String[] { "name", "VoltageUnitType" });
 		addAnnotation(voltageUnitTypeObjectEDataType, source,
 				new String[] { "name", "VoltageUnitType:Object", "baseType", "VoltageUnitType" });

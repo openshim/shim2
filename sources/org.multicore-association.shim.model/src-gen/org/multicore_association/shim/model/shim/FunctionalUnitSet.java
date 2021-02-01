@@ -31,7 +31,7 @@ public interface FunctionalUnitSet extends EObject {
 	 * @return the value of the '<em>Functional Unit</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getFunctionalUnitSet_FunctionalUnit()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='FunctionalUnit' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FunctionalUnit'"
 	 * @generated
 	 */
 	EList<FunctionalUnit> getFunctionalUnit();

@@ -33,7 +33,7 @@ public interface SystemConfiguration extends EObject {
 	 * @see #setComponentSet(ComponentSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSystemConfiguration_ComponentSet()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='ComponentSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ComponentSet'"
 	 * @generated
 	 */
 	ComponentSet getComponentSet();
@@ -56,7 +56,7 @@ public interface SystemConfiguration extends EObject {
 	 * @see #setAddressSpaceSet(AddressSpaceSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSystemConfiguration_AddressSpaceSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='AddressSpaceSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='AddressSpaceSet'"
 	 * @generated
 	 */
 	AddressSpaceSet getAddressSpaceSet();
@@ -79,7 +79,7 @@ public interface SystemConfiguration extends EObject {
 	 * @see #setCommunicationSet(CommunicationSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSystemConfiguration_CommunicationSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='CommunicationSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='CommunicationSet'"
 	 * @generated
 	 */
 	CommunicationSet getCommunicationSet();
@@ -102,7 +102,7 @@ public interface SystemConfiguration extends EObject {
 	 * @see #setFrequencyVoltageSet(FrequencyVoltageSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSystemConfiguration_FrequencyVoltageSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='FrequencyVoltageSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='FrequencyVoltageSet'"
 	 * @generated
 	 */
 	FrequencyVoltageSet getFrequencyVoltageSet();
@@ -125,7 +125,7 @@ public interface SystemConfiguration extends EObject {
 	 * @see #setContentionGroupSet(ContentionGroupSet)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getSystemConfiguration_ContentionGroupSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='ContentionGroupSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ContentionGroupSet'"
 	 * @generated
 	 */
 	ContentionGroupSet getContentionGroupSet();

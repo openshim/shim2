@@ -32,7 +32,7 @@ public interface ComponentSet extends AbstractComponent {
 	 * @return the value of the '<em>Component Set</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getComponentSet_ComponentSet()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='ComponentSet' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ComponentSet'"
 	 * @generated
 	 */
 	EList<ComponentSet> getComponentSet();
@@ -45,7 +45,7 @@ public interface ComponentSet extends AbstractComponent {
 	 * @return the value of the '<em>Master Component</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getComponentSet_MasterComponent()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='MasterComponent' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='MasterComponent'"
 	 * @generated
 	 */
 	EList<MasterComponent> getMasterComponent();
@@ -58,7 +58,7 @@ public interface ComponentSet extends AbstractComponent {
 	 * @return the value of the '<em>Slave Component</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getComponentSet_SlaveComponent()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='SlaveComponent' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='SlaveComponent'"
 	 * @generated
 	 */
 	EList<SlaveComponent> getSlaveComponent();
@@ -71,7 +71,7 @@ public interface ComponentSet extends AbstractComponent {
 	 * @return the value of the '<em>Cache</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getComponentSet_Cache()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Cache' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='Cache'"
 	 * @generated
 	 */
 	EList<Cache> getCache();

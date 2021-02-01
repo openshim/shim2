@@ -8,6 +8,7 @@
       <children xsi:type="menu:Menu" xmi:id="_kruvILwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file" label="File" mnemonics="F">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_Tt9mcLwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.new" label="New..." mnemonics="N" command="_V9SkwLwrEemfpteWRRjXYA"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_-vKZ0LxBEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.open" label="Open..." mnemonics="O" command="_A16q8LxCEemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_OnYUwD92EeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.menu.file.open10" label="Convert" mnemonics="P" command="_vhSqsD9uEeunZaUFjTuMyQ"/>
         <children xsi:type="menu:MenuSeparator" xmi:id="_Lja6ALxDEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menuseparator.1"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_lpdFMLw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.save" label="Save" mnemonics="S" command="_byXrULw3EemfpteWRRjXYA"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_TKu7kLxBEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.saveAs" label="Save As..." mnemonics="A" command="_byXrULw3EemfpteWRRjXYA">
@@ -42,7 +43,9 @@
   </children>
   <handlers xmi:id="_Z1b7ALwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.new" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.NewHandler" command="_V9SkwLwrEemfpteWRRjXYA"/>
   <handlers xmi:id="_JoxAoLxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.open" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.OpenHandler" command="_A16q8LxCEemfpteWRRjXYA"/>
+  <handlers xmi:id="_k0Dr8D9uEeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.handler.file.open10" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.Open10Handler" command="_vhSqsD9uEeunZaUFjTuMyQ"/>
   <handlers xmi:id="_SVVJILw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.save" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.SaveHandler" command="_byXrULw3EemfpteWRRjXYA"/>
+  <handlers xmi:id="_dj8IAA4QEeudVrxRfX771w" elementId="org.multicore_association.shim.edit.handler.file.convert" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.ConvertHandler" command="_svxuIA4SEeudVrxRfX771w"/>
   <handlers xmi:id="_SeaLoLxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.exit" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.ExitHandler" command="_A_CKsLxCEemfpteWRRjXYA"/>
   <handlers xmi:id="_7vPNkLxYEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.preferences" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.PreferencesHandler" command="_NeDYsLxZEemfpteWRRjXYA"/>
   <handlers xmi:id="_DeTLALxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.about" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.AboutHandler" command="_-zAgkLxYEemfpteWRRjXYA"/>
@@ -86,9 +89,11 @@
   <descriptors xmi:id="_XBV-kLwyEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.partdescriptor.shimEditor" bindingContexts="_s44wQLxLEemfpteWRRjXYA" allowMultiple="true" category="shimEditorCategory" closeable="true" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.gui.jface.ShimEditorPart"/>
   <commands xmi:id="_V9SkwLwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.new" commandName="New"/>
   <commands xmi:id="_A16q8LxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.open" commandName="Open"/>
+  <commands xmi:id="_vhSqsD9uEeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.command.file.open10" commandName="Open10"/>
   <commands xmi:id="_byXrULw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.save" commandName="Save">
     <parameters xmi:id="_9ZI3gLxAEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.commandparameter.saveAs" name="saveAs"/>
   </commands>
+  <commands xmi:id="_svxuIA4SEeudVrxRfX771w" elementId="org.multicore_association.shim.edit.command.file.convert" commandName="Convert"/>
   <commands xmi:id="_A_CKsLxCEemfpteWRRjXYA" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
   <commands xmi:id="_NeDYsLxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.preferences" commandName="Preferences"/>
   <commands xmi:id="_-zAgkLxYEemfpteWRRjXYA" elementId="org.eclipse.ui.help.aboutAction" commandName="About"/>

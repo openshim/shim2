@@ -33,7 +33,7 @@ public interface OperatingPointSet extends EObject {
 	 * @see #setName(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPointSet_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
 	String getName();
@@ -56,7 +56,7 @@ public interface OperatingPointSet extends EObject {
 	 * @see #setId(String)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPointSet_Id()
 	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='id'"
 	 * @generated
 	 */
 	String getId();
@@ -79,7 +79,7 @@ public interface OperatingPointSet extends EObject {
 	 * @return the value of the '<em>Operating Point</em>' containment reference list.
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getOperatingPointSet_OperatingPoint()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='OperatingPoint' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='OperatingPoint'"
 	 * @generated
 	 */
 	EList<OperatingPoint> getOperatingPoint();

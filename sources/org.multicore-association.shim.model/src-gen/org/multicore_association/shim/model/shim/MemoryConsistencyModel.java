@@ -39,7 +39,7 @@ public interface MemoryConsistencyModel extends EObject {
 	 * @see #setRawOrdering(OrderingType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMemoryConsistencyModel_RawOrdering()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='rawOrdering' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='rawOrdering'"
 	 * @generated
 	 */
 	OrderingType getRawOrdering();
@@ -95,7 +95,7 @@ public interface MemoryConsistencyModel extends EObject {
 	 * @see #setWarOrdering(OrderingType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMemoryConsistencyModel_WarOrdering()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='warOrdering' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='warOrdering'"
 	 * @generated
 	 */
 	OrderingType getWarOrdering();
@@ -151,7 +151,7 @@ public interface MemoryConsistencyModel extends EObject {
 	 * @see #setWawOrdering(OrderingType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMemoryConsistencyModel_WawOrdering()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='wawOrdering' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='wawOrdering'"
 	 * @generated
 	 */
 	OrderingType getWawOrdering();
@@ -204,7 +204,7 @@ public interface MemoryConsistencyModel extends EObject {
 	 * @see #setRarOrdering(OrderingType)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getMemoryConsistencyModel_RarOrdering()
 	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='rarOrdering' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='rarOrdering'"
 	 * @generated
 	 */
 	OrderingType getRarOrdering();

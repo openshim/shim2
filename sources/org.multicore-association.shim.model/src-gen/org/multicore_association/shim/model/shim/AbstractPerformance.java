@@ -34,7 +34,7 @@ public interface AbstractPerformance extends EObject {
 	 * @see #setBest(Float)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractPerformance_Best()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedFloatObjectType"
-	 *        extendedMetaData="kind='attribute' name='best' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='best'"
 	 * @generated
 	 */
 	Float getBest();
@@ -82,7 +82,7 @@ public interface AbstractPerformance extends EObject {
 	 * @see #setTypical(float)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractPerformance_Typical()
 	 * @model dataType="org.multicore_association.shim.model.shim.UnsignedFloatType" required="true"
-	 *        extendedMetaData="kind='attribute' name='typical' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='typical'"
 	 * @generated
 	 */
 	float getTypical();
@@ -107,7 +107,7 @@ public interface AbstractPerformance extends EObject {
 	 * @see #setWorst(Float)
 	 * @see org.multicore_association.shim.model.shim.ShimPackage#getAbstractPerformance_Worst()
 	 * @model unsettable="true" dataType="org.multicore_association.shim.model.shim.UnsignedFloatObjectType"
-	 *        extendedMetaData="kind='attribute' name='worst' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='attribute' name='worst'"
 	 * @generated
 	 */
 	Float getWorst();
