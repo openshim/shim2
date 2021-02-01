@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_wCKRML2yEemv3PQmL74F5g" name="MasterComponentPreferences">
+  <rootEClass href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUgL2yEemv3PQmL74F5g" name="Control baseName">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUgb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUgr2yEemv3PQmL74F5g" name="Control type">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUg72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/type"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUhL2yEemv3PQmL74F5g" name="Control endian">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUhb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/endian"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUhr2yEemv3PQmL74F5g" name="Control arch">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUh72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/arch"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUiL2yEemv3PQmL74F5g" name="Control archOpt">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUib2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/archOpt"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUir2yEemv3PQmL74F5g" name="Control nChannel">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUi72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/nChannel"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUjL2yEemv3PQmL74F5g" name="Control nThread">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUjb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/nThread"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUjr2yEemv3PQmL74F5g" name="Control checkClockForMaster">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUj72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/checkClockForMaster"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wCNUkL2yEemv3PQmL74F5g" name="Control clock">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wCNUkb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/MasterComponentPreferences/clock"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

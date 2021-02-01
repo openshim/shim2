@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.multicore-association.shim10.model/src" modelPluginID="org.multicore-association.shim10.model"
+    modelName="Shim10" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Shim10.ecore</foreignModel>
+  <genPackages prefix="Shim" resource="XML" disposableProviderFactory="true" ecorePackage="Shim10.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//CacheCoherencyType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//CacheCoherencyType/SOFT"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//CacheCoherencyType/HARD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//CacheType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//CacheType/DATA"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//CacheType/INSTRUCTION"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//CacheType/UNIFIED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//EndianType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//EndianType/LITTLE"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//EndianType/BIG"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//LockDownType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//LockDownType/LINE"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//LockDownType/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//LockDownType/WAY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//MasterType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//MasterType/PU"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//MasterType/TU"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//MasterType/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//OperationType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OperationType/TAS"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OperationType/LLSC"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OperationType/CAX"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OperationType/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//OrderingType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OrderingType/ORDERD"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//OrderingType/UNORDERD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//RWType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/RW"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/WX"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/RX"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/R"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/W"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/X"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//RWType/RWX"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Shim10.ecore#//SizeUnitType">
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//SizeUnitType/KiB"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//SizeUnitType/B"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//SizeUnitType/GiB"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//SizeUnitType/MiB"/>
+      <genEnumLiterals ecoreEnumLiteral="Shim10.ecore#//SizeUnitType/TiB"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="Shim10.ecore#//CacheCoherencyTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//CacheTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//EndianTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//LockDownTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//MasterTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//OperationTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//OrderingTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//RWTypeObject"/>
+    <genDataTypes ecoreDataType="Shim10.ecore#//SizeUnitTypeObject"/>
+    <genClasses image="false" ecoreClass="Shim10.ecore#//AbstractCommunication">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//AbstractCommunication/connectionSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AbstractCommunication/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Shim10.ecore#//AbstractPerformance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AbstractPerformance/best"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AbstractPerformance/typical"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AbstractPerformance/worst"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Accessor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//Accessor/performanceSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//Accessor/masterComponentRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//AccessType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/accessByteSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/alignmentByteSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/nBurst"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AccessType/rwType"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//AccessTypeSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//AccessTypeSet/accessType"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//AddressSpace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//AddressSpace/subSpace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AddressSpace/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//AddressSpace/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//AddressSpaceSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//AddressSpaceSet/addressSpace"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Cache">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/cacheCoherency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/cacheType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/lineSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/lockDownType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/nWay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Cache/sizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//Cache/cacheRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//ClockFrequency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//ClockFrequency/clockValue"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//CommonInstructionSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommonInstructionSet/instruction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//CommonInstructionSet/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//CommunicationSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommunicationSet/sharedRegisterCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommunicationSet/sharedMemoryCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommunicationSet/eventCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommunicationSet/fIFOCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//CommunicationSet/interruptCommunication"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//ComponentSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//ComponentSet/componentSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//ComponentSet/slaveComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//ComponentSet/masterComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//ComponentSet/cache"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//ComponentSet/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Connection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//Connection/performance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//Connection/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//Connection/from"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//ConnectionSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//ConnectionSet/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/abstractCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/abstractPerformance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/accessor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/accessType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/accessTypeSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/addressSpace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/addressSpaceSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/cache"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/clockFrequency"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/commonInstructionSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/communicationSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/componentSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/connection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/connectionSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/eventCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/fIFOCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/instruction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/interruptCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/latency"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/masterComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/masterSlaveBinding"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/masterSlaveBindingSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/memoryConsistencyModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/performance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/performanceSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/pitch"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/sharedMemoryCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/sharedRegisterCommunication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/slaveComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/subSpace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//DocumentRoot/systemConfiguration"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//EventCommunication"/>
+    <genClasses ecoreClass="Shim10.ecore#//FIFOCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//FIFOCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//FIFOCommunication/dataSizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//FIFOCommunication/queueSize"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Instruction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//Instruction/performance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//Instruction/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//InterruptCommunication"/>
+    <genClasses ecoreClass="Shim10.ecore#//Latency"/>
+    <genClasses ecoreClass="Shim10.ecore#//MasterComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterComponent/commonInstructionSet"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterComponent/Cache"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterComponent/clockFrequency"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterComponent/accessTypeSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/arch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/archOption"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/endian"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/masterType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/nThread"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MasterComponent/pid"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//MasterSlaveBinding">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterSlaveBinding/accessor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//MasterSlaveBinding/slaveComponentRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//MasterSlaveBindingSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//MasterSlaveBindingSet/masterSlaveBinding"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//MemoryConsistencyModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MemoryConsistencyModel/rarOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MemoryConsistencyModel/rawOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MemoryConsistencyModel/warOrdering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//MemoryConsistencyModel/wawOrdering"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Performance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//Performance/pitch"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//Performance/latency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//Performance/accessTypeRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//PerformanceSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//PerformanceSet/performance"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//Pitch"/>
+    <genClasses ecoreClass="Shim10.ecore#//SharedMemoryCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedMemoryCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedMemoryCommunication/dataSizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedMemoryCommunication/operationType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//SharedMemoryCommunication/addressSpaceRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference Shim10.ecore#//SharedMemoryCommunication/subSpaceRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//SharedRegisterCommunication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedRegisterCommunication/dataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedRegisterCommunication/dataSizeUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SharedRegisterCommunication/nRegister"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//SlaveComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SlaveComponent/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SlaveComponent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SlaveComponent/rwType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SlaveComponent/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SlaveComponent/sizeUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//SubSpace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SubSpace/memoryConsistencyModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SubSpace/masterSlaveBindingSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SubSpace/end"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SubSpace/endian"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SubSpace/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SubSpace/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SubSpace/start"/>
+    </genClasses>
+    <genClasses ecoreClass="Shim10.ecore#//SystemConfiguration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SystemConfiguration/componentSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SystemConfiguration/communicationSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SystemConfiguration/addressSpaceSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Shim10.ecore#//SystemConfiguration/clockFrequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SystemConfiguration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Shim10.ecore#//SystemConfiguration/shimVersion"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

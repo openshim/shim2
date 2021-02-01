@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_uURzEL2yEemv3PQmL74F5g" name="AddressSpacePreferences">
+  <rootEClass href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_uUVdcL2yEemv3PQmL74F5g" name="Control numberSubSpace">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_uUVdcb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences/numberSubSpace"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_uUVdcr2yEemv3PQmL74F5g" name="Control sizeSubSpace">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_uUVdc72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences/sizeSubSpace"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_uUVddL2yEemv3PQmL74F5g" name="Control addressSpaceName">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_uUVddb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences/addressSpaceName"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_uUVddr2yEemv3PQmL74F5g" name="Control subSpaceName">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_uUVdd72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences/subSpaceName"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_uUVdeL2yEemv3PQmL74F5g" name="Control dontConnect">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_uUVdeb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AddressSpacePreferences/dontConnect"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

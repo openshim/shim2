@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ABZMEKz_EemGGP5hGlG2Ig" elementId="org.multicore_association.shim.edit.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_I5EQAK0CEemGGP5hGlG2Ig" elementId="" label="ShimEdit" width="1025" height="692">
+    <children xsi:type="basic:PartStack" xmi:id="_lolHALwtEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.partstack.main">
+      <tags>shimEditorCategory</tags>
+    </children>
+    <mainMenu xmi:id="_kVJlsLwsEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_kruvILwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file" label="File" mnemonics="F">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Tt9mcLwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.new" label="New..." mnemonics="N" command="_V9SkwLwrEemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_-vKZ0LxBEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.open" label="Open..." mnemonics="O" command="_A16q8LxCEemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_OnYUwD92EeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.menu.file.open10" label="Convert" mnemonics="P" command="_vhSqsD9uEeunZaUFjTuMyQ"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Lja6ALxDEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menuseparator.1"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lpdFMLw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.save" label="Save" mnemonics="S" command="_byXrULw3EemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_TKu7kLxBEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.file.saveAs" label="Save As..." mnemonics="A" command="_byXrULw3EemfpteWRRjXYA">
+          <parameters xmi:id="_xY6xcLxBEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.parameter.saveAs" name="org.multicore_association.shim.edit.commandparameter.saveAs" value="true"/>
+        </children>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_oKig4LxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__fxXYLxBEemfpteWRRjXYA" elementId="" label="Exit" mnemonics="X" command="_A_CKsLxCEemfpteWRRjXYA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_bFU5sLzoEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.menu.edit" label="Edit" mnemonics="E">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_etpEMLzoEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.menu.edit.cut" label="Cut" mnemonics="T" command="_GPimEL12Eemv3PQmL74F5g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_EwoYEL12Eemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.menu.edit.copy" label="Copy" mnemonics="C" command="_gCgCQL2AEemv3PQmL74F5g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_EzdCkL12Eemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.menu.edit.paste" label="Paste" mnemonics="P" command="_gEwFAL2AEemv3PQmL74F5g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_E5HlsL12Eemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.menu.edit.cut" label="Delete" mnemonics="D" command="_gGz6gL2AEemv3PQmL74F5g"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_C3nbULyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.shim" label="Shim" mnemonics="S">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_C1jJULyjEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.shim.renumberComponnetSet" label="Renumber Componnets..." mnemonics="N" command="_sUnCQLy-EemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ywNMsLy-EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.shim.renumberAddressSpaceSet" label="Renumber AddressSpace..." mnemonics="N" command="_NLXjELyiEemfpteWRRjXYA"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_XYisQLyjEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menuseparator.2"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_C3nbUryiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.shim.remakeAddressSpaceSet" label="Remake AddressSpaceSet..." mnemonics="A" command="_Xub5MLyiEemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_C3nbUbyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.shim.remakeCommunicationSet" label="Remake CommunicationSet..." mnemonics="C" command="_XwK-kLyiEemfpteWRRjXYA"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_mU-OULyuEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menuseparator.3"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_nOkv0LyuEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.shim.elementTable" label="ElementTable" type="Check" mnemonics="E" command="_JMu3YLyvEemfpteWRRjXYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_VLNbkLyvEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.shim.search" visible="false" label="Search" type="Check" mnemonics="S" command="_JOxewLyvEemfpteWRRjXYA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_XNR3ELxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.window" label="Window" mnemonics="W">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_aMwf8LxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handledmenuitem.preferences" label="Preferences" mnemonics="P" command="_NeDYsLxZEemfpteWRRjXYA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_j8DPwLxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.menu.help" label="Help" mnemonics="H">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_j8DPwbxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handledmenuitem.about" label="About SHIM Editor" mnemonics="A" command="_-zAgkLxYEemfpteWRRjXYA"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_Z1b7ALwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.new" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.NewHandler" command="_V9SkwLwrEemfpteWRRjXYA"/>
+  <handlers xmi:id="_JoxAoLxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.open" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.OpenHandler" command="_A16q8LxCEemfpteWRRjXYA"/>
+  <handlers xmi:id="_k0Dr8D9uEeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.handler.file.open10" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.Open10Handler" command="_vhSqsD9uEeunZaUFjTuMyQ"/>
+  <handlers xmi:id="_SVVJILw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.file.save" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.SaveHandler" command="_byXrULw3EemfpteWRRjXYA"/>
+  <handlers xmi:id="_dj8IAA4QEeudVrxRfX771w" elementId="org.multicore_association.shim.edit.handler.file.convert" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.file.ConvertHandler" command="_svxuIA4SEeudVrxRfX771w"/>
+  <handlers xmi:id="_SeaLoLxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.exit" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.ExitHandler" command="_A_CKsLxCEemfpteWRRjXYA"/>
+  <handlers xmi:id="_7vPNkLxYEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.preferences" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.PreferencesHandler" command="_NeDYsLxZEemfpteWRRjXYA"/>
+  <handlers xmi:id="_DeTLALxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.about" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.AboutHandler" command="_-zAgkLxYEemfpteWRRjXYA"/>
+  <handlers xmi:id="_rK5oMLy-EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.renumberComponentSet" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.RenumberComponentSetHandler" command="_sUnCQLy-EemfpteWRRjXYA"/>
+  <handlers xmi:id="_GDzDcLyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.renumberAddressSpaceSet" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.RenumberAddressSpaceSetHandler" command="_NLXjELyiEemfpteWRRjXYA"/>
+  <handlers xmi:id="_XL-FULyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.remakeAddressSpaceSet" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.RemakeAddressSpaceSetHandler" command="_Xub5MLyiEemfpteWRRjXYA"/>
+  <handlers xmi:id="_XXAQoLyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.remakeCommunicationSet" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.RemakeCommunicationSetHandler" command="_XwK-kLyiEemfpteWRRjXYA"/>
+  <handlers xmi:id="_POQU8LyvEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.toggleElementTable" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.ToggleElementTableHandler" command="_JMu3YLyvEemfpteWRRjXYA"/>
+  <handlers xmi:id="_PPww0LyvEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.handler.shim.toggleSearch" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.shim.ToggleSearchHandler" command="_JOxewLyvEemfpteWRRjXYA"/>
+  <handlers xmi:id="_I1vMQL12Eemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.handler.edit.cut" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.edit.CutHandler" command="_GPimEL12Eemv3PQmL74F5g"/>
+  <handlers xmi:id="_fZLYcL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.handler.edit.copy" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.edit.CopyHandler" command="_gCgCQL2AEemv3PQmL74F5g"/>
+  <handlers xmi:id="_fboPgL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.handler.edit.paste" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.edit.PasteHandler" command="_gEwFAL2AEemv3PQmL74F5g"/>
+  <handlers xmi:id="_ff2BIL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.handler.edit.delete" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.handler.edit.DeleteHandler" command="_gGz6gL2AEemv3PQmL74F5g"/>
+  <bindingTables xmi:id="_VhVfMLxEEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.bindingtable.shimEdit" bindingContext="_s44wQLxLEemfpteWRRjXYA">
+    <bindings xmi:id="_2wz70LxEEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.keybinding.new" keySequence="M1+N" command="_V9SkwLwrEemfpteWRRjXYA">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_229nILxEEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.keybinding.open" keySequence="M1+O" command="_A16q8LxCEemfpteWRRjXYA">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_hfeZQLxREemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.keybinding.save" keySequence="M1+S" command="_byXrULw3EemfpteWRRjXYA">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6uzs0L2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.keybinding.cut" keySequence="M1+X" command="_GPimEL12Eemv3PQmL74F5g">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6w3iUL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.keybinding.copy" keySequence="M1+C" command="_gCgCQL2AEemv3PQmL74F5g">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6zRWEL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.keybinding.paste" keySequence="M1+V" command="_gEwFAL2AEemv3PQmL74F5g">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_BV2SQL2BEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.keybinding.delete" keySequence="DELETE" command="_gGz6gL2AEemv3PQmL74F5g">
+      <tags>type:user</tags>
+    </bindings>
+  </bindingTables>
+  <rootContext xmi:id="_g-uoMLxHEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.contexts.dialogAndWindow" name="Windows and Dialogs">
+    <children xmi:id="_sw4q0LxLEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.contexts.dialog" name="Dialogs"/>
+    <children xmi:id="_s44wQLxLEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.contexts.window" name="Windows"/>
+  </rootContext>
+  <descriptors xmi:id="_XBV-kLwyEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.partdescriptor.shimEditor" bindingContexts="_s44wQLxLEemfpteWRRjXYA" allowMultiple="true" category="shimEditorCategory" closeable="true" contributionURI="bundleclass://org.multicore-association.shim.edit/org.multicore_association.shim.edit.gui.jface.ShimEditorPart"/>
+  <commands xmi:id="_V9SkwLwrEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.new" commandName="New"/>
+  <commands xmi:id="_A16q8LxCEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.open" commandName="Open"/>
+  <commands xmi:id="_vhSqsD9uEeunZaUFjTuMyQ" elementId="org.multicore-association.shim.edit.command.file.open10" commandName="Open10"/>
+  <commands xmi:id="_byXrULw3EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.file.save" commandName="Save">
+    <parameters xmi:id="_9ZI3gLxAEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.commandparameter.saveAs" name="saveAs"/>
+  </commands>
+  <commands xmi:id="_svxuIA4SEeudVrxRfX771w" elementId="org.multicore_association.shim.edit.command.file.convert" commandName="Convert"/>
+  <commands xmi:id="_A_CKsLxCEemfpteWRRjXYA" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_NeDYsLxZEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.preferences" commandName="Preferences"/>
+  <commands xmi:id="_-zAgkLxYEemfpteWRRjXYA" elementId="org.eclipse.ui.help.aboutAction" commandName="About"/>
+  <commands xmi:id="_sUnCQLy-EemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.renumberComponentSet" commandName="Renumber ComponnetSet"/>
+  <commands xmi:id="_NLXjELyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.renumberAddressSpaceSet" commandName="Renumber AddressSpaceSet"/>
+  <commands xmi:id="_Xub5MLyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.remakeAddressSpaceSet" commandName="Remake AddressSpaceSet"/>
+  <commands xmi:id="_XwK-kLyiEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.remakeCommunicationSet" commandName="Remake CommunicationSet"/>
+  <commands xmi:id="_JMu3YLyvEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.toggleElementTable" commandName="Toggle ElementTable"/>
+  <commands xmi:id="_JOxewLyvEemfpteWRRjXYA" elementId="org.multicore_association.shim.edit.command.shim.toggleSearch" commandName="Toggle Search"/>
+  <commands xmi:id="_GPimEL12Eemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.command.edit.cut" commandName="Cut"/>
+  <commands xmi:id="_gCgCQL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.command.edit.copy" commandName="Copy"/>
+  <commands xmi:id="_gEwFAL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.command.edit.paste" commandName="Paste"/>
+  <commands xmi:id="_gGz6gL2AEemv3PQmL74F5g" elementId="org.multicore_association.shim.edit.command.edit.delete" commandName="Delete"/>
+  <addons xmi:id="_ABZMEaz_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_ABZMEqz_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_ABZME6z_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_ABZMFKz_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_ABZMFaz_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_ABZMFqz_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_ABZMF6z_EemGGP5hGlG2Ig" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

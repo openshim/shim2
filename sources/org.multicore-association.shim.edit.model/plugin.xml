@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated app -->
+      <package
+            uri="http://multicore-association.org/shimApp"
+            class="org.multicore_association.shim.edit.model.app.AppPackage"
+            genModel="model/app.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated app -->
+      <package
+            uri="http://multicore-association.org/shimAppPreferences"
+            class="org.multicore_association.shim.edit.model.app.preferences.PreferencesPackage"
+            genModel="model/app.genmodel"/>
+   </extension>
+
+</plugin>

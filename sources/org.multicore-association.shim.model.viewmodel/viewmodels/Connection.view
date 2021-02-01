@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_W9eBwLNLEemWLecWRnNqng" name="Connection">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//Connection"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_Qz87MLthEemaAKF4TnPa2g" name="Connection">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_W9hsIrNLEemWLecWRnNqng" name="Control from">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_W9hsI7NLEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//Connection/from"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_W9hsJLNLEemWLecWRnNqng" name="Control to">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_W9hsJbNLEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//Connection/to"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

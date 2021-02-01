@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmlns:org.eclipse.emf.ecp.view.table.model="http://org/eclipse/emf/ecp/view/table/model/150" xmi:id="_k0GmYLLHEemiUsUi6LVRJQ" name="ConnectionSet">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//ConnectionSet"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.table.model:TableControl" xmi:id="_lYwyoLLHEemiUsUi6LVRJQ" name="connection" readonly="true" addRemoveDisabled="true">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.table.model:TableDomainModelReference" xmi:id="_pKzg4LLHEemiUsUi6LVRJQ">
+      <columnDomainModelReferences xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_qEOcMLLHEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//Connection/from"/>
+      </columnDomainModelReferences>
+      <columnDomainModelReferences xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_rC31wLLHEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//Connection/to"/>
+      </columnDomainModelReferences>
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_pKzg4bLHEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//ConnectionSet/connection"/>
+      </domainModelReference>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

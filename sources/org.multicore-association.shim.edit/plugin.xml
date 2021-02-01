@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+       
+    <extension id="application" point="org.eclipse.core.runtime.applications">
+              
+        <application cardinality="singleton-global" thread="main" visible="true">
+                     
+            <run class="org.multicore_association.shim.edit.gui.jface.SHIMEditJFaceApplicationWindow">
+         </run>
+                  
+        </application>
+           
+    </extension>
+       
+    <extension id="product" point="org.eclipse.core.runtime.products">
+              
+        <product application="org.eclipse.e4.ui.workbench.swt.E4Application" name="ShimEdit">
+                     
+            <property name="appName" value="ShimEdit">
+         </property>
+                     
+            <property name="cssTheme" value="org.multicore_association.shim.edit.themes.default">
+         </property>
+                  
+        </product>
+           
+    </extension>
+       
+    <extension point="org.eclipse.e4.ui.css.swt.theme">
+              
+        <theme basestylesheeturi="css/default.css" id="org.multicore_association.shim.edit.themes.default" label="Base Theme">
+      </theme>
+           
+    </extension>
+    
+    <extension point="org.eclipse.emf.ecp.view.model.provider.xmi.file">
+        
+        <file filePath="viewmodels/app/preferences/AccessTypePreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/AddressSpacePreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/CacheDataPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/CommunicationSetPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/ComponentSetPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/ComponentsPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/LatencyPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/MasterComponentPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/PitchPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/SavePolicyPreferences.view"/>
+        
+        <file filePath="viewmodels/app/preferences/SlaveComponentPreferences.view"/>
+        
+        <file filePath="viewmodels/app/AccessTypeWizardPageData.view"/>
+        
+        <file filePath="viewmodels/app/AddressSpaceParameterWizardPageData.view"/>
+        
+        <file filePath="viewmodels/app/CacheWizardPageData.view"/>
+        
+        <file filePath="viewmodels/app/CommunicationSetWizardPageData.view"/>
+        
+        <file filePath="viewmodels/app/ComponentParameterWizardPageData.view"/>
+        
+    </extension>
+    
+    <extension point="org.eclipse.emf.ecp.view.template">
+        <viewTemplate xmi="viewmodels/app/preferences/new_file.template"/>
+    </extension>
+</plugin>

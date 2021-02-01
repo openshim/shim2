@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_w7OAIL2yEemv3PQmL74F5g" name="SlaveComponentPreferences">
+  <rootEClass href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_w7RqgL2yEemv3PQmL74F5g" name="Control baseName">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_w7Rqgb2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_1grlcL_NEemqZ6BN_GZ5aQ">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_w7Rqgr2yEemv3PQmL74F5g" name="Control size">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_w7Rqg72yEemv3PQmL74F5g">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/size"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_w7RqhL2yEemv3PQmL74F5g" name="Control sizeUnit" labelAlignment="None">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_w7Rqhb2yEemv3PQmL74F5g">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/sizeUnit"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_w7Rqhr2yEemv3PQmL74F5g" name="Control rwType">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_w7Rqh72yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SlaveComponentPreferences/rwType"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

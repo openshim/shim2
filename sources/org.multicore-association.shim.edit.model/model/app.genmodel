@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.multicore-association.shim.edit.model/src-gen"
+    creationCommands="false" creationIcons="false" editDirectory="/org.multicore-association.shim.edit.model.edit/src-gen"
+    editorDirectory="/org.multicore-association.shim.edit.model.editor/src-gen" modelPluginID="org.multicore-association.shim.edit.model"
+    modelName="App" editPluginClass="org.multicore_association.shim.edit.model.shim.provider.ShimEditPlugin"
+    editorPluginClass="" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" editPluginID="org.multicore-association.shim.edit.model.edit"
+    usedGenPackages="../../org.multicore-association.shim.model/model/shim.genmodel#//shim"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>app.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="App" basePackage="org.multicore_association.shim.edit.model"
+      multipleEditorPages="false" generateModelWizard="false" ecorePackage="app.ecore#/">
+    <genDataTypes ecoreDataType="app.ecore#//ByteSizeListType"/>
+    <genClasses image="false" ecoreClass="app.ecore#//AbstractWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//AbstractWizardPageData/shim"/>
+    </genClasses>
+    <genClasses ecoreClass="app.ecore#//AccessTypeWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//AccessTypeWizardPageData/accessTypePreferences"/>
+    </genClasses>
+    <genClasses ecoreClass="app.ecore#//AddressSpaceParameterWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//AddressSpaceParameterWizardPageData/addressSpacePreferences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//AddressSpaceParameterWizardPageData/numberOfAddressSpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//AddressSpaceParameterWizardPageData/targetSlaveComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="app.ecore#//CacheWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//CacheWizardPageData/cacheDataPreferences"/>
+    </genClasses>
+    <genClasses ecoreClass="app.ecore#//CommunicationSetWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//CommunicationSetWizardPageData/communicationSetPreferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//CommunicationSetWizardPageData/addressSpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//CommunicationSetWizardPageData/subSpace"/>
+    </genClasses>
+    <genClasses ecoreClass="app.ecore#//ComponentParameterWizardPageData">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//ComponentParameterWizardPageData/componentsPreferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//ComponentParameterWizardPageData/masterComponentPreferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//ComponentParameterWizardPageData/slaveComponentPreferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference app.ecore#//ComponentParameterWizardPageData/componentSetPreferences"/>
+    </genClasses>
+    <nestedGenPackages prefix="Preferences" multipleEditorPages="false" generateModelWizard="false"
+        ecorePackage="app.ecore#//preferences">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="app.ecore#//preferences/CacheTypeSelect">
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/CacheTypeSelect/NONE"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/CacheTypeSelect/UNIFIED"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/CacheTypeSelect/DATA"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/CacheTypeSelect/INSTRUCTION"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/CacheTypeSelect/DATA_AND_INSTRUCTION"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="app.ecore#//preferences/SavePolicyType">
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/SavePolicyType/ALWAYS"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/SavePolicyType/ON_REQUEST"/>
+        <genEnumLiterals ecoreEnumLiteral="app.ecore#//preferences/SavePolicyType/NEVER"/>
+      </genEnums>
+      <genDataTypes ecoreDataType="app.ecore#//preferences/CacheTypeSelectObject"/>
+      <genDataTypes ecoreDataType="app.ecore#//preferences/SavePolicyTypeObject"/>
+      <genClasses image="false" ecoreClass="app.ecore#//preferences/AbstractPreferences"/>
+      <genClasses image="false" ecoreClass="app.ecore#//preferences/AbstractComponentPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AbstractComponentPreferences/baseName"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="app.ecore#//preferences/AbstractPerformancePreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AbstractPerformancePreferences/best"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AbstractPerformancePreferences/typical"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AbstractPerformancePreferences/worst"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/AccessTypePreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkR"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkW"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkRW"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkRWX"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkRX"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/checkX"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/accessByteSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AccessTypePreferences/nBurst"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/AddressSpacePreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AddressSpacePreferences/numberSubSpace"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AddressSpacePreferences/sizeSubSpace"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AddressSpacePreferences/addressSpaceName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AddressSpacePreferences/subSpaceName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/AddressSpacePreferences/dontConnect"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/CacheDataPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataPreferences/cacheType"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/CacheDataPreferences/data"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/CacheDataPreferences/instruction"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/CacheDataUnitPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/cacheCoherenecy"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/sizeUnit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/nWay"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/lineSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CacheDataUnitPreferences/lockDownType"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/CommunicationSetPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/checkInterruptCommunication"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/checkEventCommunication"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/checkFIFOCommunication"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/fifoDataSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/fifoDataSizeUnit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/queueSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/checkSharedMemoryCommunication"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/sharedMemoryDataSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/sharedMemoryDataSizeUnit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/operationType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/checkSharedRegisterCommunication"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/sharedRegisterDataSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/sharedRegisterDataSizeUnit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/nRegister"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/CommunicationSetPreferences/dontConnect"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/ComponentSetPreferences"/>
+      <genClasses ecoreClass="app.ecore#//preferences/ComponentsPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/ComponentsPreferences/systemName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/ComponentsPreferences/numberMaster"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/ComponentsPreferences/numberSlave"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/ComponentsPreferences/numberComponent"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/ComponentsPreferences/clock"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/LatencyPreferences"/>
+      <genClasses ecoreClass="app.ecore#//preferences/MasterComponentPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/type"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/endian"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/arch"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/archOpt"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/nChannel"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/nThread"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/checkClockForMaster"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/MasterComponentPreferences/clock"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/PitchPreferences"/>
+      <genClasses ecoreClass="app.ecore#//preferences/SavePolicyPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/SavePolicyPreferences/savePolicy"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/ShimPreferences">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/componentsPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/masterComponentPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/slaveComponentPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/componentSetPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/addressSpacePreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/communicationSetPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/cacheDataPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/accessTypePreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/latencyPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/pitchPreferences"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference app.ecore#//preferences/ShimPreferences/savePolicyPreferences"/>
+      </genClasses>
+      <genClasses ecoreClass="app.ecore#//preferences/SlaveComponentPreferences">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/SlaveComponentPreferences/size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/SlaveComponentPreferences/sizeUnit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute app.ecore#//preferences/SlaveComponentPreferences/rwType"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

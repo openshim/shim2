@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="app" nsURI="http://multicore-association.org/shimApp" nsPrefix="shimApp">
+  <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+    <details key="qualified" value="false"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractWizardPageData" abstract="true">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AbstractWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shim" eType="ecore:EClass ../../org.multicore-association.shim.model/model/shim.ecore#//Shim"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Shim"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AccessTypeWizardPageData" eSuperTypes="#//AbstractWizardPageData">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AccessTypeWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accessTypePreferences"
+        lowerBound="1" eType="#//preferences/AccessTypePreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="AccessTypePreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddressSpaceParameterWizardPageData"
+      eSuperTypes="#//AbstractWizardPageData">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AddressSpaceParameterWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addressSpacePreferences"
+        lowerBound="1" eType="#//preferences/AddressSpacePreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="AddressSpacePreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfAddressSpace" lowerBound="1"
+        eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="numberOfAddressSpace"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetSlaveComponent" lowerBound="1"
+        eType="ecore:EClass ../../org.multicore-association.shim.model/model/shim.ecore#//SlaveComponent">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TargetSlaveComponent"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ByteSizeListType" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ByteSizeListType"/>
+      <details key="whiteSpace" value="collapse"/>
+      <details key="pattern" value="(\d+(,\d+)*)?"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CacheWizardPageData" eSuperTypes="#//AbstractWizardPageData">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CacheWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cacheDataPreferences" lowerBound="1"
+        eType="#//preferences/CacheDataPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="CacheDataPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CommunicationSetWizardPageData" eSuperTypes="#//AbstractWizardPageData">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CommunicationSetWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="communicationSetPreferences"
+        lowerBound="1" eType="#//preferences/CommunicationSetPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="CommunicationSetPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addressSpace" lowerBound="1"
+        eType="ecore:EClass ../../org.multicore-association.shim.model/model/shim.ecore#//AddressSpace">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="AddressSpace"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSpace" lowerBound="1"
+        eType="ecore:EClass ../../org.multicore-association.shim.model/model/shim.ecore#//SubSpace">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="SubSpace"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentParameterWizardPageData" eSuperTypes="#//AbstractWizardPageData">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ComponentParameterWizardPageData"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentsPreferences"
+        lowerBound="1" eType="#//preferences/ComponentsPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ComponentsPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="masterComponentPreferences"
+        lowerBound="1" eType="#//preferences/MasterComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="MasterComponentPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="slaveComponentPreferences"
+        lowerBound="1" eType="#//preferences/SlaveComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="SlaveComponentPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentSetPreferences"
+        lowerBound="1" eType="#//preferences/ComponentSetPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ComponentSetPreferences"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eSubpackages name="preferences" nsURI="http://multicore-association.org/shimAppPreferences"
+      nsPrefix="shimAppPreferences">
+    <eClassifiers xsi:type="ecore:EClass" name="AbstractPreferences" abstract="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="AbstractPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AbstractComponentPreferences" abstract="true"
+        eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="AbstractComponentPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="baseName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="baseName"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AbstractPerformancePreferences" abstract="true"
+        eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="AbstractPerformancePreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="best" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedFloatObjectType"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="best"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="typical" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedFloatType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="typical"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="worst" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedFloatObjectType"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="worst"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AccessTypePreferences" eSuperTypes="#//preferences/AbstractComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="AccessTypePreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkR" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkR"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkW" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkW"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkRW" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkRW"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkRWX" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkRWX"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkRX" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkRX"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkX" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkX"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessByteSize" lowerBound="1"
+          eType="#//ByteSizeListType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="accessByteSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nBurst" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="nBurst"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AddressSpacePreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="AddressSpacePreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberSubSpace" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="numberSubSpace"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeSubSpace" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sizeSubSpace"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="addressSpaceName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="addressSpaceName"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="subSpaceName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="subSpaceName"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dontConnect" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="dontConnect"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CacheDataPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CacheDataPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cacheType" lowerBound="1"
+          eType="#//preferences/CacheTypeSelect">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="cacheType"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="data" lowerBound="1"
+          eType="#//preferences/CacheDataUnitPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="Data"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="instruction" lowerBound="1"
+          eType="#//preferences/CacheDataUnitPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="Instruction"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="CacheTypeSelect">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CacheTypeSelect"/>
+      </eAnnotations>
+      <eLiterals name="NONE"/>
+      <eLiterals name="UNIFIED" value="1"/>
+      <eLiterals name="DATA" value="2" literal="DATA"/>
+      <eLiterals name="INSTRUCTION" value="3"/>
+      <eLiterals name="DATA_AND_INSTRUCTION" value="4" literal="DATA_AND_INSTRUCTION"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="CacheTypeSelectObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CacheTypeSelect:Object"/>
+        <details key="baseType" value="CacheTypeSelect"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CacheDataUnitPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CacheDataUnitPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cacheCoherenecy" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//CacheCoherencyType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="cacheCoherenecy"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="size"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeUnit" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//SizeUnitType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sizeUnit"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nWay" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="nWay"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineSize" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="lineSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lockDownType" eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//LockDownType"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="lockDownType"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CommunicationSetPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CommunicationSetPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkInterruptCommunication"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkInterruptCommunication"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkEventCommunication"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkEventCommunication"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkFIFOCommunication"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkFIFOCommunication"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fifoDataSize" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="fifoDataSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fifoDataSizeUnit" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//SizeUnitType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="fifoDataSizeUnit"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="queueSize" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="queueSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkSharedMemoryCommunication"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkSharedMemoryCommunication"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sharedMemoryDataSize"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sharedMemoryDataSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sharedMemoryDataSizeUnit"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//SizeUnitType"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sharedMemoryDataSizeUnit"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="operationType" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//OperationType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="operationType"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkSharedRegisterCommunication"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkSharedRegisterCommunication"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sharedRegisterDataSize"
+          lowerBound="1" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sharedRegisterDataSize"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sharedRegisterDataSizeUnit"
+          lowerBound="1" eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//SizeUnitType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sharedRegisterDataSizeUnit"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nRegister" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="nRegister"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dontConnect" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="dontConnect"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ComponentSetPreferences" eSuperTypes="#//preferences/AbstractComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="ComponentSetPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ComponentsPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="ComponentsPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="systemName"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberMaster" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="numberMaster"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberSlave" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="numberSlave"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberComponent" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="numberComponent"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clock" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedFloatType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="clock"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LatencyPreferences" eSuperTypes="#//preferences/AbstractPerformancePreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="LatencyPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MasterComponentPreferences" eSuperTypes="#//preferences/AbstractComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MasterComponentPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//MasterType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="type"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="endian" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//EndianType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="endian"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="arch" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="arch"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="archOpt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="archOpt"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nChannel" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="nChannel"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nThread" eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntObjectType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="nThread"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="checkClockForMaster"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="checkClockForMaster"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clock" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedFloatObjectType"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="clock"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PitchPreferences" eSuperTypes="#//preferences/AbstractPerformancePreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="PitchPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SavePolicyPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SavePolicyPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="savePolicy" lowerBound="1"
+          eType="#//preferences/SavePolicyType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="savePolicy"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="SavePolicyType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SavePolicyType"/>
+      </eAnnotations>
+      <eLiterals name="ALWAYS" literal="always"/>
+      <eLiterals name="ON_REQUEST" value="1" literal="on request"/>
+      <eLiterals name="NEVER" value="2" literal="never"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="SavePolicyTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SavePolicyType:Object"/>
+        <details key="baseType" value="SavePolicyType"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ShimPreferences" eSuperTypes="#//preferences/AbstractPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="ShimPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="componentsPreferences"
+          lowerBound="1" eType="#//preferences/ComponentsPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="ComponentsPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="masterComponentPreferences"
+          lowerBound="1" eType="#//preferences/MasterComponentPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="MasterComponentPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="slaveComponentPreferences"
+          lowerBound="1" eType="#//preferences/SlaveComponentPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="SlaveComponentPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="componentSetPreferences"
+          lowerBound="1" eType="#//preferences/ComponentSetPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="ComponentSetPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="addressSpacePreferences"
+          lowerBound="1" eType="#//preferences/AddressSpacePreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="AddressSpacePreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="communicationSetPreferences"
+          lowerBound="1" eType="#//preferences/CommunicationSetPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="CommunicationSetPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cacheDataPreferences"
+          lowerBound="1" eType="#//preferences/CacheDataPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="CacheDataPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="accessTypePreferences"
+          lowerBound="1" eType="#//preferences/AccessTypePreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="AccessTypePreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="latencyPreferences" lowerBound="1"
+          eType="#//preferences/LatencyPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="LatencyPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pitchPreferences" lowerBound="1"
+          eType="#//preferences/PitchPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="PitchPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="savePolicyPreferences"
+          lowerBound="1" eType="#//preferences/SavePolicyPreferences" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="element"/>
+          <details key="name" value="SavePolicyPreferences"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SlaveComponentPreferences" eSuperTypes="#//preferences/AbstractComponentPreferences">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SlaveComponentPreferences"/>
+        <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" lowerBound="1"
+          eType="ecore:EDataType ../../org.multicore-association.shim.model/model/shim.ecore#//UnsignedIntType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="size"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeUnit" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//SizeUnitType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="sizeUnit"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rwType" lowerBound="1"
+          eType="ecore:EEnum ../../org.multicore-association.shim.model/model/shim.ecore#//RWType">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="rwType"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

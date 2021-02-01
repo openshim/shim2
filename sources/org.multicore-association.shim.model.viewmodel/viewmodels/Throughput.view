@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_XlqrYLXWEemw-7j0htsiAA" name="Throughput">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//Throughput"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_oXDZILthEemaAKF4TnPa2g" name="Throughput">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_XluVwLXWEemw-7j0htsiAA" name="Control frequencyDomainRef">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_XluVwbXWEemw-7j0htsiAA">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//Throughput/frequencyDomainRef"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_A5Tx8L_LEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_XluVwrXWEemw-7j0htsiAA" name="Control value">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_XluVw7XWEemw-7j0htsiAA">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//Throughput/value"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_XluVxLXWEemw-7j0htsiAA" name="Control unit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_XluVxbXWEemw-7j0htsiAA">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//Throughput/unit"/>
+        </domainModelReference>
+      </children>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

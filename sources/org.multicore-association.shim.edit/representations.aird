@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_Z_CYwEWFEeu0SbEsBpEKqA" version="14.1.0.201810161215">
+  <semanticResources>Application.e4xmi</semanticResources>
+  <semanticResources>viewmodels/app/AccessTypeWizardPageData.view</semanticResources>
+  <semanticResources>viewmodels/app/AddressSpaceParameterWizardPageData.view</semanticResources>
+  <semanticResources>viewmodels/app/CacheWizardPageData.view</semanticResources>
+  <semanticResources>viewmodels/app/CommunicationSetWizardPageData.view</semanticResources>
+  <semanticResources>viewmodels/app/ComponentParameterWizardPageData.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/AccessTypePreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/AddressSpacePreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/CacheDataPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/CommunicationSetPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/ComponentSetPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/ComponentsPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/LatencyPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/MasterComponentPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/PitchPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/SavePolicyPreferences.view</semanticResources>
+  <semanticResources>viewmodels/app/preferences/SlaveComponentPreferences.view</semanticResources>
+</viewpoint:DAnalysis>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shim:Shim xmlns:shim="http://www.multicore-association.org/2017/SHIM2.0/" shim:name="System" shim:shimVersion="2.0">
+  <shim:SystemConfiguration>
+    <shim:ComponentSet shim:name="Cluster_0">
+      <shim:ComponentSet shim:name="Cluster_0_0">
+        <shim:MasterComponent shim:name="Core_0_0_0" shim:id="MC_SHIMEDITOR2020022622131589116291055380104" shim:arch="Generic" shim:endian="LITTLE" shim:masterType="PU" shim:nThread="1" shim:pid="0">
+          <shim:CacheRef>#//@systemConfiguration/@componentSet/@componentSet.0/@cache.0</shim:CacheRef>
+          <shim:AccessTypeSet>
+            <shim:AccessType shim:name="AT_0_0_0_0" shim:id="AT_SHIMEDITOR2020022622131600318039773227377" shim:rwType="R" shim:accessByteSize="4" shim:alignmentByteSize="4" shim:nBurst="8"/>
+            <shim:AccessType shim:name="AT_0_0_0_1" shim:id="AT_SHIMEDITOR2020022622131600410096380128009" shim:rwType="R" shim:accessByteSize="8" shim:alignmentByteSize="8" shim:nBurst="8"/>
+            <shim:AccessType shim:name="AT_0_0_0_2" shim:id="AT_SHIMEDITOR2020022622131600400792970711512" shim:rwType="W" shim:accessByteSize="4" shim:alignmentByteSize="4" shim:nBurst="8"/>
+            <shim:AccessType shim:name="AT_0_0_0_3" shim:id="AT_SHIMEDITOR2020022622131600418371635374317" shim:rwType="W" shim:accessByteSize="8" shim:alignmentByteSize="8" shim:nBurst="8"/>
+          </shim:AccessTypeSet>
+          <shim:CommonInstructionSet shim:name="LLVM Instructions">
+            <shim:FunctionalUnitSet>
+              <shim:FunctionalUnit>
+                <shim:Instruction shim:name="ret">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="br">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="switch">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="indirectbr">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="invoke">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="resume">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="unreachable">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="add">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fadd">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="sub">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fsub">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="mul">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fmul">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="udiv">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="sdiv">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fdiv">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="urem">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="srem">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="frem">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="shl">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="lshr">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="ashr">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="and">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="or">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="xor">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="extractelement">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="insertelement">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="shufflevector">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="extractivalue">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="insertvalue">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="alloca">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="load">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="store">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fence">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="cmpxchg">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="atomicrmw">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="getelementptr">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="trunc">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="zext">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="sext">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fptrunc">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fpext">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fptoui">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="uitofp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="sitofp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="ptrtoint">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="uitofp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="sitofp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="ptrtoint">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="inttoptr">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="bitcast">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="icmp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="fcmp">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="phi">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="select">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="call">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="va_arg">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+                <shim:Instruction shim:name="landingpad">
+                  <shim:Performance>
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:Instruction>
+              </shim:FunctionalUnit>
+            </shim:FunctionalUnitSet>
+          </shim:CommonInstructionSet>
+        </shim:MasterComponent>
+        <shim:SlaveComponent shim:name="Memory_0_0_0" shim:id="SC_SHIMEDITOR2020022622131589305805155436752" shim:size="128" shim:sizeUnit="KiB" shim:rwType="RW"/>
+        <shim:Cache shim:name="UnifiedCache_0_0_0" shim:cacheType="UNIFIED" shim:cacheCoherency="SOFTWARE" shim:size="64" shim:sizeUnit="KiB" shim:nWay="16" shim:lineSize="128" shim:lockDownType="LINE"/>
+      </shim:ComponentSet>
+    </shim:ComponentSet>
+    <shim:AddressSpaceSet>
+      <shim:AddressSpace shim:name="AS_0_0" shim:id="AS_SHIMEDITOR2020022622131593219313489915733">
+        <shim:SubSpace shim:name="SS_0_0_0" shim:id="SS_SHIMEDITOR2020022622131593306805843136364" shim:start="0" shim:end="127" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+        <shim:SubSpace shim:name="SS_0_0_1" shim:id="SS_SHIMEDITOR2020022622131593418570313584700" shim:start="128" shim:end="255" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+        <shim:SubSpace shim:name="SS_0_0_2" shim:id="SS_SHIMEDITOR2020022622131593419611479374651" shim:start="256" shim:end="383" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+      </shim:AddressSpace>
+      <shim:AddressSpace shim:name="AS_0" shim:id="AS_SHIMEDITOR2020022622131593206002527126063">
+        <shim:SubSpace shim:name="SS_0_0" shim:id="SS_SHIMEDITOR2020022622131593512933697378157" shim:start="0" shim:end="127" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+        <shim:SubSpace shim:name="SS_0_1" shim:id="SS_SHIMEDITOR2020022622131593516533318384057" shim:start="128" shim:end="255" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+        <shim:SubSpace shim:name="SS_0_2" shim:id="SS_SHIMEDITOR2020022622131593502045343816401" shim:start="256" shim:end="383" shim:endian="LITTLE">
+          <shim:MasterSlaveBindingSet>
+            <shim:MasterSlaveBinding shim:slaveComponentRef="#SC_SHIMEDITOR2020022622131589305805155436752">
+              <shim:Accessor shim:masterComponentRef="#MC_SHIMEDITOR2020022622131589116291055380104">
+                <shim:PerformanceSet>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600318039773227377">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600410096380128009">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600400792970711512">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                  <shim:Performance shim:accessTypeRef="#AT_SHIMEDITOR2020022622131600418371635374317">
+                    <shim:Pitch shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                    <shim:Latency shim:best="10.0" shim:typical="10.0" shim:worst="10.0"/>
+                  </shim:Performance>
+                </shim:PerformanceSet>
+              </shim:Accessor>
+            </shim:MasterSlaveBinding>
+          </shim:MasterSlaveBindingSet>
+          <shim:MemoryConsistencyModel shim:rawOrdering="ORDERED" shim:warOrdering="ORDERED" shim:wawOrdering="ORDERED" shim:rarOrdering="ORDERED"/>
+        </shim:SubSpace>
+      </shim:AddressSpace>
+    </shim:AddressSpaceSet>
+    <shim:CommunicationSet>
+      <shim:SharedMemoryCommunication shim:name="shmem_00" shim:operationType="TAS" shim:dataSize="128" shim:dataSizeUnit="KiB"/>
+      <shim:SharedRegisterCommunication shim:name="sreg_00" shim:dataSize="32" shim:dataSizeUnit="KiB" shim:nRegister="32"/>
+      <shim:EventCommunication shim:name="Event_00"/>
+      <shim:FIFOCommunication shim:name="fifo_00" shim:dataSize="64" shim:dataSizeUnit="KiB" shim:queueSize="32"/>
+      <shim:InterruptCommunication shim:name="Interrupt_00"/>
+    </shim:CommunicationSet>
+  </shim:SystemConfiguration>
+</shim:Shim>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="ShimEdit" uid="org.multicore_association.shim.edit.product" id="org.multicore-association.shim.edit.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.1.0" useFeatures="true" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState
+      </programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.multicore_association.shim.edit"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.emf.common.ui"/>
+      <feature id="org.eclipse.emf.databinding"/>
+      <feature id="org.eclipse.emf.databinding.edit"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.ecore.edit"/>
+      <feature id="org.eclipse.emf.edit"/>
+      <feature id="org.eclipse.emf.edit.ui"/>
+      <feature id="org.eclipse.emf.ecp.view.treemasterdetail.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.template.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.label.feature"/>
+      <feature id="org.eclipse.emfforms.core.bazaar.feature"/>
+      <feature id="org.eclipse.emfforms.view.annotation.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.table.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.categorization.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.group.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.vertical.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.custom.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.stack.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.compoundcontrol.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.validation.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.rule.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.unset.feature"/>
+      <feature id="org.eclipse.emf.ecp.viewmodel.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.horizontal.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.model.controls.feature"/>
+      <feature id="org.eclipse.net4j.util"/>
+      <feature id="org.eclipse.emf.ecp.e4.feature"/>
+      <feature id="org.eclipse.emf.ecp.feature"/>
+      <feature id="org.eclipse.emf.emfstore.client.ui.feature"/>
+      <feature id="org.eclipse.emf.emfstore.common.feature"/>
+      <feature id="org.eclipse.emf.emfstore.client.feature"/>
+      <feature id="org.eclipse.emf.emfstore.server.feature"/>
+   </features>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

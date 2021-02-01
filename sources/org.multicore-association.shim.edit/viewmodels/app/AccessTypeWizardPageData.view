@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_9NQtcLi4Eemq2aQw7jAXMQ" name="AccessTypeWizardPageData">
+  <rootEClass href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQP4kLi8EemLHrBtt6fUag" name="Control baseName">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_dvdtALi8EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AbstractComponentPreferences/baseName"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_kuswALi8EemLHrBtt6fUag" name="RWType" groupType="Embedded">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQQfoLi8EemLHrBtt6fUag" name="Control checkR">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQQfobi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkR"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQRGsLi8EemLHrBtt6fUag" name="Control checkW">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQRGsbi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkW"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQRtwLi8EemLHrBtt6fUag" name="Control checkRW">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQRtwbi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkRW"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQSU0Li8EemLHrBtt6fUag" name="Control checkRWX">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQSU0bi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkRWX"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQS74Li8EemLHrBtt6fUag" name="Control checkRX">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQS74bi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkRX"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQTi8Li8EemLHrBtt6fUag" name="Control checkX">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQTi8bi8EemLHrBtt6fUag">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/checkX"/>
+        <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQUKALi8EemLHrBtt6fUag" name="Control accessByteSize">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQUKAbi8EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/accessByteSize"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+    </domainModelReference>
+  </children>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_bQVYILi8EemLHrBtt6fUag" name="Control nBurst">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_bQVYIbi8EemLHrBtt6fUag">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/AccessTypePreferences/nBurst"/>
+      <domainModelEReferencePath href="http://multicore-association.org/shimApp#//AccessTypeWizardPageData/accessTypePreferences"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

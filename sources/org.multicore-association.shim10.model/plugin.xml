@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated shim10 -->
+      <package
+            uri="file:/C:/Users/scasy/Downloads/shim.xsd"
+            class="org.multicore_association.shim10.model.shim10.ShimPackage"
+            genModel="model/shim10.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated shim10 -->
+      <parser
+            type="shim"
+            class="org.multicore_association.shim10.model.shim10.util.ShimResourceFactoryImpl"/>
+   </extension>
+</plugin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_wnqK8L2yEemv3PQmL74F5g" name="SavePolicyPreferences">
+  <rootEClass href="http://multicore-association.org/shimApp#//preferences/SavePolicyPreferences"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_wnt1UL2yEemv3PQmL74F5g" name="Control savePolicy">
+    <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_wnt1Ub2yEemv3PQmL74F5g">
+      <domainModelEFeature xsi:type="ecore:EAttribute" href="http://multicore-association.org/shimApp#//preferences/SavePolicyPreferences/savePolicy"/>
+    </domainModelReference>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.edit.model/model/app.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

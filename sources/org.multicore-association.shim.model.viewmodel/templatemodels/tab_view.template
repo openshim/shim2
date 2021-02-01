@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.template.model:ViewTemplate xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.emf.ecp.view.template.model="http://org/eclipse/emf/ecp/view/template/model" xmlns:org.eclipse.emf.ecp.view.template.selector.viewmodelelement.model="http://www.eclipse.org/emf/ecp/view/template/selector/viewmodelelement/model" xmlns:org.eclipse.emf.ecp.view.template.style.background.model="http://www.eclipse.org/emf/ecp/view/template/style/background/model" xmlns:org.eclipse.emf.ecp.view.template.style.validation.model="http://www.eclipse.org/emf/ecp/view/template/style/validation/model">
+  <styles>
+    <selector xsi:type="org.eclipse.emf.ecp.view.template.selector.viewmodelelement.model:ViewModelElementSelector">
+      <classType href="http://org/eclipse/emf/ecp/view/group/model#//Group"/>
+    </selector>
+  </styles>
+  <styles>
+    <selector xsi:type="org.eclipse.emf.ecp.view.template.selector.viewmodelelement.model:ViewModelElementSelector" attributeValue="ACED00057400175F525F5A68634C5F5245656D715A36424E5F475A356151">
+      <classType href="http://org/eclipse/emf/ecp/view/categorization/model#//Category"/>
+      <attribute href="http://org/eclipse/emf/ecp/view/model/1180#//Element/uuid"/>
+    </selector>
+    <properties xsi:type="org.eclipse.emf.ecp.view.template.style.validation.model:ValidationStyleProperty" okColorHEX="ff0000" okForegroundColorHEX="ff0000"/>
+    <properties xsi:type="org.eclipse.emf.ecp.view.template.style.background.model:BackgroundStyleProperty" color="ff0000"/>
+  </styles>
+  <styles>
+    <selector xsi:type="org.eclipse.emf.ecp.view.template.selector.viewmodelelement.model:ViewModelElementSelector" attributeValue="ACED00057400175F496C637A554C677445656D5867716C65553372716577">
+      <classType href="http://org/eclipse/emf/ecp/view/group/model#//Group"/>
+      <attribute href="http://org/eclipse/emf/ecp/view/model/1180#//Element/uuid"/>
+    </selector>
+    <properties xsi:type="org.eclipse.emf.ecp.view.template.style.background.model:BackgroundStyleProperty" color="ff8000"/>
+  </styles>
+  <styles>
+    <selector xsi:type="org.eclipse.emf.ecp.view.template.selector.viewmodelelement.model:ViewModelElementSelector" attributeValue="ACED00057400175F4A357673774C677445656D5867716C65553372716577">
+      <classType href="http://org/eclipse/emf/ecp/view/group/model#//Group"/>
+      <attribute href="http://org/eclipse/emf/ecp/view/model/1180#//Element/uuid"/>
+    </selector>
+    <properties xsi:type="org.eclipse.emf.ecp.view.template.style.background.model:BackgroundStyleProperty" color="408080"/>
+  </styles>
+</org.eclipse.emf.ecp.view.template.model:ViewTemplate>
