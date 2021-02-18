@@ -72,14 +72,18 @@ Click "Import" in the "File" menu.
 
 <img src="images/22.png" width="600"><br>
 
-The wizard launches and displays a selection page. In the "General" category
-Select "Existing Projects into Workspace" and click "Next".
+The wizard launches and displays a selection page. In the "Plug-in Development" category
+Select "Plug-ins and Fragments" and click "Next".
 
-<img src="images/23.png" width="600"><br>
+<img src="images/p1.jpg" width="600"><br>
 
-A screen for specifying the directory to import from is displayed. Select "Select archive file" and then select the downloaded file. The "Projects" list is updated. Make sure that the project to be imported is as shown below, and select "Finish" to deploy the project with Eclipse.
+A screen for specifying the directory to import from is displayed. Select "Import Form" and then select the directory.
 
-<img src="images/21.PNG" width="600"><br>
+<img src="images/p2.jpg" width="600"><br>
+
+The "Projects" list is updated. Make sure that the project to be imported is as shown below, and select "Finish" to deploy the project with Eclipse.
+
+<img src="images/p3.jpg" width="600"><br>
 
 
 
