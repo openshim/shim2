@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_6qZaULJxEemiUsUi6LVRJQ" name="CommunicationSet">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_VdqRQLthEemaAKF4TnPa2g" name="Communication Set">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_6qlAiLJxEemiUsUi6LVRJQ" name="Control interruptCommunication">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_6qlAibJxEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet/interruptCommunication"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_6qlAhLJxEemiUsUi6LVRJQ" name="Control eventCommunication">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_6qlAhbJxEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet/eventCommunication"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_6qlAhrJxEemiUsUi6LVRJQ" name="Control fIFOCommunication">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_6qlAh7JxEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet/fIFOCommunication"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_6qlAgrJxEemiUsUi6LVRJQ" name="Control sharedMemoryCommunication">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_6qlAg7JxEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet/sharedMemoryCommunication"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_6qlAgLJxEemiUsUi6LVRJQ" name="Control sharedRegisterCommunication">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_6qlAgbJxEemiUsUi6LVRJQ">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//CommunicationSet/sharedRegisterCommunication"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

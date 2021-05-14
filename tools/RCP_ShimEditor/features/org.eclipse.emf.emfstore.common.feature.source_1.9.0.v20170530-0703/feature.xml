@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.emf.emfstore.common.feature.source" version="1.9.0.v20170530-0703" label="EMFStore Common" provider-name="Eclipse Modeling Project"     >
+	<description url="http://emfstore.org">
+		Contains common plugins of EMFStore that are used by other EMFStore features.
+	</description>
+	<copyright url="%copyrightURL">
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+</feature>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.emf.ecp.view.model:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.emf.ecp.view.group.model="http://org/eclipse/emf/ecp/view/group/model" xmlns:org.eclipse.emf.ecp.view.horizontal.model="http://org/eclipse/emf/ecp/view/horizontal/model" xmlns:org.eclipse.emf.ecp.view.model="http://org/eclipse/emf/ecp/view/model/1180" xmi:id="_LZ4F8LNPEemWLecWRnNqng" name="SharedMemoryCommunication">
+  <rootEClass href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication"/>
+  <children xsi:type="org.eclipse.emf.ecp.view.group.model:Group" xmi:id="_u5q48LteEemaAKF4TnPa2g" name="SharedMemory Communication">
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsIrNPEemWLecWRnNqng" name="Control name">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsI7NPEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//AbstractCommunication/name"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.horizontal.model:HorizontalLayout" xmi:id="_1vzG4L_KEemqZ6BN_GZ5aQ">
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsJrNPEemWLecWRnNqng" name="Control dataSize">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsJ7NPEemWLecWRnNqng">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication/dataSize"/>
+        </domainModelReference>
+      </children>
+      <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsKLNPEemWLecWRnNqng" name="Control dataSizeUnit" labelAlignment="None">
+        <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsKbNPEemWLecWRnNqng">
+          <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication/dataSizeUnit"/>
+        </domainModelReference>
+      </children>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsKrNPEemWLecWRnNqng" name="Control addressSpaceRef">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsK7NPEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication/addressSpaceRef"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsLLNPEemWLecWRnNqng" name="Control subSpaceRef">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsLbNPEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EReference" href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication/subSpaceRef"/>
+      </domainModelReference>
+    </children>
+    <children xsi:type="org.eclipse.emf.ecp.view.model:Control" xmi:id="_LaDsJLNPEemWLecWRnNqng" name="Control operationType">
+      <domainModelReference xsi:type="org.eclipse.emf.ecp.view.model:FeaturePathDomainModelReference" xmi:id="_LaDsJbNPEemWLecWRnNqng">
+        <domainModelEFeature xsi:type="ecore:EAttribute" href="http://www.multicore-association.org/2017/SHIM2.0/#//SharedMemoryCommunication/operationType"/>
+      </domainModelReference>
+    </children>
+  </children>
+  <ecorePaths>/org.multicore-association.shim.model/model/shim.ecore</ecorePaths>
+</org.eclipse.emf.ecp.view.model:View>

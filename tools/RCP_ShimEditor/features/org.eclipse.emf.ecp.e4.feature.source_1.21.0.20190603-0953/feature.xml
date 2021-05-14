@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.emf.ecp.e4.feature.source" version="1.21.0.20190603-0953" label="ECP e4 UI Integration" provider-name="%providerName" image="eclipse_update_120.jpg"    >
+	<description >
+		%description
+	</description>
+	<copyright url="%copyrightURL">
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+</feature>

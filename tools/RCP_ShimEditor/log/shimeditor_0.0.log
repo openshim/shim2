@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-31j" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-14T02:50:24.026219500Z</date>
+  <millis>1618368624026</millis>
+  <nanos>219500</nanos>
+  <sequence>0</sequence>
+  <logger>org.multicore_association.shim.edit.log.ShimLoggerUtil</logger>
+  <level>INFO</level>
+  <class>org.multicore_association.shim.edit.log.ShimLoggerUtil</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Load default logging properties.</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-31j" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-15T06:36:31.050304800Z</date>
+  <millis>1618468591050</millis>
+  <nanos>304800</nanos>
+  <sequence>0</sequence>
+  <logger>org.multicore_association.shim.edit.log.ShimLoggerUtil</logger>
+  <level>INFO</level>
+  <class>org.multicore_association.shim.edit.log.ShimLoggerUtil</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Load default logging properties.</message>
+</record>
+</log>

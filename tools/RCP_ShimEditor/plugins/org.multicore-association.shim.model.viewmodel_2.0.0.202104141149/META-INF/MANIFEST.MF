@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.multicore_association.shim.model.viewmodel
+Bundle-SymbolicName: org.multicore-association.shim.model.viewmodel;sing
+ leton:=true
+Bundle-Version: 2.0.0.202104141149
+Require-Bundle: org.eclipse.emf.ecp.view.model.provider.xmi
+
+

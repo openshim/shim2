@@ -1,0 +1,12 @@
+#encoding=UTF-8
+#version=1
+org.multicore-association.shim.edit.model.edit.source,1.0.0.202104141149,plugins/org.multicore-association.shim.edit.model.edit.source_1.0.0.202104141149.jar,4,false
+org.multicore-association.shim.edit.model.source,2.0.0.202104141149,plugins/org.multicore-association.shim.edit.model.source_2.0.0.202104141149.jar,4,false
+org.multicore-association.shim.edit.source,2.0.0.202104141149,plugins/org.multicore-association.shim.edit.source_2.0.0.202104141149.jar,4,false
+org.multicore-association.shim.model.edit.source,2.0.0.202104141149,plugins/org.multicore-association.shim.model.edit.source_2.0.0.202104141149.jar,4,false
+org.multicore-association.shim.model.editor.source,1.0.0.202104141149,plugins/org.multicore-association.shim.model.editor.source_1.0.0.202104141149.jar,4,false
+org.multicore-association.shim.model.source,2.0.0.202104141149,plugins/org.multicore-association.shim.model.source_2.0.0.202104141149.jar,4,false
+org.multicore-association.shim.model.viewmodel.source,2.0.0.202104141149,plugins/org.multicore-association.shim.model.viewmodel.source_2.0.0.202104141149.jar,4,false
+org.multicore-association.shim10.model.edit.source,1.0.0.202104141149,plugins/org.multicore-association.shim10.model.edit.source_1.0.0.202104141149.jar,4,false
+org.multicore-association.shim10.model.editor.source,1.0.0.202104141149,plugins/org.multicore-association.shim10.model.editor.source_1.0.0.202104141149.jar,4,false
+org.multicore-association.shim10.model.source,1.0.0.202104141149,plugins/org.multicore-association.shim10.model.source_1.0.0.202104141149.jar,4,false

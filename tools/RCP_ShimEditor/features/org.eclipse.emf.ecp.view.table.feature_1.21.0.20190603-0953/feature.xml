@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.ecp.view.table.feature"
+      label="EMF Forms Table Model"
+      version="1.21.0.20190603-0953"
+      provider-name="Eclipse Modeling Project"
+      plugin="org.eclipse.emf.ecp.view.table.model"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.table.model"
+         download-size="74"
+         install-size="184"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.table.model.edit"
+         download-size="52"
+         install-size="85"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.table.ui.swt"
+         download-size="154"
+         install-size="354"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.table.columnservice"
+         download-size="13"
+         install-size="19"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.swt.table"
+         download-size="86"
+         install-size="193"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.core.services.domainexpander.table"
+         download-size="13"
+         install-size="20"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.core.services.mappingprovider.table"
+         download-size="12"
+         install-size="18"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.core.services.structuralchange.table"
+         download-size="12"
+         install-size="17"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.core.services.segments.multi"
+         download-size="22"
+         install-size="41"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.view.multisegment.model"
+         download-size="28"
+         install-size="51"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.view.multisegment.model.edit"
+         download-size="20"
+         install-size="30"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+</feature>

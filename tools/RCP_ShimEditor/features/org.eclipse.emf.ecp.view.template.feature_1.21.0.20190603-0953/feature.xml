@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.ecp.view.template.feature"
+      label="EMF Forms Template  Model"
+      version="1.21.0.20190603-0953"
+      provider-name="%providerName"
+      plugin="org.eclipse.emf.ecp.view.template.model"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.template.model"
+         download-size="346"
+         install-size="742"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.template.model.edit"
+         download-size="245"
+         install-size="511"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.template.service"
+         download-size="25"
+         install-size="47"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.emfforms.core.bazaar.feature.source" version="1.21.0.20190603-0953" plugin="org.eclipse.emfforms.core.bazaar" label="Bazaar Feature incl. Sources" provider-name="Eclipse Modeling Project">
+  <includes id="org.eclipse.emfforms.core.bazaar.feature" version="1.21.0.20190603-0953"/>
+  <description>
+      %description
+   </description>
+  <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.emfforms.core.bazaar.source" version="1.21.0.20190603-0953" download-size="0" install-size="0" unpack="false"/>
+</feature>

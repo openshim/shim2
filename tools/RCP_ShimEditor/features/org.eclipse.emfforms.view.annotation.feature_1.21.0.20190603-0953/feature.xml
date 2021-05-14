@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emfforms.view.annotation.feature"
+      label="EMF Forms Annotation View Model Feature"
+      version="1.21.0.20190603-0953"
+      provider-name="Eclipse Modeling Project"
+      plugin="org.eclipse.emfforms.view.annotation.model">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.emfforms.view.annotation.model"
+         download-size="25"
+         install-size="44"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emfforms.view.annotation.model.edit"
+         download-size="21"
+         install-size="35"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.template.annotation.model"
+         download-size="25"
+         install-size="43"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.template.annotation.model.edit"
+         download-size="23"
+         install-size="38"
+         version="1.21.0.20190603-0953"
+         unpack="false"/>
+
+</feature>

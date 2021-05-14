@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.multicore_association.shim.edit.source" version="2.0.0.202104141149" label="ShimEdit Feature"      >
+	<plugin id="org.multicore-association.shim.edit.source" version="2.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.model.source" version="2.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.model.edit.source" version="2.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.model.viewmodel.source" version="2.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.edit.model.source" version="2.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.edit.model.edit.source" version="1.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim10.model.source" version="1.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim10.model.edit.source" version="1.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim10.model.editor.source" version="1.0.0.202104141149"     unpack="false"/>
+	<plugin id="org.multicore-association.shim.model.editor.source" version="1.0.0.202104141149"     unpack="false"/>
+</feature>
