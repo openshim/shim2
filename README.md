@@ -2,7 +2,7 @@
 
 [source](https://github.com/openshim/shim2/tree/master/source) directory includes eclipse projects containing multiple soruce codes. Please refer to README.txt files in each subdirectory.
 
-[shim-measure](https://github.com/openshim/shim2/tree/master/shim-measure) directory includes the measurement tool to collect the hardware performance information and write them into an existing SHIM XML without the performance information.
+[shim-measure](https://github.com/openshim/shim2/tree/master/shim-measure) directory includes the measurement tool to collect the hardware performance information and write them into an existing SHIM XML without the performance information. Please refer to README.txt files in each subdirectory.
 
 [samples](https://github.com/openshim/shim2/tree/master/samples) direcotry includes various SHIM and CCF XML files samples. Please note that these are just samples to provide a feel for how these XML files look like. The accuracy and correctness of the contents are not verified.
 
