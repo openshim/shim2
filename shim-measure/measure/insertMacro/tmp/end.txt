@@ -1,0 +1,26 @@
+// Begin insertion
+unsigned ccuse_end = ccnt_read();
+pmu_read(myendcount);
+if(ccuse_start > ccuse_end){
+	printf("time error\n");
+}
+
+mytotaltime+=ccuse_end - ccuse_start;
+for(int myi2=0;myi2<6;myi2++){
+      myTotalcount[myi2] += myendcount[myi2] - mystartcount[myi2];
+    }
+
+for(int myi2=0;myi2<6;myi2++){
+      mycount_1[myi2] = myendcount[myi2] - mystartcount[myi2];
+      printf("%d,%d,%d,%d,",myTotalcount[myi2],mystartcount[myi2],myendcount[myi2],mycount_1[myi2]);
+    }
+printf("\n");
+}
+printf("-----------------------\n");
+printf("TotalTime,%u,Iteration,%u\n",mytotaltime,MYITERATION);
+printf("exec count,%u\n",mytotaltime/MYITERATION);
+printf("L1access,%u\n",get_L1access(myTotalcount)/MYITERATION);
+printf("L1missrate,%f\n",get_L1missrate(myTotalcount));
+printf("L2missrate,%f\n",get_L2missrate(myTotalcount));
+pmu_close();
+// End insertion

@@ -1,0 +1,24 @@
+// Begin insertion
+setaffinity(3);
+pmu_open();
+
+unsigned mytotaltime=0;
+unsigned int myTotalcount[6] = {0,0,0,0,0,0};
+unsigned int mystartcount[10];
+unsigned int myendcount[10];
+
+printf("L1I-Refill,,,,L1D-Refil,,,,L1D-Access,,,,L1I-Access,,,,L2D-Access,,,,L2D-Refill,,,,\n");
+
+for(int myi3=0;myi3<6;myi3++){
+printf("Total,Start,End,lap,");
+}
+
+printf("\n");
+
+for(int myi=0;myi < MYITERATION;myi++){
+	unsigned int mycount_1[6] = {0,0,0,0,0,0}; //inokawa	
+	pmu_reset();
+	cache_invalidate();
+	pmu_read(mystartcount);
+	unsigned ccuse_start = ccnt_read();
+// End insertion

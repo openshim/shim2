@@ -1,0 +1,17 @@
+#ifndef PMU_UTIL_H
+#define PMU_UTIL_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+
+int fd0_A;
+
+int pmu_open(){
+  if((fd0_A = open("/dev/set_pmu",O_RDWR)) < 0){
+    perror("open");
+    return -1;
+  }
+}
